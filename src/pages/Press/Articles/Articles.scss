@@ -1,0 +1,244 @@
+@import './../../../App.scss';  //import vars and mixins
+
+.Articles{
+    // margin-top: -30rem;
+    text-align: left;
+    text-align: center;
+    .btn{
+        margin-top: 2rem;
+    }
+}
+article{
+    background: $color_black_1;
+    color: #fff;
+    min-height: 55rem;
+    margin-bottom: 6rem;
+    font-size: 1.4rem;
+    text-align: left;
+}
+
+.article__img,
+.article__heading{
+    width: 50%;
+}
+.article__img{
+    position: absolute;
+    background-size: cover;
+    background-position: right;
+    font-size: 1.2rem;
+    height: 55rem;
+    transition: .7s;
+    .cover{
+        transition: 1.5s;
+    }
+
+}
+.article__heading{
+    height: 55rem;
+    display: inline-grid;
+    align-content: center;
+    padding: 5rem 8rem;
+    left: 50%;
+
+}
+article:nth-child(odd) {
+    .article__img{
+        left: 50%;
+        // grid-column: 2;
+    }
+    .article__heading{
+        left: 0;
+    }
+}
+article:nth-child(even) {
+    .article__heading{
+        transition: .5s;
+    }
+    .article__img{
+        background-position: left;
+        // grid-column: 2;
+    }
+}
+article.open{
+
+    .article__img{
+        width: 100%;
+        left: 0;
+        // opacity: .3;
+        .cover{
+            background: rgba($color_black,.7);
+            transition: 1.5s;
+        }
+        transition: .75s;
+    }
+    .article__heading{
+        color: #fff;
+        left: 0;
+        padding-left: 10rem;
+        position: relative;
+        transition: left .75s;
+    }
+    .article__body{
+        display: block;
+        background: #f5f5f5;
+        background: #fff;
+        color: $color_black_1;
+        // top: -5rem;
+        // opacity: 0;
+        // @include anim(slideBodyIn, .5s , .5s, ease-out);
+    }
+    .article__arr{
+        display: block;
+        @include anim(slideArrIn, .5s , .5s, ease-out);
+    }
+    .btn{
+        display: none;
+    }
+}
+.article__img_caption{
+    color: #fff;
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    text-align: right;
+    padding: 0 4rem;
+}
+.article__top{
+    margin: 4rem 0;
+}
+.article__title{
+    font-size: 2.8rem;
+    small{
+        // font-size: 1.6rem;
+
+    }
+}
+.article__subtitle{
+    font-size: 1.8rem;
+}
+.article__arr{
+    font-size: 3rem;
+    font-weight: normal;
+    display: none;
+    //anim
+    top: -5rem;
+    opacity: 0;
+}
+.article__body{
+    width: 100%;
+    display: none;
+    padding: 10rem;
+}
+.article__text{
+    column-count: 2;
+    column-gap: 5rem;
+    p{
+        display: inline-block;
+    }
+
+    a{
+        font-weight: bold;
+    }
+
+
+}
+.article__link{
+    border-top: solid .1rem #e5e5e5;
+    // color: #d5d5d5;
+    margin: 8rem auto 0;
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    span{
+        font-size: 1.6rem;
+        top: 5rem;
+        cursor: pointer;
+        opacity: .3;
+    }
+    span:hover{
+        opacity: 1;
+    }
+}
+.edinburghReporterOnTheCoreLaunch{
+    .article__img{
+        background-position: right top;
+    }
+}
+.article__box{
+    border: solid .1rem $color_black_1;
+    padding: 2rem 4rem;
+    margin: 2rem 0 3rem;
+    font-size: 1.2rem;
+    p{
+        margin: .5rem 0;
+    }
+}
+.article__box_title{
+    background: #FFFFFF;
+    padding: 1rem 2rem;
+    left: 2rem;
+    top: -1.7rem;
+    position: absolute;
+}
+
+.Articles_others{
+    display:grid;
+    // grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    grid-gap: 2rem;
+    article{
+        margin: 0;
+
+    }
+    .article__img{
+        display: none;
+    }
+    .article__heading{
+        width: 100%;
+        // height: 100%;
+        // display: grid;
+        // align-content:center;
+        left: 0;
+        top: 0;
+        transition: 0s;
+        transform: scale(.8);
+        padding: 0 2rem;
+    }
+    article:nth-child(even) {
+        .article__heading{
+            transition: 0s;
+        }
+    }
+    article.open{
+        grid-column: 1/4;
+        grid-row: 1;
+        margin: 4rem 0;
+        .article__img{
+            display: block;
+            transition: none;
+        }
+        .article__heading{
+            width: 50%;
+            transition: 0s;
+            transform: scale(1);
+            padding: 5rem 8rem;
+        }
+    }
+    // article.open:nth-child(odd) {
+    //     grid-column: span 2;
+    //
+    // }
+    // article.open:nth-child(even) {
+    //     grid-column: 1 span 2;
+    // }
+}
+
+//=============================
+//     customised articles
+//=============================
+.edinburghGuideOnTen.open{
+    .article__img{
+        background-position: top;
+    }
+}

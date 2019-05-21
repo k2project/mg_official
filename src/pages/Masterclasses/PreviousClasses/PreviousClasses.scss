@@ -1,0 +1,17 @@
+@import './../../../App.scss';  //import vars and mixins
+
+.PreviousClasses{
+    background: $color_black_1;
+    padding: 22rem 0 10rem;
+    img{
+        height: 5rem;
+        margin: 1.5rem;
+    }
+    .btn{
+        color: $color_theme;
+        margin-top: 8rem;
+    }
+    .wrapper{
+        width: 120rem;
+    }
+}

@@ -1,0 +1,55 @@
+@import './../../App.scss';  //import vars and mixins
+
+.Cookies__body,
+.Cookies__nav{
+    background: $color_black_1;
+    padding: 12rem 20rem;
+    text-align: left;
+    font-size: 1.3rem;
+    b{
+        font-size: 2rem;
+        display: block;
+        // margin-top: 6rem;
+        font-weight: 400;
+        line-height: 1.4;
+        margin: 4rem 0 0;
+    }
+
+    p{
+        margin: 1rem 0;
+    }
+
+}
+#intro{
+    b{
+        margin-top: 0;
+        margin-bottom: 4rem;
+    }
+}
+.Cookies__nav{
+    a{
+        display: block;
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+}
+.Cookies__body{
+    column-count: 2;
+    column-gap: 4rem;
+}
+.cookies__list{
+    b{
+        font-size: 1.4rem;
+    }
+    padding: 4rem;
+    padding-top: 1rem;
+    top: 1rem;
+    margin-bottom: 6rem;
+    background: $color_black_2;
+    // border: solid .1rem #fff;
+    span{
+        display: block;
+        margin-bottom: 2rem;
+        column-count: 3;
+    }
+}

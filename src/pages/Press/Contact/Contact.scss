@@ -1,0 +1,28 @@
+@import './../../../App.scss';  //import vars and mixins
+
+.Contact{
+    background: $color_purple;
+    padding: 11rem 10rem 0;
+    height: 60rem;
+    display: grid;
+    align-content: center;
+    width: 100%;
+    a{
+        padding: .7rem;
+        img{
+            height: 2rem;
+        }
+    }
+    .SocialMedia{
+    }
+}
+.Contact__body{
+    display: grid;
+    grid-auto-rows: 8rem;
+    grid-template-columns: 30rem 1fr;
+    width: 54rem;
+    margin: auto;
+    text-align: left;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+}

@@ -1,0 +1,84 @@
+@import './../../App.scss';  //import vars and mixins
+
+.Home{
+    .Nav__brand{
+        display: none;
+    }
+    .Nav__media{
+        display: block;
+    }
+    .Nav__pages{
+        a:first-child{
+            display: none;
+        }
+    }
+    .Page__top{
+        display: none;
+    }
+}
+// .Home__nav{
+//     display: grid;
+//     grid-template-columns: auto 1fr;
+//     text-align: right;
+//     width: 90%;
+//     margin: 0 auto 4rem;
+//     font-size: 1.2rem;
+//     text-transform: uppercase;
+//     letter-spacing: .1rem;
+//     padding: 0 7rem;
+//     // color: #000;
+//     top: 12rem;
+//     z-index: 3;
+//
+// }.Home__nav_media{
+//     img{
+//         height: 1.4rem;
+//     }
+//     a{
+//         padding: 0 .7rem;
+//     }
+// }
+// .Home__nav_pages{
+//     a{
+//         padding: 0 1rem;
+//     }
+// }
+.Home__hidden{
+    display: none;
+    top: 10rem ;
+    opacity: 0;
+    padding-top: 10rem;
+    margin-top: -5rem;
+    @include anim(showHomeHiddenEl, .5s, 0s, ease-in)
+}
+//stop init anim on go back button
+.Home.not_anim{
+    .CurrentProjects{
+        display: grid;
+    }
+    .project{
+        opacity: 1;
+        top: 0;
+    }
+    .Top{
+        h1{
+            opacity: 1;
+            letter-spacing: .8rem;
+        }
+        h2{
+            opacity: 1;
+            letter-spacing: .4rem;
+        }
+    }
+}
+.Home.pastProjects_shown{
+    .CurrentProjects__btn{
+        display: none;
+    }
+    .Home__hidden{
+        display: block;
+        top: 0;
+        opacity: 1;
+    }
+
+}

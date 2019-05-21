@@ -1,0 +1,126 @@
+@import './../../../App.scss';
+//europe map ratio w x h : 1.2 x 1
+.Map{
+    width: 70rem;
+    height: 58.33rem;
+    // height: 50rem;
+    // overflow: hidden;
+    margin: 2rem auto 3rem;
+
+    img{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        margin: 0 auto;
+        // opacity: .4;
+        // transform: scale(3);
+    }
+    // transform: rotate(15deg);
+}
+.Map__location{
+    display: grid;
+    position: absolute;
+    transition: opacity .25s ease-in;
+
+}
+.Map__text{
+    overflow: hidden;
+    text-align: left;
+    top: -2rem;
+    padding: 0 4rem 0 1.5rem;
+    p{
+        line-height: 1;
+        color: $color_theme;
+        // position: absolute;
+        // top: -2rem;
+        opacity: 0;
+        left: 4rem;
+        transition: 2s ease-out;
+    }
+}
+.Map__circles{
+    display: none;
+    span{
+        position: absolute;
+        background: $color_theme;
+        border-radius: 100%;
+        top: 0;
+        left: 0;
+
+    }
+    span:nth-child(3){
+        left: -.35rem;
+        top: -.35rem;
+        width: .7rem;
+        height: .7rem;
+        opacity: 0;
+        transform: scale(0);
+        animation: pulsingFirstSpan .25s ease-out forwards;
+        // animation: pulsing 1.5s infinite ease-out;
+    }
+    span:nth-child(2){
+        left: -1.5rem;
+        top: -1.5rem;
+        width: 3rem;
+        height: 3rem;
+        background: rgba($color_theme,.2);
+        opacity: 0;
+        animation: pulsing 1.2s ease-out;
+
+    }
+    span:nth-child(1){
+        left: -2.5rem;
+        top: -2.5rem;
+        width: 5rem;
+        height: 5rem;
+        background: rgba(255,255,255,.2);
+        opacity: 0;
+        animation: pulsing 1s ease-out;
+    }
+}
+@keyframes pulsingFirstSpan{
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes pulsing{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+.Map__cities_lft,
+.Map__cities_rgt{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: grid;
+    align-content: center;
+    color: $color_black;
+    z-index: 2;
+    font-size: 1.3rem;
+
+    span:hover{
+        color: #fff;
+        opacity: .5;
+        cursor: none;
+    }
+}
+.Map__cities_lft{
+    left: -10rem;
+    text-align: left;
+
+}
+.Map__cities_rgt{
+    text-align: right;
+    right: -10rem;
+}

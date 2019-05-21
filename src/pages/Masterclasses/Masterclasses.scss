@@ -1,0 +1,18 @@
+@import './../../App.scss';  //import vars and mixins
+
+.Masterclasses{
+    .Page__top{
+        height: 80vh;
+        .cover{
+            background: rgba($color_black_1,.6);
+        }
+    }
+
+}
+.Masterclasses__info{
+    background: $color_black_1;
+    padding: 22rem  10rem 10rem;
+    font-size: 1.6rem;
+    display: grid;
+
+}

@@ -1,0 +1,19 @@
+{
+    "name": "Murray Grant",
+    "short_name": "Murray Grant",
+    "icons": [
+        {
+            "src": "/media/icons/favicon/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/media/icons/favicon/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#c8ab85",
+    "background_color": "#c8ab85",
+    "display": "standalone"
+}

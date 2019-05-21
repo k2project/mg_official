@@ -1,0 +1,121 @@
+@import './../../../App.scss';  //import vars and mixins
+.PastProjects{
+    background: $color_black;
+    height: 100vh;
+    // padding-top: 10vh;
+    // margin-top: 4rem;
+    margin-bottom: 0;
+    z-index: 2;
+}
+.Slideshow{
+    height: 100%;
+    .cover_crossed{
+        // background-image: url('./../../../media/bgs/bgc_black.png');
+        opacity: .3;
+        background-position: center bottom;
+    }
+    .cover_gradient{
+        background: rgba($color_black_1,.7);
+        // background: linear-gradient(to top,rgba($color_purple, .9),rgba($color_purple, .5),rgba($color_black_1,.5) );
+        z-index: 2;
+    }
+    ul{
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        bottom: 7rem;
+        z-index: 3;
+    }
+    li{
+        width: 1rem;
+        height: 1rem;
+        border-radius: 100%;
+        border: solid .1rem #fff;
+        background: #fff;
+        margin: 0 .8rem;
+        display: inline-block;
+        cursor: pointer;
+        opacity: .7;
+        transform: rotate(-45deg);
+
+    }
+    li:hover{
+        opacity: 1;
+    }
+    li.current{
+        border: solid .2rem $color_theme;
+        background-color: $color_theme;
+        transform: scale(1.3) rotate(-315deg);
+        transition: .25s;
+        opacity: 1;
+    }
+    p{
+        margin: 0 0 .5rem;
+        font-size: 1.4rem;
+        line-height: 1.6;
+    }
+    .btn{
+        font-size: 1.2rem;
+        color: $color_theme;
+        width: 18rem;
+        padding: 1rem 0;
+        margin-top: 3rem;
+    }
+
+}
+.Slideshow,
+.Slideshow__slide,
+.Slideshow__slide_content{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: top;
+    display: grid;
+    align-content: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.Slideshow__slide,
+.Slideshow__slide_content{
+    z-index: 1;
+    opacity: 0;
+    transform: scale(1.4);
+    transition: 1.5s;
+}
+.Slideshow__slide_content{
+    transition: none;
+    padding-top: 7rem;
+}
+.Slideshow__slide.current,
+.Slideshow__slide_content.current{
+    opacity: 1;
+    z-index: 2;
+    transform: scale(1);
+    transition: 3s;
+}
+
+.projects__past_name{
+    color: #fff;
+    font-size: 4.5rem;
+    line-height: 1;
+}
+.projects__past_role{
+    color: $color_theme;
+    letter-spacing: .2rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin-bottom: .5em;
+    // font-weight: bold;
+
+}
+.projects__past_desc{
+    font-size: 1.5rem;
+    color: #fff;
+    width: 70rem;
+    margin: 4rem auto 0;
+    line-height: 1.2;
+}
