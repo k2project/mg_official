@@ -7,6 +7,21 @@
             background: rgba($color_black_1,.6);
         }
     }
-    height: 300vh;
 
+}
+.Choreography__info{
+    background: $color_black_1;
+    padding: 21rem  10rem 12rem;
+    font-size: 1.4rem;
+    display: grid;
+    text-align: center;
+    p{
+        width: 80rem;
+        margin: 2rem auto 0;
+        text-align: justify;
+    }
+    .btn{
+    color: $color_theme;
+    margin: 8rem auto 0;
+    }
 }
