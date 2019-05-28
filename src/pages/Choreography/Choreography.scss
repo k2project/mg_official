@@ -4,13 +4,13 @@
     .Page__top{
         height: 80vh;
         .cover{
-            background: rgba($color_black_1,.6);
+            background: rgba($color_dark,.6);
         }
     }
 
 }
 .Choreography__info{
-    background: $color_black_1;
+    background: $color_dark;
     padding: 21rem  10rem 12rem;
     font-size: 1.4rem;
     display: grid;

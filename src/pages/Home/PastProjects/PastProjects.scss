@@ -1,6 +1,6 @@
 @import './../../../App.scss';  //import vars and mixins
 .PastProjects{
-    background: $color_black;
+    // background: $color_black;
     height: 100vh;
     // padding-top: 10vh;
     // margin-top: 4rem;
@@ -15,7 +15,7 @@
         background-position: center bottom;
     }
     .cover_gradient{
-        background: rgba($color_black_1,.7);
+        background: rgba($color_dark,.7);
         // background: linear-gradient(to top,rgba($color_purple, .9),rgba($color_purple, .5),rgba($color_black_1,.5) );
         z-index: 2;
     }

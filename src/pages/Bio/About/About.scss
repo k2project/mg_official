@@ -3,7 +3,7 @@
 .About{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background: $color_black_1;
+    background: $color_dark;
     text-align: left;
     font-size: 1.4rem;
     .btn{
@@ -37,6 +37,6 @@
     background-repeat: no-repeat;
     background-position: center bottom;
     .cover{
-        background: rgba($color_black_2, .4);
+        background: rgba($color_darker, .4);
     }
 }

@@ -18,16 +18,14 @@ export default function Page(props){
     return(
         <div className="Page">
             <Nav/>
-            <div className="Page__top">
-                    <section>
-                        { data.video && <Video video={data.video}/>}
-                        <div className="cover">
-                            {data.title && <p className="Page__top_title font_themed">{data.title}</p>}
-                            {data.subtitle && <p className="Page__top_subtitle font_themed">{data.subtitle}</p>}
-                            {data.content}
-                        </div>
-                    </section>
-            </div>
+            <section className="Page__top">
+                { data.video && <Video video={data.video}/>}
+                <div className="cover">
+                    {data.title && <p className="Page__top_title font_themed">{data.title}</p>}
+                    {data.subtitle && <p className="Page__top_subtitle font_themed">{data.subtitle}</p>}
+                    {data.content}
+                </div>
+            </section>
             {props.children}
             {!cookies && <CookiesDisclaimer/>}
             <Footer/>

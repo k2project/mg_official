@@ -4,11 +4,11 @@ import {NavHashLink} from 'react-router-hash-link';
 
 const canonical = 'http://www.murraygrantofficial.com/';
 const description = 'Murray Grant is a creative entrepreneur with businesses ranging from training, corporate, production, agency, choreography and consulting in and around the UK and international market.';
-const keywords = 'murray grant, international, choreography, masterclasses, mga, enterpreneur, creative,training, corporate, consulting';
+const keywords = 'murray grant, international, choreography, masterclasses, mga, entrepreneur, creative,training, corporate, consulting';
 
 const home = {
     meta : {
-        title: "Murry Grant | Creative Enterpreneur",
+        title: "Murry Grant | Creative Entrepreneur",
         description,
         canonical,
         meta: {

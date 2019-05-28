@@ -1,9 +1,9 @@
 @import './../../../App.scss';
 
 .CurrentProjects{
-        display: none; //anim
-        margin-top: -14rem;
-        margin-bottom: 0;
+    background: none;
+    display: none; //anim
+    margin-top: -14rem;
 }
 
 .projects{
@@ -20,9 +20,9 @@
 .project{
     // background-image: url('./../../../media/bgs/grey.jpg');
     .cover{
-        background: rgba($color_black_2, .95)
+        background: rgba($color_darker, .95)
     }
-    box-shadow: 0rem 1rem 2rem .5rem rgba($color_black, .5);
+    box-shadow: 0rem 1rem 2rem .5rem rgba(21,21,21, .5);
     //anim
     opacity: 0;
     top: 3rem;
@@ -93,7 +93,7 @@
 }
 
 .projectsDetails__box.cover{
-    background: $color_black_2;
+    background: $color_dark;
     display: none;
     opacity: 0;
     // left: 15rem;
@@ -113,7 +113,7 @@
     height: 100%;
     display: inline;
     .cover{
-        background: rgba($color_black_2, 1);
+        background: rgba($color_darker, 1);
         display: grid;
         align-content: center;
         grid-template-columns: 1.2fr 1fr;
@@ -197,7 +197,7 @@ a.details__btn{
     }
     div:hover{
         background: #4f4f4f;
-        color: $color_black_2;
+        color: $color_darker;
         cursor: pointer;
     }
 }
