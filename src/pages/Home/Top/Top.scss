@@ -11,7 +11,7 @@
         text-transform: uppercase;
         letter-spacing: 25rem;
         opacity: 0;
-        @include anim(murrayGrantAnim, 1.2s, 0.2s, ease-out, 0.8rem, 3.5rem)
+        @include anim(murrayGrantAnim, 1.2s, 0.2s, ease-out, 0.8rem)
     }
 
     .animBox_subtitle{
