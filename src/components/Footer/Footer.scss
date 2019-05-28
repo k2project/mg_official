@@ -10,8 +10,54 @@
         font-size: 1.2rem;
         padding: 0 .7rem;
     }
+    a:last-child{
+        display: none;
+    }
+}
+
+
+
+//max 1300
+@include desktop-sm{
 
 }
-.Footer_social{
-    display: none;
+//max 1024
+@include tablet{
+
+}
+//max 768
+@include mobile{
+.Footer{
+    grid-template-columns:1fr;
+    grid-row-gap: 2rem;
+    text-align: center;
+    a{
+        font-size: 1.1rem;
+        padding: 0 .5rem;
+    }
+
+    margin-top: 0rem;
+}
+
+.Footer_brand{
+    grid-row: 2;
+    grid-column: span 2;
+    opacity: .6;
+}
+}
+// max 480
+@include mobile-sm{
+    .Footer{
+        a{
+            padding: 0 .7rem;
+        }
+        a:nth-child(2),
+        a:nth-child(3),
+        a:nth-child(4){
+            display: none;
+        }
+        a:last-child{
+            display: inline-block;
+        }
+    }
 }

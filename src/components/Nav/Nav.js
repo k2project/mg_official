@@ -20,15 +20,34 @@ export default function Page (props){
                     <SocialMedia/>
                 </div>
                 <div className="Nav__pages">
-                    <NavLink to="/" exact >Home</NavLink>
-                    <NavLink to="/biography" >Biography</NavLink>
-                    <NavLink to="/choreography" >Choreography</NavLink>
-                    <NavLink to="/masterclasses" >Masterclasses</NavLink>
-                    <NavHashLink to="/biography#endorsements" >Endorsements</NavHashLink>
-                    <NavLink to="/press" >Press</NavLink>
-                    <NavHashLink to="/press#contact" >Contact</NavHashLink>
+                    <NavLink to="/" exact  onClick={toggleOpenMenu}>Home</NavLink>
+                    <NavLink to="/biography"  onClick={toggleOpenMenu}>Biography</NavLink>
+                    <NavLink to="/choreography"  onClick={toggleOpenMenu}>Choreography</NavLink>
+                    <NavLink to="/masterclasses" onClick={toggleOpenMenu}>Masterclasses</NavLink>
+                    <NavHashLink to="/biography#endorsements"  onClick={toggleOpenMenu}>Endorsements</NavHashLink>
+                    <NavLink to="/press"  onClick={toggleOpenMenu}>Press</NavLink>
+                    <NavHashLink to="/press#contact"  onClick={toggleOpenMenu}>Contact</NavHashLink>
+                </div>
+                <div className="Nav__burger" onClick={handleMenuBurgerClick}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </section>
         </div>
     )
+}
+
+function toggleOpenMenu(){
+    const nav = document.querySelector('.Nav');
+    if(nav.classList.contains('opened')){
+        nav.classList.remove('opened')
+    }else{
+        nav.classList.add('opened')
+
+    }
+}
+function handleMenuBurgerClick(){
+    toggleOpenMenu();
+    window.scrollTo(0,0);
 }
