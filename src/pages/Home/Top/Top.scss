@@ -11,14 +11,14 @@
         text-transform: uppercase;
         letter-spacing: 25rem;
         opacity: 0;
-        @include anim(murrayGrantAnim, 1.2s, 0.2s, ease-out, 0.8rem)
+        @include anim(murrayGrantAnim, 1.7s, 0.2s, cubic-bezier(.25,.2,.2,1.15), 0.8rem)
     }
 
     .animBox_subtitle{
         text-transform: uppercase;
         font-size: 1.4rem;
         opacity: 0;
-        @include anim(enterpreneurtAnim, 1s, 1.7s, ease-out, 0.4rem)
+        @include anim(enterpreneurtAnim, .7s, 2s, ease-out, 0.4rem)
     }
 
 
