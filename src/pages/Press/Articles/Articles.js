@@ -16,13 +16,13 @@ export default function Articles (){
 
     return(
 
-        <div className="Articles">
+        <section className="Articles">
             {articlesFeaturedList}
             <div className="btn" onClick={e=>showOtherArticles(e)}>More Press</div>
             {displayAllArticles && <div className="Articles_others">
                 {articlesOtherList}
             </div>}
-        </div>
+        </section>
 
     )
 }

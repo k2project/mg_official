@@ -14,12 +14,12 @@ export default function Press (){
         <DocumentMeta {...appPages.press.meta}>
             <div className="Press">
                 <Page data = {appPages.press.topContent}>
-                    <section>
+                    {/* <section> */}
                         <Articles/>
-                    </section>
-                    <section>
+                    {/* </section> */}
+                    {/* <section> */}
                         <Contact/>
-                    </section>
+                    {/* </section> */}
                 </Page>
             </div>
         </DocumentMeta>

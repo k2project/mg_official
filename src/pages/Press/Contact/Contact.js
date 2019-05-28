@@ -7,7 +7,7 @@ export default function Contact (){
 
     return(
 
-        <div className="Contact" id="contact">
+        <section className="Contact" id="contact">
             <div className="section__title">Contact</div>
             <div className="Contact__body">
                 <div>For enquiries please contact <br/><b>Jenny McLean</b>:</div>
@@ -26,7 +26,7 @@ export default function Contact (){
                 </div>
             </div>
             <SocialMedia/>
-        </div>
+        </section>
 
     )
 }

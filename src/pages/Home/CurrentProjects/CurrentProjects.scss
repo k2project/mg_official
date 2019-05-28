@@ -5,7 +5,9 @@
     display: none; //anim
     margin-top: -14rem;
 }
-
+.btn.CurrentProjects__btn{
+    margin: 6rem auto 4rem;
+}
 .projects{
     width: 100rem;
     display: grid;
@@ -14,7 +16,7 @@
     grid-gap: 1rem;
     margin: auto;
     text-align: center;
-    margin-bottom: 6rem; //for btn
+    // margin-bottom: 6rem; //for btn
     overflow: hidden;
 }
 .project{
@@ -215,7 +217,4 @@ a.details__btn{
     .details__name{
         text-transform: lowercase;
     }
-}
-.btn.CurrentProjects__btn{
-    margin-bottom: 8rem;
 }

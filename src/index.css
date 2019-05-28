@@ -38,6 +38,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 h1{
     opacity: 0;
     visibility: hidden;
+    color: #fff;
 }
 p{
     line-height: 1.6;
