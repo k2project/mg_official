@@ -27,6 +27,7 @@ export default function Page (props){
                     <NavHashLink to="/biography#endorsements"  onClick={toggleOpenMenu}>Endorsements</NavHashLink>
                     <NavLink to="/press"  onClick={toggleOpenMenu}>Press</NavLink>
                     <NavHashLink to="/press#contact"  onClick={toggleOpenMenu}>Contact</NavHashLink>
+                    <p onClick={handleMenuBurgerClick}> <span>&times; </span></p>
                 </div>
                 <div className="Nav__burger" onClick={handleMenuBurgerClick}>
                     <span></span>
@@ -47,7 +48,7 @@ function toggleOpenMenu(){
 
     }
 }
-function handleMenuBurgerClick(){
+function handleMenuBurgerClick(e){
     toggleOpenMenu();
     window.scrollTo(0,0);
 }
