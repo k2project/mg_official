@@ -19,6 +19,7 @@
     // top: -1.5rem;
     text-transform: uppercase;
     margin-bottom: 3rem;
+    line-height: 1.3;
 }
 .Video{
     position: absolute;
@@ -101,19 +102,34 @@
 
 @include desktop-sm{
 
-}
-@include tablet{
     .Page__top{
         .cover{
-            padding-left: 10rem;
-            padding-right: 5rem;
+            padding-left: 15rem;
+            padding-right: 4rem;
         }
     }
+
+}
+@include tablet{
     .Page__top_title{
         font-size: 3rem;
+        margin-bottom: .5rem;
+    }
+    .Page__top{
+        .cover{
+            padding-left: 12rem;
+        }
     }
 }
 @include mobile{
+    .Page__top{
+        .cover{
+            padding-left: 6rem;
+        }
+    }
+    .video_ctrl_sound{
+        right: 4rem;
+    }
 
     .cookies__disclaimer{
         z-index: 99;
@@ -130,5 +146,10 @@
     }
 }
 @include mobile-sm{
-
+    .Page__top_title{
+        font-size: 2.6rem;
+    }
+    .Page__top_subtitle{
+        font-size: 1.4rem;
+    }
 }

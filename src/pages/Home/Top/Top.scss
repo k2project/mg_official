@@ -2,35 +2,61 @@
 
 .Top{
     height: 80vh;
-
-    //anim for iOs
-    .animBox_title{
-        color: $color_theme;
-        font-size: 3.5rem;
-        margin-bottom: .7rem;
-        margin-top: 4rem;
-        text-transform: uppercase;
-        letter-spacing: 25rem;
-        opacity: 0;
-        @include anim(murrayGrantAnim, 1.2s, 0.2s, ease-out, 0.8rem)
-    }
-
-    .animBox_subtitle{
-        text-transform: uppercase;
-        font-size: 1.4rem;
-        opacity: 0;
-        @include anim(enterpreneurtAnim, 1s, 1.7s, ease-out, 0.4rem)
-    }
-
-
 }
 .animContainer{
     width: 100rem;
     margin: auto;
     overflow: hidden;
     .animBox{
-        width: 500%;
-        left: -200%;
+        width: 900%;
+        left: -400%;
         text-align: center;
+    }
+}
+.animBox_title{
+    color: $color_theme;
+    font-size: 3.5rem;
+    margin-bottom: .7rem;
+    margin-top: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 25rem;
+    opacity: 0;
+    @include anim(murrayGrantAnim, 1.2s, 0.2s, ease-out, 0.8rem)
+}
+
+.animBox_subtitle{
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    opacity: 0;
+    @include anim(enterpreneurtAnim, 1s, 1.7s, ease-out, 0.4rem)
+}
+
+
+//max 1300
+@include desktop-sm{
+
+}
+//max 1024
+@include tablet{
+    .animContainer{
+        width: 90%;
+    }
+}
+//max 768
+@include mobile{
+    .Top{
+        height: 70vh;
+    }
+    .animBox_title{
+        font-size: 2.7rem;
+    }
+}
+// max 480
+@include mobile-sm{
+    .animBox_title{
+        font-size: 2rem;
+    }
+    .animBox_subtitle{
+        font-size: 1.1rem;
     }
 }

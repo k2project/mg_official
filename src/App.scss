@@ -42,11 +42,11 @@ $color_theme:     #c8ab85;
 //
 // }
 
-@mixin anim($name, $time, $delay, $timing-function:linear, $letterSpacing:0rem, $font_size:default) {
+@mixin anim($name, $time, $delay, $timing-function:linear, $letterSpacing:0rem) {
     animation: #{$name} #{$time} #{$delay} forwards #{$timing-function};
-    @include keyframe($name, $letterSpacing, $font-size);
+    @include keyframe($name, $letterSpacing);
 }
-@mixin keyframe($name, $letterSpacing, $font_size){
+@mixin keyframe($name, $letterSpacing){
     @keyframes #{$name}{
         to{
             left: 0;
@@ -54,7 +54,6 @@ $color_theme:     #c8ab85;
             top: 0;
             letter-spacing: $letterSpacing;
             transform: scale(1);
-            font-size: $font_size;
         }
 
     }
@@ -151,10 +150,15 @@ section{
 }
 @include tablet{
 
+    .btn{
+        width: 22rem;
+    }
 }
 @include mobile{
 
 }
 @include mobile-sm{
-
+    .btn{
+        width: 20rem;
+    }
 }
