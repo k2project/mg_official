@@ -14,7 +14,7 @@ export default function Page (props){
         <div className="Nav">
             <section>
                 <div className="Nav__brand font_themed color_themed">
-                    Murray Grant
+                    <NavLink to="/" exact>Murray Grant</NavLink>
                 </div>
                 <div className="Nav__media">
                     <SocialMedia/>
