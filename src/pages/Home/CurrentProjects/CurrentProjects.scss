@@ -16,7 +16,6 @@
     grid-gap: 1rem;
     margin: auto;
     text-align: center;
-    // margin-bottom: 6rem; //for btn
     overflow: hidden;
 }
 .project{
@@ -62,11 +61,10 @@
 
 }
 .project__role.cover{
-    padding:3rem;
+    padding:2rem;
     font-size: 1.6rem;
     line-height: 1.2;
     text-align: center;
-    // background: rgba($color_black_2,1);
     background: none;
     color: $color_theme;
     cursor: pointer;
@@ -80,8 +78,6 @@
 
 
 .project:hover .project__logo{
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-     filter: grayscale(100%);
      opacity: 0;
      transition: 0s ;
      transform: scale(.5);
@@ -98,7 +94,6 @@
     background: $color_dark;
     display: none;
     opacity: 0;
-    // left: 15rem;
     transform: scale(1.4);
     @include anim(showDetailsBox, .5s, 0s, ease-out);
     transition: left .5s ease-out;
@@ -110,8 +105,7 @@
 }
 
 .projectsDetails__li{
-    // background-image: url('./../../../media/bgs/grey2.jpg');
-    width: 100rem; //equal to .projects width
+    width: 100rem; //equal to .projects width //set dinamiclly
     height: 100%;
     display: inline;
     .cover{
@@ -127,11 +121,11 @@
     text-align: justify;
     font-size: 1.4rem;
 }
-.projectDetails_rgt,
-.projectDetails_lft{
+.projectDetails_lft,
+.projectDetails_rgt{
     display: grid;
-    align-content: end;
-    padding-bottom: 5rem;
+    align-content: center;
+    // padding-bottom: 5rem;
 }
 .details__name{
     text-align: left;
@@ -165,8 +159,9 @@ a.details__btn{
 }
 .projectsDetails__li.ted{
     .details__logo{
-        top: -5rem;
-        left: 2rem;
+        // top: -5rem;
+        // left: 2rem;
+        margin: 7rem 0;
     }
 }
 .details__links{
@@ -176,7 +171,7 @@ a.details__btn{
         padding: 0 1rem;
     }
     img{
-        height: 2.5rem;
+        height: 2rem;
     }
 }
 
@@ -216,5 +211,153 @@ a.details__btn{
 .projectsDetails__li.ted{
     .details__name{
         text-transform: lowercase;
+    }
+}
+
+//max 1300
+@include desktop-sm{
+    .projects{
+        width: 80rem;
+        grid-auto-rows: 17.5rem;
+    }
+    .project__logo{
+        padding: 1rem;
+        width: 80%;
+    }
+    .projectsDetails__li{
+        width: 80rem;
+        .cover{
+            background: rgba($color_darker, 1);
+            display: grid;
+            grid-template-columns: 1.8fr 1fr;
+            grid-column-gap: 2rem;
+            padding: 8rem;
+
+        }
+        .btn{
+            margin-left: 0;
+            width: 22rem;
+        }
+    }
+    .details__name{
+        font-size: 2.4rem;
+        margin-bottom: 0;
+    }
+}
+//max 1024
+@include tablet{
+    .projects{
+        width: 64rem;
+        grid-auto-rows: 14.5rem;
+    }
+    .project__logo{
+        padding: 1rem;
+        width: 90%;
+    }
+    .project__role.cover{
+        padding:1.5rem;
+        font-size: 1.4rem;
+    }
+    .projectsDetails__li{
+        width: 64rem;
+        font-size: 1.2rem;
+        .cover{
+            grid-template-columns: 1fr;
+            grid-column-gap: 0rem;
+            padding: 7rem;
+
+        }
+        .btn{
+            margin-left: 0;
+            width: 20rem;
+            font-size: 1.4rem;
+        }
+    }
+
+    .details__logo{
+        display: none;
+    }
+    .details__links{
+        display: none;
+    }
+    .details__role{
+        width: 60%;
+        text-align: left;
+    }
+}
+//max 768
+@include mobile{
+    .projects{
+        // border: solid 1px red;
+        grid-template-columns: 1fr 1fr;
+        width: 40rem;
+    }
+    .project{
+        grid-column: span 1;
+    }
+    .ted,
+    .mgaAcademy,
+    .beyondBroadwayProduction{
+        grid-column: span 1;
+    }
+    .ted{
+        grid-column: span 2;
+        // grid-row: 1;
+        .project__logo{
+            width: 50%;
+            padding: 1rem;
+        }
+    }
+    .projectsDetails__li{
+        width: 40rem;
+        text-align: left;
+        .cover{
+            padding: 5rem;
+        }
+        .btn{
+            margin-left: auto;
+        }
+
+    }
+    .projectDetails_rgt{
+        grid-row: 1;
+        text-align: left;
+    }
+    .details__logo{
+        display: block;
+        margin-left: 0;
+        width: 80%;
+    }
+    .details__name{
+        font-size: 2.8rem;
+        margin-bottom: 0;
+    }
+    .details__role{
+        width: 90%;
+    }
+
+}
+// max 480
+@include mobile-sm{
+    .CurrentProjects{
+        margin-top: -10rem;
+    }
+    .projects{
+        // border: solid 1px yellow;
+        width: 85vw;
+    }
+
+    // .ted{
+    //     grid-column: span 2;
+    //     // grid-row: 1;
+    //     .project__logo{
+    //         width: 50%;
+    //     }
+    // }
+    .project__logo{
+        padding: 0.7rem;
+    }
+    .projectsDetails__li{
+        width: 85vw;
     }
 }

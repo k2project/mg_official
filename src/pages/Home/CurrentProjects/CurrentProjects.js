@@ -9,18 +9,29 @@ import twitter from './../../../media/icons/twitter.png';
 import instagram from './../../../media/icons/instagram.png';
 
 let projectIndex = 0;
+//for sliding and arrow navigation
 let projectsDetailsShown = false;
+//for swapping
+var xDown = null;
+var yDown = null;
 export default function CurrentProjects (){
     const projects = currentProjects.map((project,index)=>displayCurrentProjects(project,index));
 
     useEffect(()=>{
         const introAnim = setTimeout(runIntroAnim,3500);
         document.addEventListener('keydown', slideProjectDetailsListUsingArrowsKeys);
+        window.addEventListener('resize', closeProjectDetails);
+        document.addEventListener('touchstart', handleTouchStart);
+        document.addEventListener('touchmove', handleTouchMove);
         return ()=>{
             clearTimeout(introAnim);
             document.removeEventListener('keydown', slideProjectDetailsListUsingArrowsKeys);
+            window.removeEventListener('resize', closeProjectDetails);
+            document.removeEventListener('touchstart', handleTouchStart);
+            document.removeEventListener('touchmove', handleTouchMove);
         }
     })
+
 
     return(
         <section className="CurrentProjects" id="projects">
@@ -75,14 +86,14 @@ function displayCurrentProjects(project,index){
 function displayProjectsDeatils(index){
     projectsDetailsShown = true;
     projectIndex = index;
-    document.querySelector('.projects').scrollIntoView({behavior: "smooth",block: "center"});
+    const projects = document.querySelector('.projects');
+    projects.scrollIntoView({behavior: "smooth",block: "center"});
     const detailsBox = document.querySelector('.projectsDetails__box');
     detailsBox.style.display = 'block';
-
-    const projectBoxW = document.querySelector('.projects').offsetWidth;
+    const projectBoxW = projects.offsetWidth;
     const projectDetailsUl = document.querySelector('.projectsDetails__box ul');
     projectDetailsUl.style.width = projectBoxW * currentProjects.length + 'px';
-    slideProjectDetailsList(projectIndex);
+    slideProjectDetailsList(projectIndex, projectBoxW);
 
 }
 function slideProjectDetailsList(index){
@@ -98,28 +109,8 @@ function slideProjectDetailsList(index){
 
     const page  = projectIndex + 1;
     document.querySelector('.projectDetails__pagination').textContent = page +' / '+currentProjects.length;
-    console.log(projectsDetailsShown)
 
 }
-function slideProjectDetailsListUsingArrowsKeys(e){
-    if(projectsDetailsShown){
-
-        if (e.code === 'ArrowLeft') {
-            e.preventDefault();
-            // left arrow
-            console.log('left arrow')
-            slideProjectDetailsList(--projectIndex)
-        }
-        if (e.code === 'ArrowRight') {
-            e.preventDefault();
-            // right arrow
-            console.log('right arrow')
-            slideProjectDetailsList(++projectIndex)
-        }
-    }
-
-}
-
 function ProjectsDetails(){
     const projectsDetailsList = currentProjects.map(project=>displayProjectDetails(project));
     return(
@@ -137,7 +128,6 @@ function ProjectsDetails(){
 function closeProjectDetails(){
     document.querySelector('.projectsDetails__box').style.display = 'none';
     projectsDetailsShown = false;
-    console.log(projectsDetailsShown)
 }
 function displayProjectDetails(project){
     const { cls, links, desc, imgs, projectName, subpageURL, role} = project;
@@ -182,3 +172,58 @@ function showHomeHiddenEl(e){
     }
 
 }
+//handle arrows
+
+function slideProjectDetailsListUsingArrowsKeys(e){
+    if(projectsDetailsShown){
+
+        if (e.code === 'ArrowLeft') {
+            e.preventDefault();
+            // left arrow
+            slideProjectDetailsList(--projectIndex)
+        }
+        if (e.code === 'ArrowRight') {
+            e.preventDefault();
+            // right arrow
+            slideProjectDetailsList(++projectIndex)
+        }
+    }
+
+}
+//handle sipping
+
+function getTouches(evt) {
+  return evt.touches ||             // browser API
+         evt.originalEvent.touches; // jQuery
+}
+
+function handleTouchStart(evt) {
+    const firstTouch = getTouches(evt)[0];
+    xDown = firstTouch.clientX;
+    yDown = firstTouch.clientY;
+};
+function handleTouchMove(evt) {
+    if ( ! xDown || ! yDown ) {
+        return;
+    }
+
+    var xUp = evt.touches[0].clientX;
+    var yUp = evt.touches[0].clientY;
+
+    var xDiff = xDown - xUp;
+    var yDiff = yDown - yUp;
+
+    if(projectsDetailsShown){
+        if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
+            if ( xDiff > 0 ) {
+                slideProjectDetailsList(++projectIndex);
+            } else {
+                slideProjectDetailsList(--projectIndex);
+            }
+        }
+    }
+
+    /* reset values */
+    xDown = null;
+    yDown = null;
+};
