@@ -50,6 +50,26 @@ const christinaBianco = {
     },
     text:'Murray is a human Swiss Army knife for the performing arts! His ability to navigate the international acts scene, in all it’s facets, is unmatched.'
 }
+const SteveLeatham = {
+    name:'Steve Leatham, FEAA',
+    title:'Creative Director, ted ',
+    link:'https://www.tedgroup.com/',
+    country:{
+        name:'United Kingdom',
+        flag:'uk.png'
+    },
+    text:'We work closely with Murray in a number of ways, as a leading industry creative, his skills, imagination and personality help us bring our theatrical projects to life through stunning direction and choreography. He also works as an ambassador for ted, delivering interactive workshops at the foremost performing arts colleges around the world. As an artistic expert he helps build relationships for us, with the highest calibre of performers and creatives from the US and UK theatre and entertainment scene. Finally, he is a joy to have as part of the wider creative team.'
+}
+const TellyLeung  = {
+    name:'Telly Leung',
+    title:'Performer. Producer. Recording artist. Teacher.',
+    link:'http://www.tellyleung.com/',
+    country:{
+        name:'USA',
+        flag:'usa.png'
+    },
+    text:'I had a wonderful time collaborating with Murray Grant as both a producer and fellow educator of the arts. I was thrilled to get the opportunity to work with his students in Edinburgh - and he and his team at MGA are doing incredible work with the students as they venture into the professional world of show business. I also appreciate his passion for bringing Broadway artists to the UK as part of a mutually-fulfilling cultural exchange of ideas. His passion for bringing the arts to his hometown of Edinburgh is contagious and inspiring. I hope to have many more collaborations with Murray in the future.'
+}
 
 let endorsements = [
     christinaBianco,
@@ -57,7 +77,7 @@ let endorsements = [
     chrisStapelberg,
     markLethem,
     natalieWeiss,
-
-
+    SteveLeatham,
+    TellyLeung,
 ];
 export {endorsements};

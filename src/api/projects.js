@@ -188,7 +188,7 @@ const ted = {
         logo:'ted.svg',
     },
     role:{
-        title:'Freelance Creative',
+        title:'Creative Consultant',
         subtitle:null,
     },
     desc:'The Entertainment Department (ted) are creators and global implementers of original live production shows, dynamic audio and visual installations, leading sports and wellbeing programmes and custom-made merchandise retail product ranges. ',
