@@ -77,8 +77,7 @@ function Slideshow(){
     return(
         <div className="Slideshow">
             {slidesBg}
-            <div className="cover cover_gradient">
-                <div className="cover cover_crossed"></div>
+            <div className="cover">
                 {slidesContent}
             </div>
             <ul>{cntrls}</ul>
