@@ -70,11 +70,6 @@ body{
     color: $color_theme;
 }
 
-// .wrapper{
-//     width: 105rem;
-//     margin: auto;
-// }
-
 section{
     align-content: center;
     background: $color_dark;
@@ -144,18 +139,12 @@ section{
 
 
 @include desktop-sm{
-    // .wrapper{
-    //     width: 80%;
-    // }
 }
 @include tablet{
 
     .btn{
         width: 22rem;
     }
-    // .wrapper{
-    //     width: 90%;
-    // }
 }
 @include mobile{
 

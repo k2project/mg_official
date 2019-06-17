@@ -20,7 +20,7 @@ export default function Contact (){
                     Alex (alex@thisistailormade.com) <br/>
                     Amy (amy@thisistailormade.com)
                 </div>
-                <div>To get in touch with Murray directly:</div>
+                <div>Get in touch with Murray directly:</div>
                 <div>
                     murray@murraygrantofficial.com
                 </div>

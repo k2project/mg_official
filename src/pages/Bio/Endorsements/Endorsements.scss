@@ -1,68 +1,26 @@
 @import './../../../App.scss';  //import vars and mixins
 
 .Endorsements{
-    align-items: start;
     display: grid;
-    // grid-auto-rows: 1fr;
-    // grid-template-columns: 1fr 1fr;
-    background: $color_dark;
-    min-height: 50rem;
-    padding: 20rem 10rem  10rem;
+    padding: 23rem 0 10rem;
     text-align: left;
-font-size: 1.3rem;
+    font-size: 1.3rem;
 
 }
-.Endorsements__intro{
-    position: -webkit-sticky;
-    position: sticky;
-    top: 5rem;
-    // padding-top: 5rem;
-    font-size: 2.5rem;
-    p{
-        width: 60%;
-        left: 8rem;
-        top: 7rem;
-    }
 
-    .btn{
-        top: 3rem;
-    }
-}
-.quote__img_btm,
-.quote__img_top{
-    position: absolute;
-    opacity: .4;
-    width: 30rem;
-}
-.quote__img_top{
-    top: 20rem;
-    left: 10rem;
-}
-.quote__img_btm{
-    bottom: 12rem;
-    right: 50%;
-    transform: scale(-1,-1);
-}
 .Endorsements__quotes{
-    perspective: 1;
-    column-count: 3;
-    column-gap: 0;
-    width: 110rem;
+    width: 80%;
     margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
 
 }
 .quote{
     background: #1B1B1B;
     padding: 5rem;
-    // margin-bottom: 2rem;
-    // left: 5rem;
-    // width: 95%;
     margin:0 1rem 2rem;
-    //to stop breaking quotes
     display: grid;
-    align-content: center;
-    height: 35rem;
-
+    align-content: space-between;
 }
 .quote__text{
     margin-bottom: 3rem;
@@ -73,25 +31,37 @@ font-size: 1.3rem;
 }
 .quote__flag{
     height: 3rem;
-    // width: 5rem;
     left: -6.5rem;
     top: .2rem;
-
     position: absolute;
 
 }
-.quote:nth-child(1){
-    height: 30rem;
+.chrisStapelberg{
+    grid-column: span 2;
 }
-.quote:nth-child(2){
-    height: 40rem;
+@include desktop-sm{
+
+
 }
-.quote:nth-child(3){
-    height: 72rem;
+//max 1024
+@include tablet{
+    .Endorsements__quotes{
+        grid-template-columns: 1fr;
+    }
+    .chrisStapelberg{
+        grid-column: span 1;
+    }
 }
-.quote:nth-child(4){
-    height: 38rem;
+//max 768
+@include mobile{
+    .Endorsements__quotes{
+        width: 90%;
+    }
+    .quote{
+        padding: 3rem;
+    }
 }
-.quote:nth-child(5){
-    height: 32rem;
+// max 480
+@include mobile-sm{
+
 }

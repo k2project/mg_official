@@ -31,6 +31,7 @@ const natalieWeiss = {
     text:'Murray produced my entire European tour.  He is extremely efficient and detail-oriented during the booking process.  His budgeting and negotiating skills are unparalleled and you can always rely on him to respond in a timely manner.'
 }
 const chrisStapelberg = {
+    cls:'chrisStapelberg',
     name:'Chris Stapelberg',
     title:'Director of SA Dance Talent ',
     link:'http://sadancetalent.co.za/',
@@ -73,10 +74,10 @@ const TellyLeung  = {
 
 let endorsements = [
     christinaBianco,
+    natalieWeiss,
+    markLethem,
     sarahMilne,
     chrisStapelberg,
-    markLethem,
-    natalieWeiss,
     SteveLeatham,
     TellyLeung,
 ];

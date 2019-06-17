@@ -1,35 +1,6 @@
 @import './../../../App.scss';  //import vars and mixins
 
 .About{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background: $color_dark;
-    text-align: left;
-    font-size: 1.4rem;
-    .btn{
-        top: 5rem;
-        margin: auto;
-    }
-
-
-}
-.About__text{
-    // background: #fff;
-    // color: #111;
-    padding:12rem 10rem 15rem 10rem;
-    text-align: center;
-    p:first-of-type{
-        font-size: 1.9rem;
-        margin-bottom: 6rem;
-
-        // left: -5rem;
-        // width: calc(100% + 5rem);
-        text-align: left;
-    }
-    p{
-        margin-bottom: 2rem;
-        text-align: left;
-    }
 }
 .About__img{
     background-image: url('./../../../media/imgs/mg3.jpg');
@@ -39,4 +10,48 @@
     .cover{
         background: rgba($color_darker, .4);
     }
+    height: 85vh;
+    min-height: 70rem;
+}
+.About__text{
+    padding:10rem 0 15rem;
+    width: 80rem;
+    margin: auto;
+    font-size: 1.4rem;
+    .btn{
+        top: 4rem;
+        margin: auto;
+        color: $color_theme;
+    }
+    p:first-of-type{
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+    p{
+        text-align: justify;
+        margin-bottom: 3rem;
+    }
+}
+//max 1300
+@include desktop-sm{
+
+    .About__text{
+        width: 50rem;
+    }
+}
+//max 1024
+@include tablet{
+}
+//max 768
+@include mobile{
+    .About__text{
+        width: 80%;
+    }
+}
+// max 480
+@include mobile-sm{
+    .About__text{
+
+    }
+
 }
