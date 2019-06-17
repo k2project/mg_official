@@ -36,11 +36,14 @@
 @include desktop-sm{
 
     .About__text{
-        width: 50rem;
+        width: 60rem;
     }
 }
 //max 1024
 @include tablet{
+    .About__text{
+        width: 70%;
+    }
 }
 //max 768
 @include mobile{

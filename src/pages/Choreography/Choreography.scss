@@ -3,15 +3,11 @@
 .Choreography{
     .Page__top{
         height: 80vh;
-        .cover{
-            // background: rgba($color_dark,.6);
-        }
     }
 
 }
 .Choreography__info{
-    background: $color_dark;
-    padding: 21rem  10rem 12rem;
+    padding: 21rem  0 12rem;
     font-size: 1.4rem;
     display: grid;
     text-align: center;
@@ -21,7 +17,35 @@
         text-align: justify;
     }
     .btn{
-    color: $color_theme;
-    margin: 8rem auto 0;
+        color: $color_theme;
+        margin: 8rem auto 0;
     }
+}
+//max 1300
+@include desktop-sm{
+
+    .Choreography__info p{
+        width: 60rem;
+    }
+}
+//max 1024
+@include tablet{
+    .Choreography__info p{
+        width: 50rem;
+    }
+}
+//max 768
+@include mobile{
+    .Choreography__info p{
+        width: 80%;
+    }
+    .Choreography .Video{
+        display: none;
+    }
+
+}
+// max 480
+@include mobile-sm{
+
+
 }

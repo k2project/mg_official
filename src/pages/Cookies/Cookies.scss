@@ -38,18 +38,22 @@
     column-gap: 4rem;
 }
 .cookies__list{
+    width: 80%;
     b{
         font-size: 1.4rem;
     }
-    padding: 4rem;
+    padding: 4rem 6rem;
     padding-top: 1rem;
     top: 1rem;
-    margin-bottom: 6rem;
+    margin: 4rem auto 6rem;
     background: $color_darker;
+    line-height: 1.4;
     // border: solid .1rem #fff;
     span{
+        width: 30rem;
         display: block;
         margin-bottom: 2rem;
         column-count: 3;
+        padding: 2rem 0;
     }
 }

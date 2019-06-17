@@ -147,10 +147,30 @@ section{
     }
 }
 @include mobile{
+    .section__title{
+        font-size: 1.3rem;
+    }
+    .section__title:after,
+    .section__title:before{
+        width: 2rem;
+    }
+    .section__title:before{
+        margin-right: .7rem;
 
+    }
+    .section__title:after{
+        margin-left: .7rem;
+    }
 }
 @include mobile-sm{
     .btn{
         width: 20rem;
+    }
+    .section__title{
+        padding: 0 3rem;
+    }
+    .section__title:after,
+    .section__title:before{
+        display: none;
     }
 }
