@@ -20,7 +20,7 @@ export default function Page (props){
                     <SocialMedia/>
                 </div>
                 <div className="Nav__pages">
-                    <NavLink to="/" exact  onClick={toggleOpenMenu}>Home</NavLink>
+                    <NavLink to="/home" exact  onClick={toggleOpenMenu}>Home</NavLink>
                     <NavLink to="/biography"  onClick={toggleOpenMenu}>Biography</NavLink>
                     <NavLink to="/choreography"  onClick={toggleOpenMenu}>Choreography</NavLink>
                     <NavLink to="/masterclasses" onClick={toggleOpenMenu}>Masterclasses</NavLink>

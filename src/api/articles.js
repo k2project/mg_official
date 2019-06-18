@@ -11,7 +11,7 @@ const scotsmanOnMGAAcademy = {
     link:'https://www.scotsman.com/business/companies/media-leisure/performing-arts-academy-predicts-threefold-revenue-rise-1-4873326',
     img:{
         path:'scotsmanOnMGAAcademy.jpg',
-        caption:(<span>Murray Grant with co-founder of The MGA Academy of Performing Arts Andrew Gowland (left). <br/><small>Picture: Mike Wilkinson.</small></span>)
+        caption:(<span>Murray Grant with co-founder of The MGA Academy of Performing Arts Andrew Gowland (left) <br/><small>Picture: Mike Wilkinson.</small></span>)
     },
     text:(<div className="article__text">
         <p>Applications doubled at The MGA Academy of Performing Arts last year, reaching 1,800 for 90 places, after it became the first institution in Scotland to receive a full accreditation from the Council for Dance, Drama and Musical Theatre. </p>

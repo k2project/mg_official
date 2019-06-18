@@ -181,7 +181,7 @@ const ted = {
     current:true,
     projectName: {
         display:false,
-        name: 'TED',
+        name: 'The Entertainment Department (ted)',
     },
     imgs:{
         bg:null,

@@ -1,4 +1,12 @@
 @import './../../App.scss';  //import vars and mixins
 
 .Bio{
+    .Page__top{
+        height: 60rem;
+        background-image: url('./../../media/imgs/mg3.jpg');
+        background-size: cover;
+        background-position: center 70%;
+    }
+    .Page__top .cover{
+    }
 }

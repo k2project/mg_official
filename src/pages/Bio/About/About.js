@@ -6,9 +6,9 @@ export default function About (){
     return(
         <section>
             <div className="About">
-                <div className="About__img">
+                {/* <div className="About__img">
                     <div className="cover"></div>
-                </div>
+                </div> */}
                 <div className="About__text">
                     <p>Murray graduated from London’s Bird College in 2001 and immediately won a contract in London City Opera’s US tour of <i>The Merry Widow</i> (New York, Los Angeles, San Francisco and others). He performed in numerous musicals subsequently, including <i>Jesus Christ Superstar</i> (Vienna), <i>Paris Can-Can</i> (Sydney, Melbourne, Auckland), <i>Grease</i> (Zurich) and <i>Saturday Night Fever</i> (Vienna).</p>
                     <p>As Director and Choreographer, Murray’s extensive credits include P&O Cruises, The Entertainment Department, <i>Musical Starnights</i> (European tour), Union Square Opening Ceremony (Aberdeen), <i>12 Tenors</i> (European tour), Moulin Rouge TV Promotion (Germany). He has also directed and choreographed for musical theatre stars Adam Garcia, Ruthie Henshall, Kerry Ellis, Christina Bianco, Jon Lee and many more for concert series <i>Tonight from the West End</i>.</p>

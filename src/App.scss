@@ -63,6 +63,7 @@ body{
     color: #fff;
 
 }
+
 .font_themed{
     font-family: 'Montserrat', sans-serif;
 }
@@ -134,7 +135,54 @@ section{
     cursor: pointer;
 }
 
+.Holdingpage{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    align-content: center;
+    .Holdingpage__title{
+        margin-top: 3rem;
+        font-size: 5.5rem;
+        text-transform: uppercase;
+        line-height: 1.1;
+        padding: 0 5rem;
+    }
+    p{
+        text-transform: uppercase;
+        font-size: 1.8rem;
+        margin-top: 5rem;
+        padding: 0 3rem;
+        line-height: 1.4;
+    }
+    .timer{
+        text-align: center;
+        margin-top: 2rem;
+        color: $color_theme;
+        div{
+            display: inline-block;
+            div{
 
+                border: solid 1px $color_theme;
+                display: inline-block;
+                height: 10rem;
+                width: 10rem;
+                margin: .7rem;
+                font-size: 5rem;
+                line-height: 1;
+                padding-top: 2rem;
+            }
+            span{
+                font-size: 1.4rem;
+                font-weight: bold;
+                top: .8rem;
+            }
+
+        }
+    }
+}
 
 
 
@@ -160,6 +208,12 @@ section{
     }
     .section__title:after{
         margin-left: .7rem;
+    }
+    .Holdingpage .Holdingpage__title{
+        margin-top: 0;
+    }
+    .Holdingpage .timer{
+        display: none;
     }
 }
 @include mobile-sm{
