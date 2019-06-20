@@ -22,7 +22,7 @@ export default function Articles (){
             {/* <div className="btn" onClick={e=>showOtherArticles(e)}>More Press</div> */}
             {/* {displayAllArticles && <div> */}
                 <div className="Articles_others">
-                    {/* {articlesOtherList} */}
+                    {articlesOtherList}
                 </div>
                 <NavHashLink to="/contact#tailormadeMedia" className="btn btn_btm">Press Enquiries</NavHashLink>
             {/* </div>} */}
@@ -46,8 +46,8 @@ function displayArticle(article){
                     <div className="article__title font_themed">{title}</div>
                     <p>by <b>{author}</b> — Posted in <b>{source}</b>
                     {date && <span> on <b>{date}</b></span>}</p>
+                    <p className="article__subtitle">{subtitle}</p>
                 </div>
-                <p className="article__subtitle">{subtitle}</p>
                 <div className="btn" onClick={e=>displayArticleText(e)}> Read more</div>
                 <div className="article__arr">&#8595;</div>
             </div>
