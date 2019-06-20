@@ -1,0 +1,64 @@
+@import './../../App.scss';  //import vars and mixins
+
+.Contact{
+}
+.Contact__body{
+    padding: 14rem 0 8rem;
+    display: grid;
+    grid-auto-rows: 8rem;
+    grid-template-columns: 30rem 30rem;
+    width: 60rem;
+    margin: auto;
+    text-align: left;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    left: 2rem;
+    .SocialMedia{
+        grid-column: span 2;
+        text-align: center;
+        margin-top: 4rem;
+        left: -2rem;
+    }
+    a{
+        padding: .7rem;
+        img{
+            height: 2rem;
+        }
+    }
+
+}
+
+//max 1300
+@include desktop-sm{
+
+}
+//max 1024
+@include tablet{
+
+}
+//max 768
+@include mobile{
+
+    .Contact__body{
+        padding-top: 6rem 8rem;
+        display: block;
+        width: 80%;
+        line-height: 1.4;
+        left: 0;
+
+        div:nth-child(odd){
+            margin-top: 6rem;
+        }
+        div:nth-child(even){
+            margin-top: 1rem;
+        }
+        .SocialMedia{
+            text-align: left;
+            left: 0;
+        }
+    }
+}
+// max 480
+@include mobile-sm{
+
+}

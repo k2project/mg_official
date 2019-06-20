@@ -1,0 +1,72 @@
+@import './../../../App.scss';  //import vars and mixins
+
+.EndorsementsList{
+    display: grid;
+    padding: 0rem 0 10rem;
+    text-align: center;
+    font-size: 1.3rem;
+    .btn{
+        margin-top: 8rem;
+    }
+
+}
+
+.EndorsementsList__quotes{
+    text-align: justify;
+    width: 80%;
+    margin: auto;
+    margin-top: -10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+
+}
+.quote{
+    background: #1B1B1B;
+    padding: 5rem;
+    margin:0 1rem 2rem;
+    display: grid;
+    align-content: space-between;
+}
+.quote__text{
+    margin-bottom: 3rem;
+}
+.quote__name{
+    font-size: 1.2rem;
+    left:7rem;
+}
+.quote__flag{
+    height: 3rem;
+    left: -6.5rem;
+    top: .2rem;
+    position: absolute;
+
+}
+.chrisStapelberg{
+    grid-column: span 2;
+}
+@include desktop-sm{
+
+
+}
+//max 1024
+@include tablet{
+    .EndorsementsList__quotes{
+        grid-template-columns: 1fr;
+    }
+    .chrisStapelberg{
+        grid-column: span 1;
+    }
+}
+//max 768
+@include mobile{
+    .EndorsementsList__quotes{
+        width: 90%;
+    }
+    .quote{
+        padding: 3rem;
+    }
+}
+// max 480
+@include mobile-sm{
+
+}

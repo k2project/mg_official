@@ -1,54 +1,39 @@
 @import './../../App.scss';  //import vars and mixins
 
-.Cookies__body,
-.Cookies__nav{
-    background: $color_dark;
-    padding: 12rem 20rem;
+.Cookies__body{
     text-align: left;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    width: 70%;
+    margin: auto;
+    padding: 12rem 0 10rem;
     b{
-        font-size: 2rem;
+        font-size: 1.8rem;
         display: block;
-        // margin-top: 6rem;
-        font-weight: 400;
         line-height: 1.4;
         margin: 4rem 0 0;
     }
-
     p{
         margin: 1rem 0;
     }
-
-}
-#intro{
-    b{
+    p.color_themed{
         margin-top: 0;
         margin-bottom: 4rem;
+        b{
+            font-size: 2rem;
+            font-weight: 400;
+        }
     }
-}
-.Cookies__nav{
-    a{
-        display: block;
-        font-size: 1.8rem;
-        margin-bottom: 1rem;
-    }
-}
-.Cookies__body{
-    column-count: 2;
-    column-gap: 4rem;
+
 }
 .cookies__list{
     width: 80%;
     b{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
-    padding: 4rem 6rem;
-    padding-top: 1rem;
-    top: 1rem;
-    margin: 4rem auto 6rem;
+    padding: 1rem 6rem 4rem;
+    margin: 5rem auto 6rem;
     background: $color_darker;
     line-height: 1.4;
-    // border: solid .1rem #fff;
     span{
         width: 30rem;
         display: block;
@@ -56,4 +41,30 @@
         column-count: 3;
         padding: 2rem 0;
     }
+}
+//max 1300
+@include desktop-sm{
+
+}
+//max 1024
+@include tablet{
+
+}
+//max 768
+@include mobile{
+    .Cookies__body{
+        width: 80%;
+    }
+    .cookies__list{
+        padding-left: 4rem;
+        padding-right: 3rem;
+        width: 100%;
+        span{
+            width: 22rem;
+        }
+    }
+}
+// max 480
+@include mobile-sm{
+
 }

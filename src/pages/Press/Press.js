@@ -14,12 +14,8 @@ export default function Press (){
         <DocumentMeta {...appPages.press.meta}>
             <div className="Press">
                 <Page data = {appPages.press.topContent}>
-                    {/* <section> */}
                         <Articles/>
-                    {/* </section> */}
-                    {/* <section> */}
-                        <Contact/>
-                    {/* </section> */}
+                        {/* <Contact/> */}
                 </Page>
             </div>
         </DocumentMeta>

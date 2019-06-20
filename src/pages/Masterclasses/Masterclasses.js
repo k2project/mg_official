@@ -16,7 +16,7 @@ export default function Masterclasses (){
             <div className="Masterclasses">
                 <Page data = {appPages.masterclasses.topContent}>
                     <section className="Masterclasses__info">
-                        <div className="section__title">International workshops</div>
+                        {/* <div className="section__title">International workshops</div> */}
                         <p>Over the last 15 years Murray has been offering Jazz, Musical Theatre Dance and Audition Technique workshops across the world. <br/> His masterclass tours have taken him around Spain, Sweden, Ireland, Cyprus, Germany, Austria and the UK.</p>
                         <Map/>
                         <p>Murray’s masterclasses are for full-time students/students 14+ interested in a career in the arts.</p>

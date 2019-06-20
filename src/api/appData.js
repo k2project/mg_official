@@ -25,7 +25,7 @@ const home = {
 }
 const biography = {
     meta : {
-        title: "Murry Grant | Background & Endorsements",
+        title: "Murry Grant | About",
         description,
         canonical,
         meta: {
@@ -35,43 +35,31 @@ const biography = {
         }
     },
     topContent : {
-        title:'Get To Know Murray',
-        subtitle:'Background & Endorsements',
+        title:'Getting To Know Murray',
+        subtitle:'Professional Background',
         content:null
     },
 }
-const press = {
+const choreography = {
     meta : {
-        title: "Murry Grant | Press & Contact",
-        description,
+        title: "Murry Grant | International Freelance Choreographer",
+        description:'Murray Grant has been working as an international choreographer over the last 10 years, directing and choreographing cruise ship productions, International tours, European tours alongside corporate entertainment for some of the largest brands in the world. Murray specialises in Musical Theatre and Jazz styles.',
         canonical,
         meta: {
             name: {
-                keywords
+                keywords:'murray grant, choreography, choreographer, freelance choreographer, international freelancer'
             }
         }
     },
     topContent : {
-        title:'In The News',
-        subtitle:'Press release',
-        content: null
-    },
-}
-const cookies = {
-    meta : {
-        title: "Murry Grant | Cookies Policy",
-        description,
-        canonical,
-        meta: {
-            name: {
-                keywords
-            }
-        }
-    },
-    topContent : {
-        title:'Cookies Policy',
-        subtitle:'Updated on August 1, 2019',
-        content: null
+        title:'Worldwide Choreographer',
+        // title:'Choreography Projects',
+        subtitle:'International Freelancer',
+        video:{
+            path:'video_choreography.mp4',
+            sound:true
+        },
+        content: (<NavHashLink to="/press#contact"><div className="btn">Enquire Now!</div></NavHashLink>),
     },
 }
 const masterclasses = {
@@ -95,32 +83,82 @@ const masterclasses = {
         content: (<NavHashLink to="/press#contact"><div className="btn">Enquire Now!</div></NavHashLink>),
     },
 }
-const choreography = {
+const endorsements = {
     meta : {
-        title: "Murry Grant | International Freelance Choreographer",
-        description:'Murray Grant has been working as an international choreographer over the last 10 years, directing and choreographing cruise ship productions, International tours, European tours alongside corporate entertainment for some of the largest brands in the world. Murray specialises in Musical Theatre and Jazz styles.',
+        title: "Murry Grant | Endorsements",
+        description,
         canonical,
         meta: {
             name: {
-                keywords:'murray grant, choreography, choreographer, freelance choreographer, international freelancer'
+                keywords
             }
         }
     },
     topContent : {
-        title:'Choreography Projects',
-        subtitle:'International Freelancer',
-        video:{
-            path:'video_choreography.mp4',
-            sound:true
-        },
-        content: (<NavHashLink to="/press#contact"><div className="btn">Enquire Now!</div></NavHashLink>),
+        title:"Don't Take Our Word For It...",
+        subtitle:'Industry Endorsements',
+        content: null,
+    },
+}
+const press = {
+    meta : {
+        title: "Murry Grant | Press Release",
+        description,
+        canonical,
+        meta: {
+            name: {
+                keywords
+            }
+        }
+    },
+    topContent : {
+        title:'In The News',
+        title:'Making Headlines',
+        subtitle:'Press release',
+        content: null
+    },
+}
+const contact = {
+    meta : {
+        title: "Murry Grant | Contact",
+        description,
+        canonical,
+        meta: {
+            name: {
+                keywords
+            }
+        }
+    },
+    topContent : {
+        title:'Getting In Touch',
+        subtitle:'Contact & Press Enquiries',
+        content: null
+    },
+}
+const cookies = {
+    meta : {
+        title: "Murry Grant | Cookies Policy",
+        description,
+        canonical,
+        meta: {
+            name: {
+                keywords
+            }
+        }
+    },
+    topContent : {
+        title:'Cookies Policy',
+        subtitle:'Updated on August 1, 2019',
+        content: null
     },
 }
 export const appPages = {
     home,
     biography,
-    press,
-    masterclasses,
     choreography,
+    masterclasses,
+    endorsements,
+    press,
+    contact,
     cookies,
 }

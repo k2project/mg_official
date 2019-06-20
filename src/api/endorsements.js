@@ -63,7 +63,7 @@ const SteveLeatham = {
 }
 const TellyLeung  = {
     name:'Telly Leung',
-    title:'Performer. Producer. Recording artist. Teacher.',
+    title:'Performer &Producer',
     link:'http://www.tellyleung.com/',
     country:{
         name:'USA',

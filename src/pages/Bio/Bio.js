@@ -5,7 +5,7 @@ import {appPages} from './../../api/appData';
 
 import Page from './../../components/Page/Page';
 import About from './About/About';
-import Endorsements from './Endorsements/Endorsements';
+// import Endorsements from './Endorsements/Endorsements';
 
 
 export default function Bio (){
@@ -14,7 +14,7 @@ export default function Bio (){
                 <div className="Bio">
                     <Page data = {appPages.biography.topContent}>
                         <About/>
-                        <Endorsements/>
+                        {/* <Endorsements/> */}
                     </Page>
                 </div>
             </DocumentMeta>

@@ -1,9 +1,7 @@
 
 import React, {useEffect} from 'react';
 import './Map.scss';
-// import map from './../../media/imgs/map.png';
 import eMap from './../../../media/imgs/eMap.png';
-import eMap2 from './../../../media/imgs/eMap2.png';
 import {cities} from './../../../api/masterclasses';
 
 //animation time for location appearance
@@ -13,7 +11,7 @@ cities.forEach(arr=>{
     arr.forEach(city=>allCities.push(city.name))
 });
 allCities = allCities.sort();
-let half = allCities.length/2+1;
+let half = allCities.length/2;
 let citiesLft = allCities.splice(0,half);
 let citiesRgt = allCities;
 
@@ -27,7 +25,7 @@ export default function Map(){
     })
     return(
         <div className="Map">
-                <img src={eMap2} alt="world map"/>
+                <img src={eMap} alt="world map"/>
                 <div className="Map__cities_lft">
                     {
                         citiesLft.map(city=><span>{city}</span>)

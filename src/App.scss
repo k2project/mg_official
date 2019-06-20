@@ -78,6 +78,17 @@ section{
     margin: 4rem auto;
     width: 90%;
 }
+.section__body{
+    padding:12rem 0 10rem;
+    width: 80rem;
+    margin: auto;
+    font-size: 1.4rem;
+    text-align: center;
+    p{
+        text-align: justify;
+        margin-bottom: 3rem;
+    }
+}
 .section__title{
     font-family: 'Montserrat', sans-serif;
     width: 100%;
@@ -131,8 +142,15 @@ section{
     border-radius: 2.5rem;
     color: $color_theme;
     font-size: 1.6rem;
-    margin:1rem auto;
+    margin:6rem auto 0;
     cursor: pointer;
+}
+.btn_section{
+    margin-top: 4rem;
+}
+a.btn{
+    color: $color_theme;
+
 }
 
 .Holdingpage{
@@ -187,14 +205,23 @@ section{
 
 
 @include desktop-sm{
+    .section__body{
+        width: 60rem;
+    }
 }
 @include tablet{
-
+    .section__body{
+        width: 70%;
+    }
     .btn{
         width: 22rem;
     }
 }
 @include mobile{
+    .section__body{
+        width: 80%;
+        padding-top: 10rem;
+    }
     .section__title{
         font-size: 1.3rem;
     }
@@ -213,6 +240,9 @@ section{
         margin-top: 0;
     }
     .Holdingpage .timer{
+        display: none;
+    }
+    .mobile{
         display: none;
     }
 }

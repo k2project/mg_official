@@ -1,0 +1,31 @@
+@import './../../App.scss';  //import vars and mixins
+
+.Endorsements{
+    .Page__top{
+        height: 60rem;
+        background-image: url('./../../media/imgs/mg_nyc.jpg');
+        background-size: cover;
+        background-position: 80% top;
+        // -webkit-filter: grayscale(20%); /* Safari 6.0 - 9.0 */
+        // filter: grayscale(20%);
+
+    }
+    .Page__top .cover{
+    }
+}
+//max 1300
+@include desktop-sm{
+
+}
+//max 1024
+@include tablet{
+
+}
+//max 768
+@include mobile{
+
+}
+// max 480
+@include mobile-sm{
+
+}

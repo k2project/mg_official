@@ -7,12 +7,7 @@ import {appPages} from './../api/appData';
 let speed = 50;
 export default function Holdingpage (){
     useEffect(()=>{
-        topUp().then(result=>{
-            const timerData = getTimerData();
-            const delay = timerData.reduce((a, b) => a + b, 0);
-            setTimeout(runTimer,delay)
-        });
-
+        setTimeout(startTimer,1000);
     })
     return(
         <DocumentMeta {...appPages.home.meta}>
@@ -75,20 +70,16 @@ function runTimer(){
             timerEls.forEach((el,index)=>{
                 el.textContent = ("0"+timerData[index]).slice(-2);
             })
-            // document.getElementById("timer-days").textContent = ("0"+days).slice(-2);
-            // document.getElementById("timer-hours").textContent = ("0"+hours).slice(-2);
-            // document.getElementById("timer-mins").textContent = ("0"+mins).slice(-2);
-            // document.getElementById("timer-secs").textContent = ("0"+secs).slice(-2);
 
     }, 1000);
 }
-function topUp(cb){
-
+function startTimer(){
+    runTimer();
     const timerEls = document.querySelectorAll('.Holdingpage__timer');
     timerEls.forEach((el,index)=>{
         let n = 0;
-        const timerData = getTimerData();
         let int = setInterval(function(){
+            const timerData = getTimerData();
             ++n;
             if(n<=timerData[index]){
                 const text = ("0"+n).slice(-2)
@@ -96,11 +87,8 @@ function topUp(cb){
             }else{
                 clearInterval(int);
             }
-
         },speed);
     })
-    return new Promise((resolve,reject)=>{
-        resolve(cb);
-    })
+
 
 }

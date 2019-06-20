@@ -6,6 +6,8 @@
         background-image: url('./../../media/imgs/mg3.jpg');
         background-size: cover;
         background-position: center 70%;
+        -webkit-filter: grayscale(20%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(20%);
     }
     .Page__top .cover{
     }

@@ -2,11 +2,9 @@
 
 .Articles{
     background: none;
-    // margin-top: -30rem;
-    text-align: left;
     text-align: center;
-    .btn{
-        margin-top: 2rem;
+    .btn_btm{
+        margin: 7rem auto 5rem;
     }
 }
 article{
@@ -16,6 +14,7 @@ article{
     margin-bottom: 6rem;
     font-size: 1.4rem;
     text-align: left;
+
 }
 
 .article__img,
@@ -25,7 +24,7 @@ article{
 .article__img{
     position: absolute;
     background-size: cover;
-    background-position: right;
+    background-position: center;
     font-size: 1.2rem;
     height: 55rem;
     transition: .7s;
@@ -45,7 +44,6 @@ article{
 article:nth-child(odd) {
     .article__img{
         left: 50%;
-        // grid-column: 2;
     }
     .article__heading{
         left: 0;
@@ -56,16 +54,39 @@ article:nth-child(even) {
         transition: .5s;
     }
     .article__img{
-        background-position: left;
-        // grid-column: 2;
+        // background-position: left;
     }
+}
+.article__img_caption{
+    color: #fff;
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    text-align: right;
+    padding: 0 4rem;
+}
+.article__top{
+    margin: 3rem 0 3rem;
+}
+.article__title{
+    font-size: 2.8rem;
+}
+.article__subtitle{
+    font-size: 1.8rem;
+}
+.article__arr{
+    font-size: 3rem;
+    font-weight: normal;
+    display: none;
+    //anim
+    top: -5rem;
+    opacity: 0;
 }
 article.open{
 
     .article__img{
         width: 100%;
         left: 0;
-        // opacity: .3;
         .cover{
             background: rgba($color_dark,.7);
             transition: 1.5s;
@@ -96,35 +117,7 @@ article.open{
         display: none;
     }
 }
-.article__img_caption{
-    color: #fff;
-    position: absolute;
-    bottom: 2rem;
-    width: 100%;
-    text-align: right;
-    padding: 0 4rem;
-}
-.article__top{
-    margin: 4rem 0;
-}
-.article__title{
-    font-size: 2.8rem;
-    small{
-        // font-size: 1.6rem;
 
-    }
-}
-.article__subtitle{
-    font-size: 1.8rem;
-}
-.article__arr{
-    font-size: 3rem;
-    font-weight: normal;
-    display: none;
-    //anim
-    top: -5rem;
-    opacity: 0;
-}
 .article__body{
     width: 100%;
     display: none;
@@ -160,27 +153,23 @@ article.open{
         opacity: 1;
     }
 }
-.edinburghReporterOnTheCoreLaunch{
-    .article__img{
-        background-position: right top;
-    }
-}
-.article__box{
-    border: solid .1rem $color_dark;
-    padding: 2rem 4rem;
-    margin: 2rem 0 3rem;
-    font-size: 1.2rem;
-    p{
-        margin: .5rem 0;
-    }
-}
-.article__box_title{
-    background: #FFFFFF;
-    padding: 1rem 2rem;
-    left: 2rem;
-    top: -1.7rem;
-    position: absolute;
-}
+
+// .article__box{
+//     border: solid .1rem $color_dark;
+//     padding: 2rem 4rem;
+//     margin: 2rem 0 3rem;
+//     font-size: 1.2rem;
+//     p{
+//         margin: .5rem 0;
+//     }
+// }
+// .article__box_title{
+//     background: #FFFFFF;
+//     padding: 1rem 2rem;
+//     left: 2rem;
+//     top: -1.7rem;
+//     position: absolute;
+// }
 
 .Articles_others{
     display:grid;
@@ -226,20 +215,130 @@ article.open{
             padding: 5rem 8rem;
         }
     }
-    // article.open:nth-child(odd) {
-    //     grid-column: span 2;
-    //
-    // }
-    // article.open:nth-child(even) {
-    //     grid-column: 1 span 2;
-    // }
+}
+//=====CUSTOMISED ARTICLES=======
+.dublinLiveOnMurrayChoreographer{
+    .article__top{
+        margin-bottom: 0;
+        margin-top: 5rem;
+    }
+    .article__title{
+        font-size: 2.4rem;
+    }
 }
 
-//=============================
-//     customised articles
-//=============================
-.edinburghGuideOnTen.open{
-    .article__img{
-        background-position: top;
+
+//max 1300
+@include desktop-sm{
+    .article__title{
+        font-size: 2.4rem;
+    }
+    .article__subtitle{
+        font-size: 1.6rem;
+    }
+    .article__top{
+        margin: 0 0 3rem;
+    }
+    article .btn{
+        margin-top: 3rem;
+        margin-left: 0;
+    }
+    .article__heading{
+        padding-right: 5rem;
+    }
+    article.open{
+        .article__heading{
+            background: none;
+            width: 60%;
+        }
+    }
+
+}
+//max 1024
+@include tablet{
+    .article__img,
+    .article__heading{
+        width: 100%;
+        left: 0;
+        background: rgba($color_dark,.6);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    article:nth-child(odd) {
+        .article__img{
+            left: 0;
+        }
+    }
+    article.open{
+        .article__heading{
+            width: 100%;
+            padding: 5rem 10rem;
+            // align-content: end;
+        }
+    }
+    .article__text{
+        column-count: 1;
+        column-gap: 0rem;
+    }
+}
+//max 768
+@include mobile{
+    .article__heading{
+        padding-left: 5rem;
+        padding-right: 3rem;
+    }
+    //=====CUSTOMISED ARTICLES=======
+    .scotsmanOnMGAAcademy{
+        .article__img{
+            background-position: 75%;
+        }
+    }
+    .stagenOnMGAFundation,
+    .dublinLiveOnMurrayChoreographer{
+        .article__img{
+            background-position: center;
+        }
+    }
+    article.open{
+        .article__heading{
+            padding: 5rem 5rem 8rem;
+            align-content: end;
+        }
+    }
+    .article__body{
+        padding: 5rem;
+        padding-right: 3rem;
+        font-size: 1.2rem;
+    }
+    .article__link{
+        font-size: 1rem;
+        span{
+            top: 1rem;
+            font-size: 1.5rem;
+        }
+    }
+}
+// max 480
+@include mobile-sm{
+    .article__img,
+    .article__heading{
+        height: 60rem;
+    }
+    .article__heading{
+        padding-left: 4rem;
+
+    }
+
+    .article__img_caption{
+        font-size: 1rem;
+    }
+    article.open{
+        .article__heading{
+            padding: 5rem 4rem 8rem;
+        }
+    }
+    .article__body{
+        padding: 4rem;
+        padding-right: 3rem;
     }
 }

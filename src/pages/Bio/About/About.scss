@@ -1,60 +1,27 @@
 @import './../../../App.scss';  //import vars and mixins
 
 .About{
-}
-.About__img{
-    background-image: url('./../../../media/imgs/mg3.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    .cover{
-        background: rgba($color_darker, .4);
-    }
-    height: 85vh;
-    min-height: 70rem;
-}
-.About__text{
-    padding:10rem 0 15rem;
-    width: 80rem;
-    margin: auto;
-    font-size: 1.4rem;
-    .btn{
-        top: 4rem;
-        margin: auto;
-        color: $color_theme;
-    }
+
     p:first-of-type{
         font-size: 1.6rem;
         font-weight: bold;
     }
-    p{
-        text-align: justify;
-        margin-bottom: 3rem;
-    }
+
 }
 //max 1300
 @include desktop-sm{
 
-    .About__text{
-        width: 60rem;
-    }
 }
 //max 1024
 @include tablet{
-    .About__text{
-        width: 70%;
-    }
+
 }
 //max 768
 @include mobile{
-    .About__text{
-        width: 80%;
-    }
+
 }
 // max 480
 @include mobile-sm{
-    .About__text{
 
-    }
 
 }

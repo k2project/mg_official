@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {NavHashLink} from 'react-router-hash-link';
 import './Articles.scss';
 
 import {articlesFeatured, articlesOther} from './../../../api/articles';
@@ -18,10 +19,13 @@ export default function Articles (){
 
         <section className="Articles">
             {articlesFeaturedList}
-            <div className="btn" onClick={e=>showOtherArticles(e)}>More Press</div>
-            {displayAllArticles && <div className="Articles_others">
-                {articlesOtherList}
-            </div>}
+            {/* <div className="btn" onClick={e=>showOtherArticles(e)}>More Press</div> */}
+            {/* {displayAllArticles && <div> */}
+                <div className="Articles_others">
+                    {/* {articlesOtherList} */}
+                </div>
+                <NavHashLink to="/contact#tailormadeMedia" className="btn btn_btm">Press Enquiries</NavHashLink>
+            {/* </div>} */}
         </section>
 
     )
@@ -31,10 +35,12 @@ function displayArticle(article){
     const bg = require('./../../../media/imgs/'+img.path);
     return (
         <article className={cls} key={cls}>
+
             <div className="article__img" style={{backgroundImage:"url("+bg+")"}}>
                 <div className="article__img_caption">{img.caption}</div>
                 <div className="cover"></div>
             </div>
+
             <div className="article__heading">
                 <div className="article__top">
                     <div className="article__title font_themed">{title}</div>
@@ -45,6 +51,7 @@ function displayArticle(article){
                 <div className="btn" onClick={e=>displayArticleText(e)}> Read more</div>
                 <div className="article__arr">&#8595;</div>
             </div>
+
             <div className="article__body">
                 {text}
                 <p className="article__link">
@@ -71,6 +78,5 @@ function displayArticleText(e){
 function closeArticleText(e){
     const article = e.target.closest('article');
     article.classList.remove('open');
-    // article.querySelector('.btn').style.display = 'block';
     article.scrollIntoView();
 }

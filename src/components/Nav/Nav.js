@@ -24,9 +24,11 @@ export default function Page (props){
                     <NavLink to="/biography"  onClick={toggleOpenMenu}>Biography</NavLink>
                     <NavLink to="/choreography"  onClick={toggleOpenMenu}>Choreography</NavLink>
                     <NavLink to="/masterclasses" onClick={toggleOpenMenu}>Masterclasses</NavLink>
-                    <NavHashLink to="/biography#endorsements"  onClick={toggleOpenMenu}>Endorsements</NavHashLink>
+                    <NavLink to="/endorsements"  onClick={toggleOpenMenu}>Endorsements</NavLink>
                     <NavLink to="/press"  onClick={toggleOpenMenu}>Press</NavLink>
-                    <NavHashLink to="/press#contact"  onClick={toggleOpenMenu}>Contact</NavHashLink>
+                    {/* <NavHashLink to="/biography#endorsements"  onClick={toggleOpenMenu}>Endorsements</NavHashLink>
+                    <NavLink to="/press"  onClick={toggleOpenMenu}>Press</NavLink> */}
+                    <NavLink to="/contact"  onClick={toggleOpenMenu}>Contact</NavLink>
                     <p onClick={handleMenuBurgerClick}> <span>&times; </span></p>
                 </div>
                 <div className="Nav__burger" onClick={handleMenuBurgerClick}>

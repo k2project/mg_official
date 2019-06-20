@@ -1,12 +1,8 @@
 @import './../../../App.scss';  //import vars and mixins
 
 .PreviousClasses{
-    background: $color_dark;
-    padding: 22rem 0 10rem;
-    .btn{
-        color: $color_theme;
-        margin-top: 8rem;
-    }
+    padding: 12rem 0 10rem;
+
     .wrapper{
         width: 100rem;
         margin: auto;

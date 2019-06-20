@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import { NavLink } from 'react-router-dom';
 import './Clients.scss';
 import {pastProjectsClients} from './../../../api/projects';
 
@@ -15,6 +16,7 @@ export default function Clients (){
             <div className="wrapper">
                 {clientsLogos}
             </div>
+            <NavLink to="/biography" className="btn">About Murray</NavLink>
         </section>
     )
 

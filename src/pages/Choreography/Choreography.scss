@@ -2,43 +2,22 @@
 
 .Choreography{
     .Page__top{
-        height: 80vh;
+        height: 60rem;
     }
 
 }
-.Choreography__info{
-    padding: 21rem  0 12rem;
-    font-size: 1.4rem;
-    display: grid;
-    text-align: center;
-    p{
-        width: 80rem;
-        margin: 2rem auto 0;
-        text-align: justify;
-    }
-    .btn{
-        color: $color_theme;
-        margin: 8rem auto 0;
-    }
-}
+
 //max 1300
 @include desktop-sm{
 
-    .Choreography__info p{
-        width: 60rem;
-    }
 }
 //max 1024
 @include tablet{
-    .Choreography__info p{
-        width: 50rem;
-    }
+
 }
 //max 768
 @include mobile{
-    .Choreography__info p{
-        width: 80%;
-    }
+
     .Choreography .Video{
         display: none;
     }
