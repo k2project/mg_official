@@ -16,7 +16,7 @@ export default function Contact (){
                     <section id="contact">
                         <div className="Contact__body">
                             <div>
-                                For enquiries please contact
+                                For general enquiries please contact
                                 <br className="mobile"/><b> Jenny McLean</b>:
                             </div>
                             <div>

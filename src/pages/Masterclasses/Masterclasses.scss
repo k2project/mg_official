@@ -3,20 +3,34 @@
 .Masterclasses{
     .Page__top{
         height: 60rem;
-        .cover{
-            // background: rgba($color_dark,.6);
-        }
-    }
-    .wrapper{
-        margin: auto;
     }
 
 }
 .Masterclasses__info{
-    background: $color_dark;
-    padding: 22rem  10rem 10rem;
     padding: 12rem  10rem 12rem;
-    font-size: 1.6rem;
-    display: grid;
+    font-size: 1.4rem;
+
+}
+//max 1300
+@include desktop-sm{
+    .Masterclasses__info{
+        padding: 12rem  5rem 12rem;
+    }
+}
+//max 1024
+@include tablet{
+
+}
+//max 768
+@include mobile{
+
+}
+// max 480
+@include mobile-sm{
+.Masterclasses__info{
+    padding: 10rem 10%;
+    text-align: justify;
+
+}
 
 }

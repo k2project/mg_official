@@ -133,19 +133,23 @@ function displayProjectDetails(project){
     const { cls, links, desc, imgs, projectName, subpageURL, role} = project;
     return(
         <li key={`projectsDetails_li_${cls}`} className={"projectsDetails__li "+cls}>
-            <div className="cover">
+            {/* <div className="cover"> */}
                 <div className='projectDetails_lft'>
-                    <p className="details__name">{projectName.name}</p>
-                    <p className="details__role color_themed">{role.title}</p>
-                    {role.subtitle && <p className="details__subrole color_themed">{role.subtitle}</p>}
-                    <p className="details__desc">{desc}</p>
-                    {subpageURL && <NavLink to={subpageURL} exact className="details__btn btn">Find Out More</NavLink>}
-                    {!subpageURL && <a href={links.website} target="_blank"  rel="noopener noreferrer" className="details__btn btn">Website</a>}
+                    <div>
+                        <p className="details__name">{projectName.name}</p>
+                        <p className="details__role color_themed">{role.title}</p>
+                        {role.subtitle && <p className="details__subrole color_themed">{role.subtitle}</p>}
+                        <p className="details__desc">{desc}</p>
+                    </div>
+                    <div>
+                        {subpageURL && <NavLink to={subpageURL} exact className="details__btn btn">Find Out More</NavLink>}
+                        {!subpageURL && <a href={links.website} target="_blank"  rel="noopener noreferrer" className="details__btn btn">Website</a>}
+                    </div>
 
 
                 </div>
                 <div className='projectDetails_rgt'>
-                    { imgs.logo && <div className="details__logo "><img src={require('./../../../media/logos/'+imgs.logo)} alt={`${projectName.name} logo`}/></div>}
+                    <img src={require('./../../../media/logos/'+imgs.logo)} alt={`${projectName.name} logo`} className="details__logo"/>
                     <div className="details__links">
                         {links && links.facebook && <a href={links.facebook} target="_blank"  rel="noopener noreferrer"> <img src={facebook} alt="facebook logo"/></a>}
                         {links && links.twitter && <a href={links.twitter}  target="_blank"  rel="noopener noreferrer"> <img src={twitter} alt="twitter logo"/></a>}
@@ -153,7 +157,7 @@ function displayProjectDetails(project){
                     </div>
                 </div>
 
-            </div>
+            {/* </div> */}
         </li>
     )
 }

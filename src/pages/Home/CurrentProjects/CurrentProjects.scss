@@ -105,27 +105,21 @@
 }
 
 .projectsDetails__li{
+    background: $color_darker;
     width: 100rem; //equal to .projects width //set dinamiclly
     height: 100%;
-    display: inline;
-    .cover{
-        background: rgba($color_darker, 1);
-        display: grid;
-        align-content: center;
-        grid-template-columns: 1.2fr 1fr;
-        grid-column-gap: 4rem;
-        padding: 10rem 12rem;
-
-    }
+    display: inline-grid;
+    grid-template-columns: 1.2fr 1fr;
+    grid-column-gap: 4rem;
     float: left;
     text-align: left;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+    padding: 15rem 12rem 20rem;
 }
 .projectDetails_lft,
 .projectDetails_rgt{
     display: grid;
-    align-content: center;
-    // padding-bottom: 5rem;
+    align-content:space-between;
 }
 .details__name{
     text-align: left;
@@ -141,27 +135,39 @@
     margin-bottom: 3rem;
 }
 .details__subrole{
-    top: -4rem;
+    top: -2.5rem;
     font-size: 1.2rem;
+    margin: 0;
+}
+.details__desc{
+    text-align: justify;
 }
 a.details__btn{
-    color: $color_theme;
     margin-top: 3rem;
 
 }
 .details__logo{
-    text-align: center;
+    width: 100%;
+    margin: auto;
+    left: 2rem;
+}
+//=======CUSTOMISED PROJECTS=======
+.projectsDetails__li.fierceTheatreSchools,
+.projectsDetails__li.mgaFoundation{
     img{
-        width: 100%;
-        margin: auto;
-        left: 2rem;
+        margin-top: -4rem;
+    }
+}
+
+.projectsDetails__li.danceStar,
+.projectsDetails__li.mgaManagement{
+    img{
+        margin-top: -2rem;
     }
 }
 .projectsDetails__li.ted{
-    .details__logo{
-        // top: -5rem;
-        // left: 2rem;
-        margin: 7rem 0;
+    img{
+        margin-top: 5rem;
     }
 }
 .details__links{
@@ -208,11 +214,7 @@ a.details__btn{
     width: 100%;
 }
 
-.projectsDetails__li.ted{
-    .details__name{
-        text-transform: lowercase;
-    }
-}
+
 
 //max 1300
 @include desktop-sm{
@@ -226,22 +228,40 @@ a.details__btn{
     }
     .projectsDetails__li{
         width: 80rem;
-        .cover{
-            background: rgba($color_darker, 1);
-            display: grid;
-            grid-template-columns: 1.8fr 1fr;
-            grid-column-gap: 2rem;
-            padding: 8rem;
-
-        }
+        display: grid;
+        grid-template-columns: 1.8fr 1fr;
+        grid-column-gap: 2rem;
+        padding: 10rem 8rem 13rem;
         .btn{
             margin-left: 0;
             width: 22rem;
+        }
+        img{
+            margin-top: 5rem;
         }
     }
     .details__name{
         font-size: 2.4rem;
         margin-bottom: 0;
+    }
+    //=======CUSTOMISED PROJECTS=======
+    .projectsDetails__li.fierceTheatreSchools,
+    .projectsDetails__li.mgaFoundation{
+        img{
+            margin-top: 3rem;
+        }
+    }
+
+    .projectsDetails__li.danceStar,
+    .projectsDetails__li.mgaManagement{
+        img{
+            margin-top: 4rem;
+        }
+    }
+    .projectsDetails__li.ted{
+        img{
+            margin-top: 9rem;
+        }
     }
 }
 //max 1024
@@ -261,16 +281,15 @@ a.details__btn{
     .projectsDetails__li{
         width: 64rem;
         font-size: 1.2rem;
-        .cover{
-            grid-template-columns: 1fr;
-            grid-column-gap: 0rem;
-            padding: 7rem;
+        grid-template-columns: 1fr;
+        grid-column-gap: 0rem;
+        padding: 8rem 7rem;
 
-        }
         .btn{
             margin-left: 0;
             width: 20rem;
             font-size: 1.4rem;
+            margin-top: 1rem;
         }
     }
 
@@ -311,17 +330,25 @@ a.details__btn{
     .projectsDetails__li{
         width: 40rem;
         text-align: left;
-        .cover{
-            padding: 5rem;
-        }
+        padding: 5rem;
         .btn{
-            margin-left: auto;
+            margin: 5rem auto 0;
+        }
+        align-content: start;
+        img{
+            margin: 0 auto;
+            left: 0;
         }
 
     }
+    .projectDetails_lft{
+    }
     .projectDetails_rgt{
+        height: 30rem;
         grid-row: 1;
         text-align: left;
+        align-content: center;
+        padding: 5rem 0 0;
     }
     .details__logo{
         display: block;
@@ -334,6 +361,25 @@ a.details__btn{
     }
     .details__role{
         width: 90%;
+    }
+    //=======CUSTOMISED PROJECTS=======
+    .projectsDetails__li.fierceTheatreSchools,
+    .projectsDetails__li.mgaFoundation{
+        img{
+            margin-top: 0rem;
+        }
+    }
+
+    .projectsDetails__li.danceStar,
+    .projectsDetails__li.mgaManagement{
+        img{
+            margin-top: 0rem;
+        }
+    }
+    .projectsDetails__li.ted{
+        img{
+            margin-top: 0rem;
+        }
     }
 
 }

@@ -33,7 +33,7 @@
         line-height: 1;
         color: $color_theme;
         // position: absolute;
-        // top: -2rem;
+        top: .3rem;
         opacity: 0;
         left: 4rem;
         transition: 2s ease-out;
@@ -108,7 +108,7 @@
     color: #fff;
     opacity: .2;
     z-index: 2;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 
     :hover{
         opacity: 1;
@@ -123,4 +123,46 @@
 .Map__cities_rgt{
     text-align: right;
     right: -10rem;
+}
+//max 1300
+@include desktop-sm{
+    // .Map__cities_lft{
+    //     left: -6rem;
+    //
+    // }
+    // .Map__cities_rgt{
+    //     right: -7rem;
+    // }
+    .Map__cities_lft,
+    .Map__cities_rgt{
+        display: none;
+    }
+}
+//max 1024
+@include tablet{
+    .Map{
+        width: 55rem;
+        height: 45.83rem;
+    }
+
+}
+//max 768
+@include mobile{
+    .Map{
+        width: 32rem;
+        height: 26.66rem;
+    }
+    .Map__text p{
+        font-size: 1rem;
+        left: 1rem;
+        top: .5rem;
+    }
+}
+// max 480
+@include mobile-sm{
+    .Map{
+        border: solid 1px green;
+        display: none;
+    }
+
 }
