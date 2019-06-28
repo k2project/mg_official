@@ -1,0 +1,77 @@
+@import './../../App.scss';  //import vars and mixins
+
+.Quotes{
+    background: $color_theme;
+    .section__body{
+        padding-bottom: 5rem;
+        text-align: center;
+        // display: grid;
+        // grid-template-columns: 18rem 1fr;
+        img{
+            width: 17rem;
+            top: -2rem;
+            background: $color_theme;
+            padding: 2rem 4rem;
+            z-index: 2;
+        }
+    }
+}
+.Quotes__slider{
+    text-align: justify;
+    height: 35rem;
+    border: solid 1px $color_darker;
+    display: grid;
+    align-content: center;
+    top: -8rem;
+    overflow: hidden;
+    ul{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        padding: 1.5rem 8rem;
+        text-align: right;
+        li{
+            height: .8rem;
+            width: .8rem;
+            border-radius: 100%;
+            background: $color_darker;
+            display: inline-block;
+            margin-left: .7rem;
+            border: solid .1rem $color_darker;
+        }
+        li.current{
+            background: none;
+        }
+    }
+}
+.Quotes__quote{
+    background: $color_theme;
+    line-height: 2rem;
+    padding: 10rem 8rem 5rem;
+    color: $color_darker;
+    p{
+        font-size: 1.2rem;
+        margin: 2rem 0 0;
+    }
+    opacity: 0;
+    .Quotes__text{
+        left: -5rem;
+        opacity: 0;
+    }
+    p{
+        opacity: 0;
+        left: 8rem;
+    }
+}
+.Quotes__quote.current{
+    opacity: 1;
+    .Quotes__text,
+    p{
+        top: 0;
+        left: 0;
+        opacity: 1;
+        transition: .75s ease-out;
+    }
+
+
+}

@@ -72,7 +72,7 @@ const TellyLeung  = {
     text:'I had a wonderful time collaborating with Murray Grant as both a producer and fellow educator of the arts. I was thrilled to get the opportunity to work with his students in Edinburgh - and he and his team at MGA are doing incredible work with the students as they venture into the professional world of show business. I also appreciate his passion for bringing Broadway artists to the UK as part of a mutually-fulfilling cultural exchange of ideas. His passion for bringing the arts to his hometown of Edinburgh is contagious and inspiring. I hope to have many more collaborations with Murray in the future.'
 }
 
-let endorsements = [
+export const endorsements = [
     christinaBianco,
     natalieWeiss,
     markLethem,
@@ -81,4 +81,49 @@ let endorsements = [
     SteveLeatham,
     TellyLeung,
 ];
-export {endorsements};
+
+export const masterclassQuotes = [
+    {
+        name:'Elizabeth Ennis',
+        institution:'Westside Stage School Director',
+        link:'http://www.westsidestageschool.ie',
+        text:'Murray has been teaching his masterclasses here at Westside for a number of years. His knowledge, passion and enthusiasm for the industry is an invaluable experience for our students. His professionalism, caring and high energy in the studio not only brings out the best of each dancer but encourages them to push out of their comfort zone and improve not only their technical ability but also their performance ability. The opportunity to work with Murray is one of the highlights of the term for Westside Students.'
+    },
+
+
+]
+
+
+export const choreographyQuotes = [
+    {
+        institution:'All Edinburgh Theatre',
+        link:'http://www.alledinburghtheatre.com/review-the-producers/',
+        show:'The Producers',
+        text:'Choreographer Murray Grant’s contributions are seamless, they’ve wrangled their triple-threat charges to fantastic effect. The show never stops moving and it never stops being superb.'
+    },
+    {
+        institution:'The Scotsman',
+        link:'https://www.scotsman.com/news-2-15012/reviews-macpherson-s-rant-the-church-hill-theatre-1-1221770',
+        show:'Macphersons Rant',
+        text:'Murray Grant\'s adventurous choreography added a modern edge to the show.'
+    },
+    {
+        institution:'Broadway Baby',
+        link:'https://broadwaybaby.com/shows/zanna-dont/707071',
+        show:'Zanna Don’t',
+        text:'Where the show really stands out is in the choreography, it works really well with plenty of nice touches and flourishes.'
+    },
+    {
+        institution:'ScotsGay',
+        link:'https://scotsgayarts.com/blog/',
+        show:'Little Shop of Horrors',
+        text:'Grant’s choreography is sharp and well-judged with the occasional nod to other musicals such as fiddler on the roof and the company commit to it fully.'
+    },
+    {
+        institution:'The Review Hub',
+        link:'https://www.thereviewshub.com/the-addams-family-kings-theatre-edinburgh/',
+        show:'The Addams Family',
+        text:'Dance numbers galore are present in this production and are all unique in some way, usually through a good contrast of lighting colours or style such as the tango and praise must be offered to choreographer Murray Grant and the cast for a solid delivery.'
+    },
+
+]

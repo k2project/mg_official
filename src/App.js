@@ -16,13 +16,12 @@ import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 //Google Anlitics: pages viewed
 import Analytics from 'react-router-ga';
 import {analiticsID} from './api/appData';
-console.log(analiticsID)
 
 class App extends Component {
   render() {
     return (
         <BrowserRouter basename={process.env.PUBLIC_URL}>
-            <Analytics id={analiticsID} debug>
+            {/* <Analytics id={analiticsID} debug> */}
                 <Switch>
                     <Route exact path='/' component={Holdingpage}/>
                     <Route exact path='/home' component={Home}/>
@@ -35,7 +34,7 @@ class App extends Component {
                     <Route exact path='/cookies_policy' component={Cookies}/>
                     <Redirect from='*' to='/' />
                 </Switch>
-            </Analytics>
+            {/* </Analytics> */}
        </BrowserRouter>
 
     );

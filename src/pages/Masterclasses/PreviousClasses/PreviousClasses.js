@@ -11,7 +11,7 @@ export default function PreviousClasses(){
             <div className="wrapper">
                 {classes.map(cl=><img src={require('./../../../media/logos/'+cl.img)} alt={cl.name} key={cl.name}/>)}
             </div>
-            <NavLink to="/home" className="btn">Other Projects</NavLink>
+            {/* <NavLink to="/home" className="btn">Other Projects</NavLink> */}
         </section>
     )
 }

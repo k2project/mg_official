@@ -1,5 +1,6 @@
 import React from 'react';
 import {NavHashLink} from 'react-router-hash-link';
+import { NavLink } from 'react-router-dom';
 
 
 const canonical = 'http://www.murraygrantofficial.com/';
@@ -59,7 +60,7 @@ const choreography = {
             path:'video_choreography.mp4',
             sound:true
         },
-        content: (<NavHashLink to="/press#contact"><div className="btn">Enquire Now!</div></NavHashLink>),
+        content: (<NavLink to="/contact"><div className="btn">Enquire Now!</div></NavLink>),
     },
 }
 const masterclasses = {
@@ -80,7 +81,7 @@ const masterclasses = {
             path:'video_masterclasses.mp4',
             sound:false
         },
-        content: (<NavHashLink to="/press#contact"><div className="btn">Enquire Now!</div></NavHashLink>),
+        content: (<NavLink to="/contact"><div className="btn">Enquire Now!</div></NavLink>),
     },
 }
 const endorsements = {

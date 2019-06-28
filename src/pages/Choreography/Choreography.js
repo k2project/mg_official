@@ -6,6 +6,8 @@ import './Choreography.scss';
 import {appPages} from './../../api/appData';
 
 import Page from './../../components/Page/Page';
+import Quotes from './../../components/Quotes/Quotes';
+import {choreographyQuotes} from './../../api/endorsements';
 
 
 export default function Choreography (){
@@ -17,12 +19,27 @@ export default function Choreography (){
                     <section>
                         <div className="section__body">
                             {/* <div className="section__title">Worldwide Choreographer</div> */}
-                            <p>In addition to a lengthy performance career, Murray's directorial and choreographic credits include: touring China and Europe with <i>Musical Starlights</i>, European tour of <i>Best of Musicals, Twelve International Tenors</i> tours of Europe, <i>Moulin Rouge</i> (German TV Production), <i>The Phantom of the Opera</i> and <i>Carnaby Street Capers</i> for P&O World Cruises, <i>Macphersons Rant</i> (World Premiere, Scotland), Union Square Opening Ceremony (Scotland) and <i>Lifted</i> for TUI’s Sensatori Resorts.</p>
-                            <p>Murray has also choreographed the successful <b>Fringe</b> productions of <i>Zanna Don’t, The Great American Trailer Park Musical</i> and <i>Guys Sing Dolls.</i></p>
-                            <p>He has also directed and choreographed the likes of <i>Adam Garcia, Ruthie Henshall, Kerry Ellis, Christina Bianco, Louise Dearman, Jon Lee, Zoe Tyler, Jai Mcdowall</i> and many more in the series of concerts produced by <b>Tonight Productions</b>.</p>
-                            <NavLink to="/home" className="btn btn_section">Other Projects</NavLink>
+                            <p>
+                                Murray’s directorial and choreographic credits include Musical Starnights (European tour), Musicals Wanted (European tour), P&O Cruises (Aurora World Cruise), 12International Tenors (European tour), Macphersons Rant (World Premier), Zanna Don’t (Edinburgh Fringe Sell out production), The Great American Trailer Park Musical (Edinburgh Fringe), Guys Sing Dolls (World Premier & Edinburgh Fringe run), he also choreographed the opening of Union Square Shopping Centre (Aberdeen) in which he choroegraphed a flashmob with over 100 dancers.
+                            </p>
+                            <p>
+                                Murray has also choreographed many musicals for Performing Arts universities
+                                around Europe including; Addams Family, Bat Boy, Flashdance, Little Shop of
+                                Horrors, Legally Blonde, Wizard of Oz, Bring it On, Fame, The Pajama Game, Honk, Spring Awakening and more.
+
+                            </p>
+                            <p>
+                                He has also worked on the corporate scene for around 10 years choreographing and directing events for Baillie Gifford, PureGym, Sykes, BP, Jack Wills, Edinburgh Zoo, Zeal Experiential, Brodies, Prudential, Gleneagles, Deutsche Bank, Sheraton, Maximillion, National Museum of Scotland, Ernst & Young, British Orthodontic Society, Harvey Nichols, Radisson Blu and many more.
+                            </p>
+                            <p>
+                                Murray was also Director/Choreographer for a series of concerts called “Tonight from the West End” in which he worked with musical theatre stars Adam Garcia, Ruthie Henshall, Kerry Ellis, Christina Bianco, Ray Quinn, Zoe Tyler, Jai McDowall, Jon Lee and Louise Dearman.
+                            </p>
+
+                            
+                            {/* <NavLink to="/home" className="btn btn_section">Other Projects</NavLink> */}
                         </div>
                     </section>
+                    <Quotes quotes={choreographyQuotes}/>
 
                 </Page>
             </div>
