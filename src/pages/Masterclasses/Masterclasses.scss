@@ -24,6 +24,12 @@
 //max 768
 @include mobile{
 
+    .Masterclasses .Page__top{
+        background-image: url('./../../media/imgs/masterclass.mob.jpg');
+        background-size: cover;
+        background-position: 20% top ;
+
+    }
 }
 // max 480
 @include mobile-sm{

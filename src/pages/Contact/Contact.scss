@@ -1,31 +1,48 @@
 @import './../../App.scss';  //import vars and mixins
 
 .Contact{
-}
-.Contact__body{
-    padding: 14rem 0 8rem;
-    display: grid;
-    grid-auto-rows: 8rem;
-    grid-template-columns: 30rem 30rem;
-    width: 60rem;
-    margin: auto;
-    text-align: left;
-    font-size: 1.6rem;
-    line-height: 1.6;
-    left: 2rem;
     .SocialMedia{
         grid-column: span 2;
         text-align: center;
-        margin-top: 4rem;
-        left: -2rem;
+        margin-top: 1rem;
     }
     a{
-        padding: .7rem;
+        padding: .6rem;
         img{
-            height: 2rem;
+            height: 1.8rem;
         }
     }
+    b{
+        font-size: 2.4rem;
+        line-height: 2;
+        top: -1rem;
+    }
 
+
+}
+.murrayEmail{
+    font-size: 2.6rem;
+}
+.Contact__section{
+    padding: 10rem 2rem;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.6;
+
+
+}
+.Contact__media{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    grid-column-gap: 3rem;
+    p{
+        margin:.3rem 0 0;
+    }
+    p:nth-child(odd){
+        text-align: right;
+        font-weight: bold;
+    }
 }
 
 //max 1300
@@ -38,25 +55,23 @@
 }
 //max 768
 @include mobile{
-
-    .Contact__body{
-        padding-top: 6rem 8rem;
-        display: block;
-        width: 80%;
-        line-height: 1.4;
-        left: 0;
-
-        div:nth-child(odd){
-            margin-top: 6rem;
-        }
-        div:nth-child(even){
-            margin-top: 1rem;
-        }
-        .SocialMedia{
-            text-align: left;
-            left: 0;
+    .Contact{
+        b{
+            font-size: 1.8rem;
         }
     }
+    .murrayEmail{
+        font-size: 1.8rem;
+    }
+    .Contact__media{
+        grid-template-columns: 1fr;
+        text-align: center;
+        p:nth-child(odd){
+            text-align: center;
+        }
+    }
+
+
 }
 // max 480
 @include mobile-sm{

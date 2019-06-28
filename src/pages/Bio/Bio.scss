@@ -12,3 +12,13 @@
     .Page__top .cover{
     }
 }
+@include mobile{
+
+    .Bio .Page__top{
+        background-image: url('./../../media/imgs/mg3.mob.jpg');
+        background-size: cover;
+        background-position: center ;
+        // -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        // filter: grayscale(100%);
+    }
+}

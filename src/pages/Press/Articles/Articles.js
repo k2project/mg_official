@@ -24,7 +24,7 @@ export default function Articles (){
                 <div className="Articles_others">
                     {articlesOtherList}
                 </div>
-                <NavHashLink to="/contact#tailormadeMedia" className="btn btn_btm">Press Enquiries</NavHashLink>
+                <NavHashLink to="/contact#media" className="btn btn_btm">Press Enquiries</NavHashLink>
             {/* </div>} */}
         </section>
 

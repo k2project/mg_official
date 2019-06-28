@@ -52,7 +52,7 @@ const choreography = {
         }
     },
     topContent : {
-        title:'Worldwide Choreographer',
+        title:'Creative Director & Choreographer',
         // title:'Choreography Projects',
         subtitle:'International Freelancer',
         video:{
@@ -162,3 +162,4 @@ export const appPages = {
     contact,
     cookies,
 }
+export const analiticsID = 'UA-143024184-1';

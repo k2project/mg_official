@@ -20,10 +20,10 @@ function displayEndorsements(endorsement){
     cls = cls? cls : '';
     return(
         <div className={"quote "+cls} key={name}>
-            <p className="quote__text">{text}</p>
+            <p className="quote__text"><q>{text}</q></p>
             <div className="quote__name">
-                <b>{name}</b> <br/>
-                <i><a href={link} target="_blank"  rel="noopener noreferrer"> {title} </a></i>
+                <b><u><a href={link} target="_blank"  rel="noopener noreferrer">{name}</a></u></b> <br/>
+                <i>{title} </i>
                 <img src={require('./../../../media/icons/'+country.flag)} alt={country.name} className="quote__flag"/>
             </div>
 

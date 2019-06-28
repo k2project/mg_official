@@ -34,7 +34,7 @@ const chrisStapelberg = {
     cls:'chrisStapelberg',
     name:'Chris Stapelberg',
     title:'Director of SA Dance Talent ',
-    link:'http://sadancetalent.co.za/',
+    link:'http://dancestar.co.za/',
     country:{
         name:'South Africa',
         flag:'sa.png'

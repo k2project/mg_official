@@ -13,6 +13,7 @@ export default function Clients (){
     })
     return(
         <section className="Clients">
+            <div className="section__title">CLIENTS</div>
             <div className="wrapper">
                 {clientsLogos}
             </div>

@@ -5,6 +5,7 @@
         height: 60rem;
     }
 
+
 }
 
 //max 1300
@@ -18,8 +19,13 @@
 //max 768
 @include mobile{
 
-    .Choreography .Video{
-        display: none;
+
+    .Choreography .Page__top{
+        background-image: url('./../../media/imgs/choreography.mobile.JPG');
+        background-size: cover;
+        background-position: center ;
+        // -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        // filter: grayscale(100%);
     }
 
 }

@@ -91,29 +91,34 @@ section{
 }
 .section__title{
     font-family: 'Montserrat', sans-serif;
-    width: 100%;
-    font-size: 1.6rem;
+    // width: 100%;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    // top: -1rem;
     text-transform: uppercase;
-    position: absolute;
-    top:12rem;
-    z-index: 8;
+    // position: absolute;
+    // top:12rem;
+    // z-index: 8;
     text-align: center;
+    color: #4f4f4f;
+    letter-spacing: .2rem;
 }
-.section__title:after,
-.section__title:before{
-    content:"";
-    display: inline-block;
-    width: 4rem;
-    height: .4rem;
-    border-top: solid .1rem #fff;
-}
-.section__title:before{
-    margin-right: 1.5rem;
-
-}
-.section__title:after{
-    margin-left: 1rem;
-}
+// .section__title:after,
+// .section__title:before{
+//     content:"";
+//     display: inline-block;
+//     width: 4rem;
+//     height: .4rem;
+//     border-top: solid .1rem #fff;
+// }
+// .section__title:before{
+//     margin-right: 1.5rem;
+//
+// }
+// .section__title:after{
+//     margin-left: 1rem;
+// }
 
 .cover{
     align-content: center;

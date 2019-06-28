@@ -13,30 +13,43 @@ export default function Contact (){
         <DocumentMeta {...appPages.contact.meta}>
             <div className="Contact">
                 <Page data = {appPages.contact.topContent}>
-                    <section id="contact">
-                        <div className="Contact__body">
-                            <div>
-                                For general enquiries please contact
-                                <br className="mobile"/><b> Jenny McLean</b>:
+                    <section className="Contact__section">
+                        <div className="section__title">General Enquiries</div>
+                        {/* <p><i>For general enquiries please contact:</i></p> */}
+                        <p>
+                            <b> Jenny McLean</b> <br/>
+                            contact@murraygrantofficial.com <br/>
+                            +44 (0) 330 0242941
+                        </p>
+                    </section>
+                    <section id="media" className="Contact__section">
+                        <div className="section__title">Media Enquiries</div>
+                        <p>For press related enquiries please contact <i>Tailormade Media</i> team:</p>
+                        <div className="Contact__media">
+                            <p>
+                                Amy Anderson Brown
+                            </p>
+                            <p>
+                                amy@thisistailormade.com
+                            </p>
+                            <p>
+                                Alex Schweitzer-Thompson
+                            </p>
+                            <p>
+                                alex@thisistailormade.com
+                            </p>
                             </div>
-                            <div>
-                                contact@murraygrantofficial.com <br/>
-                                +44 (0) 330 0242941
-                            </div>
-                            <div id="tailormadeMedia">
-                                For media enquiries please contact <br className="mobile"/><b> Tailormade Media</b>:</div>
-                            <div>
-                                Alex ( alex@thisistailormade.com ) <br/>
-                                Amy ( amy@thisistailormade.com )
-                            </div>
-                            <div>
-                                Getting in touch with Murray directly:
-                            </div>
-                            <div>
-                                murray@murraygrantofficial.com
-                            </div>
+                    </section>
+                    <section className="Contact__section ">
+                        <div className="section__title">Direct Enquiries</div>
+                        {/* <p><i>Getting in touch with Murray directly:</i></p> */}
+                        <p className="murrayEmail">
+                            murray@murraygrantofficial.com
+                        </p>
+                        <div>
                             <SocialMedia/>
                         </div>
+
                     </section>
                 </Page>
             </div>

@@ -19,7 +19,7 @@ export default function Page(props){
         <div className="Page">
             <Nav/>
             <section className="Page__top">
-                { data.video && <Video video={data.video}/>}
+                { data.video && document.documentElement.clientWidth>768 &&<Video video={data.video}/>}
                 <div className="cover">
                     {data.title && <p className="Page__top_title font_themed">{data.title}</p>}
                     {data.subtitle && <p className="Page__top_subtitle font_themed">{data.subtitle}</p>}
