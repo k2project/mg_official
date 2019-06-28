@@ -8,7 +8,10 @@ let slider =null;
 export default function Quotes(props){
     useEffect(()=>{
         clearSlider();
-        runQuotes(0)
+        runQuotes(0);
+        return ()=>{
+            clearSlider();
+        }
     })
     const quotesList = props.quotes.map(q => displayQuotes(q));
     const ctrls = Array.from({length:props.quotes.length}).map((li,i)=><li key={"quotes li "+i} data-index={i} onClick={e=>getQuote(e)}></li>)
@@ -68,6 +71,7 @@ function runQuotes(i){
     ctrls[index].classList.add('current')
     index = index === quotes.length-1 ? 0 : index+1;
     slider = setTimeout(()=>runQuotes(index),10000);
+
 }
 function getQuote(e){
     clearSlider();

@@ -374,7 +374,7 @@ const aurora = {
         subtitle:null,
     },
     desc:(<div>
-        <p>Murray was employed by Cruising Musicals Consortium to choreograph 2 production shows for the World Cruise of their beautiful ship Aurora.</p>
+        <p>P&amp;O Cruises is a British cruise lines which over the years has had many suppliers for entertainment. Murray was guest creative working for Cruising Musicals Consortium. He directed 2 shows onboard their beautiful ship Aurora.</p>
         <p>Murray sailed from San Francisco to Sydney working on the show <b><i>“Carnaby Street Capers” </i></b> followed by Mumbai to Southampton with the show <b><i>“The Phantom of the Pop’era”</i></b>.</p>
     </div>),
     links:null,
@@ -395,7 +395,28 @@ const zannaDont = {
         subtitle:null,
     },
     desc:(<div>
-        <p></p>
+        <p><b>Zanna, Don\'t!</b> (subtitled &quot;A Musical Fairy Tale&quot;) is a musical written by Tim Acito and with additional lyrics and material by Alexander Dinelaris</p>
+        <p>Produced at Edinburgh Fringe 2015 for the graduating students of The MGA Academy of Performing Arts. Zanna Don’t ran for the full 3 weeks of the fringe and was a sell-out production. This production was choreographed by Murray Grant, directed by Andrew Gowland and Musically directed by Greg Davidson, it received many 5-star reviews along with a ‘Highly Recommended show’ from the fringe review.</p>
+    </div>),
+    links:null,
+}
+const BeyondBroadwayPresents = {
+    cls:'BeyondBroadwayPresents',
+    current:false,
+    projectName:{
+        display:false,
+        name:'Beyond Broadway Presents…',
+    },
+    imgs:{
+        bg:'BeyondBroadwayPresents.jpg',
+        logo:null,
+    },
+    role:{
+        title:'Producer & Creative Director',
+        subtitle:null,
+    },
+    desc:(<div>
+        <p>Beyond Broadway Productions has spent the last 4 years producing Masterclasses and cabaret’s with talent from West End to Broadway. Some of the talent that have had in Edinburgh is Shoshana Bean, Jeremy Jordan, Katie Thomson, Natalie Weiss, Yanis Marshall, Adam Garcia, Kerry Ellis, Nikki Snelson, Telly Leung and many more.</p>
     </div>),
     links:null,
 }
@@ -1207,6 +1228,7 @@ const projects=[
     iba,
     assemblyRooms,
     zannaDont,
+    BeyondBroadwayPresents,
     // tonight,
     nationalMuseumScotland,
     unionSquare,
