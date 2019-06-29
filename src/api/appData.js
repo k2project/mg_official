@@ -116,7 +116,7 @@ const press = {
         title:'In The News',
         title:'Making Headlines',
         subtitle:'Press release',
-        content: null
+        // content:(<NavHashLink to="/contact#press"><div className="btn">Press Enquiries</div></NavHashLink>),
     },
 }
 const contact = {

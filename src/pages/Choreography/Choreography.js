@@ -9,6 +9,25 @@ import Page from './../../components/Page/Page';
 import Quotes from './../../components/Quotes/Quotes';
 import {choreographyQuotes} from './../../api/endorsements';
 
+//posters
+import AddamsFamily from './../../media/posters/AddamsFamily.jpg';
+import BatBoy  from './../../media/posters/BatBoy.jpg';
+import Flashdance  from './../../media/posters/Flashdance.jpg';
+import FarewellMySon  from './../../media/posters/FarewellMySon.jpg';
+import gatp  from './../../media/posters/gatp.jpg';
+import HonkPoster  from './../../media/posters/HonkPoster.jpg';
+import IABPajamaGame  from './../../media/posters/IABPajamaGame.jpg';
+import IABSpringAwakening  from './../../media/posters/IABSpringAwakening.jpg';
+import Legallyblonde  from './../../media/posters/Legallyblonde.jpg';
+import LSOH  from './../../media/posters/LSOH.jpg';
+import Starnights  from './../../media/posters/Starnights.jpg';
+import TheProducers  from './../../media/posters/TheProducers.jpg';
+import Tonight2015  from './../../media/posters/Tonight2015.jpg';
+import Tonight2016  from './../../media/posters/Tonight2016.jpg';
+import TonightXmas from './../../media/posters/TonightXmas.jpg';
+import WOZ from './../../media/posters/WOZ.jpg';
+import Zanna from './../../media/posters/Zanna.jpg';
+
 
 export default function Choreography (){
 
@@ -35,14 +54,39 @@ export default function Choreography (){
                                 Murray was also Director/Choreographer for a series of concerts called “Tonight from the West End” in which he worked with musical theatre stars Adam Garcia, Ruthie Henshall, Kerry Ellis, Christina Bianco, Ray Quinn, Zoe Tyler, Jai McDowall, Jon Lee and Louise Dearman.
                             </p>
 
-                            
+
                             {/* <NavLink to="/home" className="btn btn_section">Other Projects</NavLink> */}
                         </div>
                     </section>
                     <Quotes quotes={choreographyQuotes}/>
+                    <Posters/>
 
                 </Page>
             </div>
         </DocumentMeta>
+    )
+}
+
+function Posters(){
+    return(
+        <section className="Posters">
+            <img src={WOZ} alt="The Wizard of Oz"/>
+            <img src={AddamsFamily} alt="Addams Family"/>
+            <img src={Flashdance} alt="Flashdance"/>
+            <img src={BatBoy} alt="Bat Boy"/>
+            <img src={FarewellMySon} alt="Farewell My Son"/>
+            <img src={Tonight2015} alt="Tonight 2015"/>
+            <img src={gatp} alt="The Great American Trailer Park Musical"/>
+            <img src={IABSpringAwakening} alt="IAB Spring Awakening"/>
+            <img src={HonkPoster} alt="Honk Poster"/>
+            <img src={IABPajamaGame} alt="IAB Pajama Game"/>
+            <img src={Legallyblonde} alt="Legally Blonde"/>
+            {/* <img src={Tonight2016} alt="Tonight 2016"/> */}
+            <img src={LSOH} alt="Little Shop Of Horrors"/>
+            <img src={Starnights} alt="The Best of Musical Starnights"/>
+            <img src={TheProducers} alt="The Producers"/>
+            {/* <img src={Zanna} alt="Zanna Dont"/> */}
+            <img src={TonightXmas} alt="Tonight Xmas"/>
+        </section>
     )
 }

@@ -12,7 +12,17 @@
         padding-top: 12rem;
     }
 }
-
+.Posters{
+    display: block;
+    overflow: hidden;
+    img{
+        width: 16.65%;
+        width: 14.28vw;
+        width: 20%;
+        display: inline-block;
+        vertical-align: bottom;
+    }
+}
 //max 1300
 @include desktop-sm{
 

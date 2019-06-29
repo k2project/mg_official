@@ -38,6 +38,7 @@
             display: inline-block;
             margin-left: .7rem;
             border: solid .1rem $color_darker;
+            cursor: pointer;
         }
         li.current{
             background: none;

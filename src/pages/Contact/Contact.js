@@ -24,7 +24,7 @@ export default function Contact (){
                     </section>
                     <section id="media" className="Contact__section">
                         <div className="section__title">Media Enquiries</div>
-                        <p>For press related enquiries please contact <i>Tailormade Media</i> team:</p>
+                        {/* <p>For press related enquiries please contact <i>Tailormade Media</i> team:</p> */}
                         <div className="Contact__media">
                             <p>
                                 Amy Anderson Brown
