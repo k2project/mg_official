@@ -2,9 +2,14 @@
 
 .CurrentProjects{
     background: none;
-    display: none; //anim
+    // display: none; //anim
     margin-top: -14rem;
+    opacity: 0;
+    top: 10rem;
+    @include anim( slideInCPs, .7s, 0s, ease-out);
+    color: #bfbfbf;
 }
+
 .btn.CurrentProjects__btn{
     margin: 6rem auto 4rem;
 }
@@ -25,9 +30,9 @@
     }
     box-shadow: 0rem 1rem 2rem .5rem rgba(21,21,21, .5);
     //anim
-    opacity: 0;
-    top: 3rem;
-    transition: .5s;
+    // opacity: 0;
+    // top: 3rem;
+    // transition: .5s;
     grid-column: span 3;
     display: grid;
     align-content: center;

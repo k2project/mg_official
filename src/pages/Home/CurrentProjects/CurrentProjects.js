@@ -11,20 +11,18 @@ import instagram from './../../../media/icons/instagram.png';
 let projectIndex = 0;
 //for sliding and arrow navigation
 let projectsDetailsShown = false;
-//for swapping
+//for swipping
 var xDown = null;
 var yDown = null;
 export default function CurrentProjects (){
     const projects = currentProjects.map((project,index)=>displayCurrentProjects(project,index));
 
     useEffect(()=>{
-        const introAnim = setTimeout(runIntroAnim,3500);
         document.addEventListener('keydown', slideProjectDetailsListUsingArrowsKeys);
         window.addEventListener('resize', closeProjectDetails);
         document.addEventListener('touchstart', handleTouchStart);
         document.addEventListener('touchmove', handleTouchMove);
         return ()=>{
-            clearTimeout(introAnim);
             document.removeEventListener('keydown', slideProjectDetailsListUsingArrowsKeys);
             window.removeEventListener('resize', closeProjectDetails);
             document.removeEventListener('touchstart', handleTouchStart);
@@ -39,29 +37,11 @@ export default function CurrentProjects (){
                 {projects}
                 <ProjectsDetails/>
             </div>
-            <div>
-                <div className="btn CurrentProjects__btn" onClick={showHomeHiddenEl}>Past Projects</div>
-            </div>
         </section>
     )
 
 }
-function runIntroAnim(){
-    const initAnim = document.querySelector('.Home').classList.contains('not_anim');
-    if(!initAnim){
-        const currentProjectsEl = document.querySelector('.CurrentProjects');
-        currentProjectsEl.style.display = 'grid';
-        const projects = document.querySelectorAll('.project');
-        projects.forEach((project, index)=>{
-            setTimeout(()=>{
-                project.style.opacity = 1;
-                project.style.top = 0;
-            }, index*100+50)
-        })
-    }
 
-
-}
 function displayCurrentProjects(project,index){
     const { cls, links, desc, imgs, projectName, subpageURL, role} = project;
     const { name }= projectName;

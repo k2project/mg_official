@@ -14,10 +14,10 @@ export default function SocialMedia (){
             <a href="https://www.facebook.com/murray.grantmga" target="_blank"  rel="noopener noreferrer">
                 <img src={facebook} alt="Facebook"/>
             </a>
-            <a href="https://www.twitter.com/murraygrant85" target="_blank"  rel="noopener noreferrer">
+            {/* <a href="https://www.twitter.com/murraygrant85" target="_blank"  rel="noopener noreferrer">
                 <img src={twitter} alt="Twitter"/>
-            </a>
-            <a href="https://www.instagram.com/murraygrant/" target="_blank"  rel="noopener noreferrer">
+            </a> */}
+            <a href="https://www.instagram.com/murray_online/" target="_blank"  rel="noopener noreferrer">
                 <img src={instagram} alt="Instagram"/>
             </a>
         </div>

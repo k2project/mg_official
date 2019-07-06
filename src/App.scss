@@ -3,6 +3,7 @@ $color_black:     #151515;
 $color_dark:      #1f1f1f;
 $color_darker:    #232323;
 $color_theme:     #c8ab85;
+$color_silver:    #bfbfbf;
 
 // mixins
 @mixin desktop-sm{
@@ -48,6 +49,7 @@ $color_theme:     #c8ab85;
 }
 @mixin keyframe($name, $letterSpacing){
     @keyframes #{$name}{
+
         to{
             left: 0;
             opacity: 1;
@@ -79,6 +81,7 @@ section{
     width: 90%;
 }
 .section__body{
+    color: $color_silver;
     padding:12rem 0 10rem;
     width: 80rem;
     margin: auto;

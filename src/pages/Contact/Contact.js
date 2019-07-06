@@ -21,8 +21,6 @@ export default function Contact (){
                             contact@murraygrantofficial.com <br/>
                             +44 (0) 330 0242941
                         </p>
-                    </section>
-                    <section id="media" className="Contact__section">
                         <div className="section__title">Media Enquiries</div>
                         {/* <p>For press related enquiries please contact <i>Tailormade Media</i> team:</p> */}
                         <div className="Contact__media">
@@ -38,9 +36,7 @@ export default function Contact (){
                             <p>
                                 alex@thisistailormade.com
                             </p>
-                            </div>
-                    </section>
-                    <section className="Contact__section ">
+                        </div>
                         <div className="section__title">Direct Enquiries</div>
                         {/* <p><i>Getting in touch with Murray directly:</i></p> */}
                         <p className="murrayEmail">
@@ -49,8 +45,8 @@ export default function Contact (){
                         <div>
                             <SocialMedia/>
                         </div>
-
                     </section>
+                
                 </Page>
             </div>
         </DocumentMeta>

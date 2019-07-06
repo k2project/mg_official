@@ -123,7 +123,7 @@ export const choreographyQuotes = [
         institution:'ScotsGay Arts',
         link:'https://scotsgayarts.com/blog/',
         show:'Little Shop of Horrors',
-        text:'Grant’s choreography is sharp and well-judged with the occasional nod to other musicals such as fiddler on the roof and the company commit to it fully.'
+        text:(<span>Grant’s choreography is sharp and well-judged with the occasional nod to other musicals such as <i>Fiddler On The Roof</i> and the company commit to it fully.</span>)
     },
     {
         institution:'The Review Hub',

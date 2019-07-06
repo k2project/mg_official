@@ -14,35 +14,30 @@ import PastProjects from './PastProjects/PastProjects';
 import Clients from './Clients/Clients';
 
 export default function Home (){
-    const [pastProjectsShown, showPastProjects] = useState(false)
-    useEffect(createSessionStorageForInitAnim);
+    const [showAllSections, setShowAllSections] = useState(false);
+    useEffect(()=>{
+        const initAnim = sessionStorage.getItem('initAnim');
+        if(initAnim){
+            setShowAllSections(true);
+        }else{
+            setTimeout(()=>{
+                setShowAllSections(true);
+            },3500)
+            sessionStorage.setItem('initAnim', 'true');
+        }
+    });
     return(
         <DocumentMeta {...appPages.home.meta}>
             <div className="Home">
                 <Page data = {appPages.home.topContent}>
                     <Top/>
-                    <CurrentProjects />
-                    <div className="Home__hidden">
-                        <PastProjects/>
-                        <Clients/>
-                    </div>
+                    {showAllSections && <CurrentProjects />}
+                    {showAllSections && <PastProjects/>}
+                    {showAllSections && <Clients/>}
 
                 </Page>
 
             </div>
         </DocumentMeta>
     )
-}
-
-function createSessionStorageForInitAnim(){
-    const initAnim = sessionStorage.getItem('initAnim');
-    const pastProjectsShown = sessionStorage.getItem('pastProjectsShown');
-    if(initAnim){
-        document.querySelector('.Home').classList.add('not_anim');
-    }else{
-        sessionStorage.setItem('initAnim', 'true');
-    }
-    if(pastProjectsShown){
-        document.querySelector('.Home').classList.add('pastProjects_shown');
-    }
 }

@@ -5,7 +5,7 @@ import {pastProjectsSlides} from './../../../api/projects';
 export default function PastProjects (){
     return(
         <section className="PastProjects">
-            {/* <div className="section__title">Past Projects</div> */}
+            <div className="section__title">PAST PROJECTS</div>
             <Slideshow/>
         </section>
     )

@@ -22,7 +22,7 @@
     height: 37rem;
     // border: solid 1px $color_darker;
     border: solid .1rem #4f4f4f;
-    color: #6f6f6f;
+    color: $color_silver;
     display: grid;
     align-content: center;
     top: -8rem;
@@ -67,11 +67,11 @@
     .Quotes__text{
         left: -5rem;
         opacity: 0;
-        color: #aaa;
     }
     p{
         opacity: 0;
         left: 8rem;
+        color: #5f5f5f;
     }
 
 }

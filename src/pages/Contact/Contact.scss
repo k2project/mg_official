@@ -10,12 +10,20 @@
         padding: .6rem;
         img{
             height: 1.8rem;
+            opacity: .7;
         }
     }
     b{
         font-size: 2.4rem;
         line-height: 2;
         top: -1rem;
+    }
+    .section__title{
+        margin-top: 5rem;
+        margin-bottom: 1.5rem;
+    }
+    .section__title:first-child{
+        margin-top: 0;
     }
 
 
@@ -28,6 +36,7 @@
     text-align: center;
     font-size: 1.6rem;
     line-height: 1.6;
+    color: $color_silver;
 
 
 }

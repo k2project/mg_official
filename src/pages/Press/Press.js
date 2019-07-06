@@ -5,7 +5,6 @@ import {appPages} from './../../api/appData';
 
 import Page from './../../components/Page/Page';
 import Articles from './Articles/Articles';
-import Contact from './Contact/Contact';
 
 
 export default function Press (){
@@ -15,7 +14,6 @@ export default function Press (){
             <div className="Press">
                 <Page data = {appPages.press.topContent}>
                         <Articles/>
-                        {/* <Contact/> */}
                 </Page>
             </div>
         </DocumentMeta>
