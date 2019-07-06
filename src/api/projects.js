@@ -5,7 +5,7 @@ const beyondBroadwayProduction = {
     current:true,
     projectName:{
         display:false,
-        name:'Beyond Broadway Production',
+        name:'Beyond Broadway Productions',
     },
     imgs:{
         bg:null,
@@ -15,7 +15,7 @@ const beyondBroadwayProduction = {
         title:'Founder & Director ',
         subtitle:null,
     },
-    desc:'From high-profile solo artists and groups to ensemble dance numbers with more than 150 performers, Beyond Broadway Productions can deliver bespoke corporate and private entertainment that will leave you speechless. Alongside this Beyond Broadway Production often produces concerts, productions and masterclasses in and around Scotland.',
+    desc:'From high-profile solo artists and groups to ensemble dance numbers with more than 150 performers, Beyond Broadway Productions can deliver bespoke corporate and private entertainment that will leave you speechless. Beyond Broadway Production also produces concerts, full-scale productions and masterclasses in and around Scotland.',
     links:{
         facebook:'https://www.facebook.com/beyondbroadwayltd/',
         instagram:'https://www.instagram.com/beyondbway/',
@@ -38,7 +38,7 @@ const choreographyProjects = {
         title:'International Freelance Choreographer',
         subtitle:null,
     },
-    desc:'Murray is a freelance chorepgrapher and has been choreographing for the last 10 years choreographing shows such as Musical Starnights, 12 Tenors, Carnaby Street Capers, The Addams Family, Legally Blonde and more while working for companies such as P&O Cruises, The Entertainment Department, Maxilillion Events, Institute of the Arts – Barcelona, Ernst & Young, BP, Edinburgh Zoo and many more. ',
+    desc:'Murray is a freelance choreographer, creating for productions including Musical Starnights, 12 Tenors, Carnaby Street Capers, The Addams Family, Legally Blonde alongside work for P&O Cruises, The Entertainment Department, Maxilillion Events, Institute of the Arts – Barcelona, Ernst & Young, BP, Edinburgh Zoo and many more.',
     links:null,
     subpageURL:'/choreography',
 }
@@ -57,7 +57,7 @@ const danceStar = {
         title:'International Guest Judge',
         subtitle:'( South Africa & World Finals )',
     },
-    desc:'Dance Star is an international dance competition which was created to build a strong and active European and World dance community. The aim is to raise the standard of dance by opening up doors towards interaction, cooperation, competition and networking. ',
+    desc:'DanceStar is an international dance competition which was created to build a strong and active European and World dance community. The aim is to raise the standard of dance by opening up doors towards interaction, cooperation, competition and networking. ',
     links:{
         facebook:'https://www.facebook.com/dancestar.world/',
         instagram:'https://www.instagram.com/realdancestar/',
@@ -103,7 +103,7 @@ const mgaAcademy = {
         title:'Co-founder & Creative Director ',
         subtitle:null,
     },
-    desc:'The MGA Academy of Performing Arts is the only college in Scotland to be accredited by the Council for Dance and Drama Education and Training (CDET), and offers BA (Hons) Degree Courses in Musical Theatre, Acting and Dance validated by Bath Spa University and is also an SQA Approved Centre offering HNC and HND qualifications and Approved Centre by the ISTD. ',
+    desc:'The MGA Academy of Performing Arts is the only college in Scotland to be accredited by the CDMT, the UK’s quality assurance and membership body for the professional dance, drama and musical theatre training sector. MGA offers BA (Hons) Degree courses in Musical Theatre, Acting and Dance for Commercial Performance (validated by Bath Spa University), an SQA Approved Centre offering HNC and HND qualifications and an Approved Centre for teacher training by ISTD.',
     links:{
         facebook:'https://www.facebook.com/themgaacademy/',
         instagram:'https://www.instagram.com/themgaacademy/',
@@ -116,7 +116,7 @@ const mgaFoundation = {
     current:true,
     projectName:{
         display:false,
-        name:'The MGA Foundation',
+        name:'MGA Foundation',
     },
     imgs:{
         bg:null,
@@ -149,7 +149,7 @@ const mgaManagement = {
         title:'Co-founder & Creative Director ',
         subtitle:null,
     },
-    desc:'MGA Management is a Theatre, TV and Film Agency representing professional performers from across the UK and beyond from offices in London and Edinburgh. Established in 2005 we have been representing professional Actors, Dancers and Musical Theatre performers for over thirteen years in Scotland, complemented by our base in Covent Garden that opening in December 2015.',
+    desc:'MGA Management is a Theatre, TV and Film Agency representing performers from across the UK and beyond, established in 2005, with offices in London and Edinburgh. MGA Management has been representing professional Actors, Dancers and Musical Theatre performers for over thirteen years in Scotland, complemented by a base in Covent Garden opened in December 2015.',
     links:{
         facebook:'https://www.facebook.com/mgamanagement/',
         instagram:'https://www.instagram.com/mgamanagement/',
@@ -172,7 +172,7 @@ const masterclasses = {
         title:'Jazz, Musical Theatre & Audition Technique Masterclass Provider',
         subtitle:null,
     },
-    desc:'Murray has over the last 15 years ran masterclasses in Jazz, Musical Theatre dance and audition technique across the world from Sweden to Cyprus, New York to Vienna. Working with students who are 14+ that have a passion and drive to go into the industry.',
+    desc:'Murray runs masterclasses in Jazz, Musical Theatre, Dance and Audition Technique in locations around the world, from Sweden to Cyprus, New York to Vienna, and working with students aged 14+ who have a passion and drive to go into the industry.',
     links:null,
     subpageURL:'/masterclasses',
 }
@@ -214,7 +214,7 @@ const theBeyondBroadwayExperience = {
         title:'Co-founder & Creative Director ',
         subtitle:null,
     },
-    desc:'The Beyond Broadway Experience gives young performers the unique opportunity to work with the team at Beyond Broadway Productions, professional directors, choreographers, musical directors, theatre designers and performers to put on a huge show at a variety of professional venues in Edinburgh. Working intensively in rehearsals for the two weeks running up to opening night, cast are put through their paces by our professional creative and productions teams. You get to work with some of the best in the industry – and have a lot of fun along the way!',
+    desc:'The Beyond Broadway Experience offers young performers a unique opportunity to work with the team at Beyond Broadway Productions – professional directors, choreographers, musical directors, theatre designers and performers – and put on a huge show at one of Edinburgh\'s professional venues. Working intensively in rehearsals for the two weeks running up to opening night, the young cast are put through their paces, working with some of the best in the industry and having a lot of fun along the way.',
     links:{
         facebook:'https://www.facebook.com/thebbexperience/',
         instagram:'https://www.instagram.com/thebbexp/',
@@ -238,7 +238,7 @@ const theCore= {
         subtitle:null,
     },
 
-    desc:'The Core is a charity shop with a difference and offers guests the opportunity to shop for all things theatrical, buy theatre tickets at discounted rates. We can provide information on local performing arts events and offer guidance on opportunities to practise and train in the performing arts across the city. It will also host signings and talks by theatre stars, including performers from the West End and Broadway! All proceeds will go to The MGA Foundation.',
+    desc:'The Core is a charity shop with a difference, offering customers the opportunity to shop for all things theatrical and purchase theatre tickets at discounted rates. It is a hub to provide information on local performing arts events, offers guidance on opportunities to practise and train in the performing arts across the city and will host signings and talks by theatre stars – including performers from the West End and Broadway! All proceeds go to the MGA Foundation.',
     links:{
         facebook:'https://www.facebook.com/TheCoreScotland/',
         instagram:'https://www.instagram.com/thecorescotland/',

@@ -76,7 +76,7 @@ const masterclasses = {
     },
     topContent : {
         title:'Masterclasses',
-        subtitle:'Jazz, Musical Theatre & Audition Techniques',
+        subtitle:'Jazz, Musical Theatre & Audition Technique',
         video:{
             path:'video_masterclasses.mp4',
             sound:false
@@ -96,7 +96,7 @@ const endorsements = {
         }
     },
     topContent : {
-        title:"Don't Take Our Word For It...",
+        title:"What They Say...",
         subtitle:'Industry Endorsements',
         content: null,
     },

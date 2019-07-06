@@ -18,7 +18,7 @@ const sarahMilne = {
         name:'Cyprus',
         flag:'cyprus.png'
     },
-    text:'Murray has visited my Performing Arts school "Cyprus Performing Arts" in Nicosia on two occasions. Murray is a true professional with valuable industry knowledge. His choreography is amazing. He has a great repport with the students, he inspires and challenges everyone when he enters the building. I have already booked him to visit again next year and we all can\'t wait for his visit.'
+    text:'Murray has visited my Performing Arts school, Cyprus Performing Arts, in Nicosia on two occasions. Murray is a true professional with valuable industry knowledge. His choreography is amazing. He has a great rapport with the students, he inspires and challenges everyone when he enters the building. I have already booked him to visit again next year and we all can\'t wait for his visit.'
 }
 const natalieWeiss = {
     name:'Natalie Weiss',
@@ -39,7 +39,7 @@ const chrisStapelberg = {
         name:'South Africa',
         flag:'sa.png'
     },
-    text:'SA Dance Talent hosts various qualifiers for international dance competitions in South Africa every year, and over the past 8 years we have invited various international choreographers and judges from all over the world to be on our judging panels. Murray Grant joined us in 2018 on the DanceStar South Africa qualifiers judging panel and has truly been one of our favourite judges over the past years. Judging two qualifiers with over 1800 routines for 11 days, Murray was professional all the time scoring each routine fairly and writing valuable feedback for each dance. Murray was the entire time courteous, warm and friendly and freely sharing he’s valuable knowledge of dance with all the South African dancers, teachers and staff. After the two week event I realised that Murray does all of this because he has an immense passion for dance and loves sharing this passion with dancers from all over the world. We would be honoured to have Murray anytime back in South Africa.'
+    text:'SA Dance Talent hosts various qualifiers for international dance competitions in South Africa every year, and over the past 8 years we have invited various international choreographers and judges from all over the world to be on our judging panels. Murray Grant joined us in 2018 on the DanceStar South Africa qualifiers judging panel and has truly been one of our favourite judges over the past years. Judging two qualifiers with over 1800 routines for 11 days, Murray was professional all the time scoring each routine fairly and writing valuable feedback for each dance. Murray was the entire time courteous, warm and friendly and freely sharing his valuable knowledge of dance with all the South African dancers, teachers and staff. After the two week event I realised that Murray does all of this because he has an immense passion for dance and loves sharing this passion with dancers from all over the world. We would be honoured to have Murray anytime back in South Africa.'
 }
 const christinaBianco = {
     name:'Christina Bianco',
@@ -49,7 +49,7 @@ const christinaBianco = {
         name:'USA',
         flag:'usa.png'
     },
-    text:'Murray is a human Swiss Army knife for the performing arts! His ability to navigate the international acts scene, in all it’s facets, is unmatched.'
+    text:'Murray is a human Swiss Army knife for the performing arts! His ability to navigate the international acrts scene, in all it’s facets, is unmatched.'
 }
 const SteveLeatham = {
     name:'Steve Leatham, FEAA',
@@ -120,7 +120,7 @@ export const choreographyQuotes = [
         text:'Where the show really stands out is in the choreography, it works really well with plenty of nice touches and flourishes.'
     },
     {
-        institution:'ScotsGay',
+        institution:'ScotsGay Arts',
         link:'https://scotsgayarts.com/blog/',
         show:'Little Shop of Horrors',
         text:'Grant’s choreography is sharp and well-judged with the occasional nod to other musicals such as fiddler on the roof and the company commit to it fully.'
