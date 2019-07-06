@@ -38,17 +38,17 @@ function displayQuotes(q){
             </div>
             <p>
                 {q.name && <span>
-                    <b>- {q.name} -</b><br/>
+                    <b>{q.name}</b><br/>
                     <a href={q.link} target="_blank"><u>
                         <i>{q.institution}</i>
                     </u></a>
                 </span>
                 }
                 {q.show && <span>
+                    <i>{q.show}</i><br/>
                     <b><a href={q.link} target="_blank"><u>
                         {q.institution}
-                    </u></a></b> <br/>
-                    <i>{q.show}</i>
+                    </u></a></b>
                 </span>
 
                 }

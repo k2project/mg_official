@@ -58,8 +58,8 @@ export default function Choreography (){
                             {/* <NavLink to="/home" className="btn btn_section">Other Projects</NavLink> */}
                         </div>
                     </section>
-                    <Quotes quotes={choreographyQuotes}/>
                     <Posters/>
+                    <Quotes quotes={choreographyQuotes}/>
 
                 </Page>
             </div>
@@ -75,17 +75,17 @@ function Posters(){
             <img src={Flashdance} alt="Flashdance"/>
             <img src={BatBoy} alt="Bat Boy"/>
             <img src={FarewellMySon} alt="Farewell My Son"/>
-            <img src={Tonight2015} alt="Tonight 2015"/>
-            <img src={gatp} alt="The Great American Trailer Park Musical"/>
-            <img src={IABSpringAwakening} alt="IAB Spring Awakening"/>
             <img src={HonkPoster} alt="Honk Poster"/>
             <img src={IABPajamaGame} alt="IAB Pajama Game"/>
             <img src={Legallyblonde} alt="Legally Blonde"/>
+            <img src={Tonight2015} alt="Tonight 2015"/>
+            <img src={gatp} alt="The Great American Trailer Park Musical"/>
+            <img src={IABSpringAwakening} alt="IAB Spring Awakening"/>
             {/* <img src={Tonight2016} alt="Tonight 2016"/> */}
             <img src={LSOH} alt="Little Shop Of Horrors"/>
             <img src={Starnights} alt="The Best of Musical Starnights"/>
             <img src={TheProducers} alt="The Producers"/>
-            {/* <img src={Zanna} alt="Zanna Dont"/> */}
+            <img src={Zanna} alt="Zanna Dont"/>
             <img src={TonightXmas} alt="Tonight Xmas"/>
         </section>
     )

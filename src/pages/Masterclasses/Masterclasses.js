@@ -27,8 +27,8 @@ export default function Masterclasses (){
                         <Map/>
                         <p>Murray’s masterclasses are for full-time students ( 14+ ) interested in a career in the arts.</p>
                     </section>
-                    <Quotes quotes={masterclassQuotes}/>
                     <PreviousClasses/>
+                    <Quotes quotes={masterclassQuotes}/>
                 </Page>
             </div>
         </DocumentMeta>
