@@ -45,18 +45,30 @@
 //max 768
 @include mobile{
     .Top{
-        height: 70vh;
+        height: calc(100vh - 11rem);
+        min-height: 35rem;
     }
+
     .animBox_title{
-        font-size: 2.7rem;
+        font-size: 3.5rem;
+        letter-spacing: .4rem;
+        opacity: 1;
+        animation: none;
+    }
+
+    .animBox_subtitle{
+        letter-spacing: .2rem;
+        opacity: 1;
+        animation: none;
     }
 }
 // max 480
 @include mobile-sm{
     .animBox_title{
-        font-size: 2rem;
+        font-size: 4.5rem;
+        line-height: 1;
     }
     .animBox_subtitle{
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
 }

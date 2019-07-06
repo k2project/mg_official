@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import { NavLink } from 'react-router-dom';
-import {NavHashLink} from 'react-router-hash-link';
 import DocumentMeta from 'react-document-meta';
 
 import './Home.scss';
@@ -21,7 +20,7 @@ export default function Home (){
             setShowAllSections(true);
         }else{
             setTimeout(()=>{
-                setShowAllSections(true);
+                // setShowAllSections(true);
             },3500)
             sessionStorage.setItem('initAnim', 'true');
         }

@@ -311,6 +311,9 @@ a.details__btn{
 }
 //max 768
 @include mobile{
+    .CurrentProjects{
+        margin-top: 0;
+    }
     .projects{
         // border: solid 1px red;
         grid-template-columns: 1fr 1fr;
@@ -390,9 +393,7 @@ a.details__btn{
 }
 // max 480
 @include mobile-sm{
-    .CurrentProjects{
-        margin-top: -10rem;
-    }
+
     .projects{
         // border: solid 1px yellow;
         width: 85vw;

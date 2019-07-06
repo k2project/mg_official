@@ -77,7 +77,7 @@ section{
     align-content: center;
     background: $color_dark;
     display: grid;
-    margin: 4rem auto;
+    margin: 2rem auto 4rem;
     width: 90%;
 }
 .section__body{
@@ -160,7 +160,9 @@ a.btn{
     color: $color_theme;
 
 }
-
+.mobile_sm{
+    display: none;
+}
 .Holdingpage{
     position: fixed;
     top: 0;
@@ -216,6 +218,10 @@ a.btn{
     .section__body{
         width: 60rem;
     }
+    section{
+        margin: 1rem auto 4rem;
+        width: 94%;
+    }
 }
 @include tablet{
     .section__body{
@@ -226,6 +232,9 @@ a.btn{
     }
 }
 @include mobile{
+    section{
+        margin: 0 auto 2rem;
+    }
     .section__body{
         width: 80%;
         padding-top: 10rem;
@@ -255,6 +264,9 @@ a.btn{
     }
 }
 @include mobile-sm{
+    .mobile_sm{
+        display: block;
+    }
     .btn{
         width: 20rem;
     }

@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: auto 1fr;
     width: 90%;
-    margin: 5rem auto;
+    margin: 5rem auto 3rem;
     a{
         font-size: 1.2rem;
         padding: 0 .7rem;
@@ -37,6 +37,7 @@
     }
 
     margin-top: 0rem;
+    margin-bottom: 2rem;
 }
 
 .Footer_brand{

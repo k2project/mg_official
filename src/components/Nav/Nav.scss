@@ -51,7 +51,8 @@
         cursor: pointer;
         opacity: .1;
         text-align: center;
-        margin-bottom: -8rem;
+        margin-bottom: -6rem;
+        line-height: 1;
     }
 
 }
@@ -169,5 +170,13 @@
     }
     .Nav__brand{
         font-size: 1.8rem;
+    }
+}
+//landscape and mobile
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+    .Nav__pages p{
+        position: absolute;
+        top: 0;
+        right: 8rem;
     }
 }
