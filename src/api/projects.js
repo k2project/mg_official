@@ -1257,7 +1257,7 @@ const projects=[
     eventit,
     deutscheBank,
     edinburghZoo,
-    montpeliers,
+    sykes,
     ben,
     rossFountain,
     puregym,
@@ -1268,7 +1268,7 @@ const projects=[
     bp,
     baillieGifford,
     apt,
-    sykes,
+    montpeliers,
 ]
 const currentProjects = projects.filter(project=>project.current)
 const pastProjectsSlides = projects.filter(project=>!project.current&&project.imgs.bg)

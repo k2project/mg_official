@@ -44,7 +44,7 @@ export default function ProjectsSlider ( props ){
 function displayProjectLayout(project){
     const { cls, links, desc, imgs, projectName, subpageURL, role} = project;
     return(
-        <li key={`projectsDetails_${cls}`} className={"projectsDetails "+cls}>
+        <div key={`projectsDetails_${cls}`} className={"projectsDetails "+cls}>
             <div className='projectDetails_lft'>
                 <div>
                     <p className="details__name">{projectName.name}</p>
@@ -68,7 +68,7 @@ function displayProjectLayout(project){
                 </div>
             </div>
 
-        </li>
+        </div>
     )
 }
 
@@ -94,6 +94,7 @@ function slideToLeft(index,cb){
         index = currentProjects.length-1;
     }
     cb(index);
+    document.querySelector('.projectsDetails').classList.add('left');
 }
 
 

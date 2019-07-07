@@ -104,34 +104,13 @@ section{
 }
 .section__title{
     font-family: 'Montserrat', sans-serif;
-    // width: 100%;
     font-size: 1.8rem;
-    // font-weight: bold;
-    margin-bottom: 2rem;
-    // top: -1rem;
+    margin-bottom: 4rem;
     text-transform: uppercase;
-    // position: absolute;
-    // top:12rem;
-    // z-index: 8;
     text-align: center;
     color: #4f4f4f;
     letter-spacing: .3rem;
 }
-// .section__title:after,
-// .section__title:before{
-//     content:"";
-//     display: inline-block;
-//     width: 4rem;
-//     height: .4rem;
-//     border-top: solid .1rem #fff;
-// }
-// .section__title:before{
-//     margin-right: 1.5rem;
-//
-// }
-// .section__title:after{
-//     margin-left: 1rem;
-// }
 
 .cover{
     align-content: center;
@@ -142,15 +121,7 @@ section{
     top: 0;
     width: 100%;
 }
-// .animated{
-//     opacity: 0;
-//     top: 5rem;
-// }
-// .animated.show{
-//     opacity: 1;
-//     top: 0;
-//     transition: .5s ease-out;
-// }
+
 .btn{
     display: inline-block;
     padding: 1.2rem 0;
@@ -169,6 +140,15 @@ section{
 a.btn{
     color: $color_theme;
 
+}
+.wrapper{
+    width: 100rem;
+    margin: auto;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .mobile_sm{
     display: none;
@@ -232,10 +212,16 @@ a.btn{
         margin: 1rem auto 4rem;
         width: 94%;
     }
+    .wrapper{
+        width: 80rem;
+    }
 }
 @include tablet{
     .section__body{
         width: 70%;
+    }
+    .wrapper{
+        width: 60rem;
     }
     .btn{
         width: 22rem;
@@ -263,17 +249,29 @@ a.btn{
     .section__title:after{
         margin-left: .7rem;
     }
+
     .Holdingpage .Holdingpage__title{
         margin-top: 0;
     }
     .Holdingpage .timer{
         display: none;
     }
+    .wrapper{
+        width: 55rem;
+    }
     .mobile{
         display: none;
     }
 }
+@media only screen and (max-width: 650px) {
+    .wrapper{
+        width: 38rem;
+    }
+}
 @include mobile-sm{
+    .wrapper{
+        width: 30rem;
+    }
     .mobile_sm{
         display: block;
     }

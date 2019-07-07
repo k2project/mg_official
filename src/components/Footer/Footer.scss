@@ -19,7 +19,9 @@
 
 //max 1300
 @include desktop-sm{
-
+    .Footer{
+        margin-top: 0;
+    }
 }
 //max 1024
 @include tablet{
@@ -36,7 +38,7 @@
         padding: 0 .5rem;
     }
 
-    margin-top: 0rem;
+    margin-top: 3rem;
     margin-bottom: 2rem;
 }
 

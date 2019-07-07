@@ -9,10 +9,6 @@
 
 }
 
-
-
-
-
 .projectsDetails{
     background: $color_darker;
     width: 100rem; //equal to .projects width //set dinamiclly
@@ -24,6 +20,14 @@
     text-align: left;
     font-size: 1.3rem;
     padding: 15rem 12rem 20rem;
+    opacity: 0;
+    left:  10rem;
+    @include anim( showDetailName, .25s, 0s, ease-out);
+}
+.projectsDetails.left{
+    opacity: 0;
+    left:  -10rem;
+    @include anim( showDetailName, .25s, 0s, ease-out);
 }
 .projectDetails_lft,
 .projectDetails_rgt{
@@ -35,8 +39,8 @@
     font-size: 3rem;
     line-height: 1.1;
     opacity: 0;
-    top: 2rem;
-    @include anim( showDetailName, .5s, .7s, ease-out);
+    top: 8rem;
+    @include anim( showDetailName, .5s, .5s, ease-out);
 }
 .details__role{
     font-size: 2rem;
@@ -47,7 +51,7 @@
     margin-bottom: 3rem;
     opacity: 0;
     top: 5rem;
-    @include anim( showDetailName, .5s, .3s, ease-out);
+    @include anim( showDetailName, .5s, .5s, ease-out);
 }
 .details__subrole{
     font-size: 1.2rem;
@@ -55,25 +59,34 @@
     margin: -2.5rem 0 3rem;
     opacity: 0;
     top: 5rem;
-    @include anim( showDetailName, .5s, .3s, ease-out);
+    @include anim( showDetailName, .5s, .5s, ease-out);
 }
 .details__desc{
     text-align: justify;
-    opacity: 0;
-    top: 3rem;
-    @include anim( showDetailName, .5s, .7s, ease-out);
+    // opacity: 0;
+    // top: 2rem;
+    // @include anim( showDetailName, .25s, .3s, ease-out);
 }
 a.details__btn{
     margin-top: 3rem;
-    opacity: 0;
-    top: 3rem;
-    @include anim( showDetailName, .5s, .7s, ease-out);
+    // opacity: 0;
+    // top: 2rem;
+    // @include anim( showDetailName, .25s, .3s, ease-out);
 
 }
 .details__logo{
     width: 100%;
     margin: auto;
-    left: 2rem;
+    // left: 2rem;
+    // opacity: 0;
+    // top: 10rem;
+    // @include anim( showDetailName, .25s, .3s, ease-out);
+
+}
+.details__links{
+    // opacity: 0;
+    // top: 2rem;
+    // @include anim( showDetailName, .25s, .3s, ease-out);
 }
 //=======CUSTOMISED PROJECTS=======
 .projectsDetails__li.fierceTheatreSchools,

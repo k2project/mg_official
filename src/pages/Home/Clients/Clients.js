@@ -14,10 +14,10 @@ export default function Clients (){
     return(
         <section className="Clients">
             <div className="section__title">CLIENTS</div>
-            <div className="wrapper">
+            <div className="wrapper flex">
                 {clientsLogos}
             </div>
-            <NavLink to="/biography" className="btn">About Murray</NavLink>
+            {/* <NavLink to="/biography" className="btn">About Murray</NavLink> */}
         </section>
     )
 
