@@ -1,6 +1,5 @@
 import React,{useEffect} from 'react';
 import { NavLink } from 'react-router-dom';
-import {NavHashLink} from 'react-router-hash-link';
 import './Nav.scss';
 import SocialMedia from './../SocialMedia';
 import {selectNavLink} from './../../api/funs'

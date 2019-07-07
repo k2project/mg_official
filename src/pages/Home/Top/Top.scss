@@ -65,8 +65,9 @@
 // max 480
 @include mobile-sm{
     .animBox_title{
-        font-size: 4.5rem;
+        // font-size: 4.5rem;
         line-height: 1;
+        margin-bottom: 1.4rem;
     }
     .animBox_subtitle{
         font-size: 1.3rem;

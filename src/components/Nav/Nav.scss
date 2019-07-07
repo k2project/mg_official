@@ -92,7 +92,7 @@
         background: $color_theme;
         background: $color_darker;
         // background: none;
-        color: #111;
+        color: $color_silver;
         padding: 5rem 2rem 4rem;
         box-shadow: 0 2rem 4rem 0rem #000;
         color: #aaa;
@@ -172,11 +172,12 @@
         font-size: 1.8rem;
     }
 }
-//landscape and mobile
-@media only screen and (max-width: 768px) and (orientation: landscape) {
+
+// mobile landscape
+@include mobile-landscape{
     .Nav__pages p{
         position: absolute;
-        top: 0;
+        top: calc(50% - 5.5rem);
         right: 8rem;
     }
 }

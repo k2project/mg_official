@@ -1,0 +1,341 @@
+@import './../../../../App.scss';
+
+.ProjectsSlider{
+    background: $color_darker;
+    z-index: 4;
+    opacity: 0;
+    transform: scale(.5);
+    @include anim(showDetailsBox, .25s, 0s, ease-out);
+
+}
+
+
+
+
+
+.projectsDetails{
+    background: $color_darker;
+    width: 100rem; //equal to .projects width //set dinamiclly
+    height: 100%;
+    display: inline-grid;
+    grid-template-columns: 1.2fr 1fr;
+    grid-column-gap: 4rem;
+    float: left;
+    text-align: left;
+    font-size: 1.3rem;
+    padding: 15rem 12rem 20rem;
+}
+.projectDetails_lft,
+.projectDetails_rgt{
+    display: grid;
+    align-content:space-between;
+}
+.details__name{
+    text-align: left;
+    font-size: 3rem;
+    line-height: 1.1;
+    opacity: 0;
+    top: 2rem;
+    @include anim( showDetailName, .5s, .7s, ease-out);
+}
+.details__role{
+    font-size: 2rem;
+    line-height: 1.2;
+    i{
+        font-size: 1.2rem;
+    }
+    margin-bottom: 3rem;
+    opacity: 0;
+    top: 5rem;
+    @include anim( showDetailName, .5s, .3s, ease-out);
+}
+.details__subrole{
+    font-size: 1.2rem;
+    margin: 0;
+    margin: -2.5rem 0 3rem;
+    opacity: 0;
+    top: 5rem;
+    @include anim( showDetailName, .5s, .3s, ease-out);
+}
+.details__desc{
+    text-align: justify;
+    opacity: 0;
+    top: 3rem;
+    @include anim( showDetailName, .5s, .7s, ease-out);
+}
+a.details__btn{
+    margin-top: 3rem;
+    opacity: 0;
+    top: 3rem;
+    @include anim( showDetailName, .5s, .7s, ease-out);
+
+}
+.details__logo{
+    width: 100%;
+    margin: auto;
+    left: 2rem;
+}
+//=======CUSTOMISED PROJECTS=======
+.projectsDetails__li.fierceTheatreSchools,
+.projectsDetails__li.mgaFoundation{
+    img{
+        margin-top: -4rem;
+    }
+}
+
+.projectsDetails__li.danceStar,
+.projectsDetails__li.mgaManagement{
+    img{
+        margin-top: -2rem;
+    }
+}
+.projectsDetails__li.ted{
+    img{
+        margin-top: 5rem;
+    }
+}
+.details__links{
+    text-align: center;
+    z-index: 2;
+    a{
+        padding: 0 1rem;
+    }
+    img{
+        height: 2rem;
+    }
+}
+
+.projectsDetails__nav{
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    display: grid;
+    grid-auto-rows: 5rem;
+    grid-template-columns: 5rem 5rem 5rem;
+    font-size: 2rem;
+    color: #4f4f4f;
+
+    div{
+        display: grid;
+        align-content: center;
+        text-align: center;
+        border: solid .1rem #4f4f4f;
+
+    }
+    div:hover{
+        background: #4f4f4f;
+        color: $color_darker;
+        cursor: pointer;
+    }
+}
+.projectsDetails__nav_lft{
+    transform: rotate(-180deg);
+    padding-bottom: .7rem;
+}
+.projectDetails__pagination{
+    position: absolute;
+    bottom: 5rem;
+    width: 100%;
+}
+
+
+
+//max 1300
+@include desktop-sm{
+    .projects{
+        width: 80rem;
+        grid-auto-rows: 17.5rem;
+    }
+    .project__logo{
+        padding: 1rem;
+        width: 80%;
+    }
+    .project__role.cover{
+        padding:1.5rem;
+        font-size: 1.2rem;
+    }
+    .projectsDetails__li{
+        width: 80rem;
+        display: grid;
+        grid-template-columns: 1.8fr 1fr;
+        grid-column-gap: 2rem;
+        padding: 10rem 8rem 13rem;
+        .btn{
+            margin-left: 0;
+            width: 22rem;
+        }
+        img{
+            margin-top: 5rem;
+        }
+    }
+    .details__name{
+        font-size: 2.4rem;
+        margin-bottom: 0;
+    }
+    //=======CUSTOMISED PROJECTS=======
+    .projectsDetails__li.fierceTheatreSchools,
+    .projectsDetails__li.mgaFoundation{
+        img{
+            margin-top: 3rem;
+        }
+    }
+
+    .projectsDetails__li.danceStar,
+    .projectsDetails__li.mgaManagement{
+        img{
+            margin-top: 4rem;
+        }
+    }
+    .projectsDetails__li.ted{
+        img{
+            margin-top: 9rem;
+        }
+    }
+}
+//max 1024
+@include tablet{
+    .projects{
+        width: 64rem;
+        grid-auto-rows: 14.5rem;
+    }
+    .project__logo{
+        padding: 1rem;
+        width: 90%;
+    }
+
+    .projectsDetails__li{
+        width: 64rem;
+        font-size: 1.2rem;
+        grid-template-columns: 1fr;
+        grid-column-gap: 0rem;
+        padding: 8rem 7rem;
+
+        .btn{
+            margin-left: 0;
+            width: 20rem;
+            font-size: 1.4rem;
+            margin-top: 1rem;
+        }
+    }
+
+    .details__logo{
+        display: none;
+    }
+    .details__links{
+        display: none;
+    }
+    .details__role{
+        width: 60%;
+        text-align: left;
+    }
+}
+//max 768
+@include mobile{
+
+    .projects{
+        // border: solid 1px red;
+        grid-template-columns: 1fr 1fr;
+        width: 40rem;
+    }
+    .project{
+        grid-column: span 1;
+    }
+    .ted,
+    .mgaAcademy,
+    .beyondBroadwayProduction{
+        grid-column: span 1;
+    }
+    .ted{
+        grid-column: span 2;
+        // grid-row: 1;
+        .project__logo{
+            width: 50%;
+            padding: 1rem;
+        }
+    }
+    .projectsDetails__li{
+        width: 40rem;
+        text-align: left;
+        padding: 5rem;
+        .btn{
+            margin: 5rem auto 0;
+        }
+        align-content: start;
+        img{
+            margin: 0 auto;
+            left: 0;
+        }
+
+    }
+    .projectDetails_lft{
+    }
+    .projectDetails_rgt{
+        height: 30rem;
+        grid-row: 1;
+        text-align: left;
+        align-content: center;
+        padding: 5rem 0 0;
+    }
+    .details__logo{
+        display: block;
+        margin-left: 0;
+        width: 80%;
+    }
+    .details__name{
+        font-size: 2.8rem;
+        margin-bottom: 0;
+    }
+    .details__role{
+        width: 90%;
+    }
+    //=======CUSTOMISED PROJECTS=======
+    .projectsDetails__li.fierceTheatreSchools,
+    .projectsDetails__li.mgaFoundation{
+        img{
+            margin-top: 0rem;
+        }
+    }
+
+    .projectsDetails__li.danceStar,
+    .projectsDetails__li.mgaManagement{
+        img{
+            margin-top: 0rem;
+        }
+    }
+    .projectsDetails__li.ted{
+        img{
+            margin-top: 0rem;
+        }
+    }
+
+}
+// max 480
+@include mobile-sm{
+
+    .projects{
+        // border: solid 1px yellow;
+        width: 85vw;
+    }
+
+    // .ted{
+    //     grid-column: span 2;
+    //     // grid-row: 1;
+    //     .project__logo{
+    //         width: 50%;
+    //     }
+    // }
+    .project__logo{
+        padding: 0.7rem;
+    }
+    .projectsDetails__li{
+        width: 85vw;
+    }
+}
+
+// mobile landscape
+@include mobile-landscape{
+    .CurrentProjects{
+        margin-top: -7rem;
+    }
+
+}

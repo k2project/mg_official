@@ -20,7 +20,7 @@ export default function Home (){
             setShowAllSections(true);
         }else{
             setTimeout(()=>{
-                // setShowAllSections(true);
+                setShowAllSections(true);
             },3500)
             sessionStorage.setItem('initAnim', 'true');
         }
