@@ -12,8 +12,8 @@ export default function CurrentProjects (){
         <section className="CurrentProjects" id="projects">
             <div className="projects">
                 {projects}
-                {projectIndex>=0 && <ProjectsSlider index={projectIndex} setProjectIndex={setProjectIndex}/>}
             </div>
+            {projectIndex>=0 && <ProjectsSlider index={projectIndex} setProjectIndex={setProjectIndex}/>}
         </section>
     )
 
@@ -32,7 +32,11 @@ function displayCurrentProjectsLayout(project,index,cb){
 }
 function showProjectsSlider(e,index,setProjectIndex){
     setProjectIndex(index);
-    const projects = document.querySelector('.projects');
-    projects.scrollIntoView({behavior: "smooth",block: "center"});
+    const ps = document.querySelector('.projects');
+    ps.style.display ='none';
+    setTimeout(()=>{
+        const slider = document.querySelector('.ProjectsSlider');
+        slider.scrollIntoView({behavior: "smooth",block: "center"});
+    },100)
 
 }

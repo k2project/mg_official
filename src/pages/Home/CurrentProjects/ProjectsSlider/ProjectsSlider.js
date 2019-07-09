@@ -33,7 +33,7 @@ export default function ProjectsSlider ( props ){
     })
     let  project = currentProjects[currentIndex];
     return(
-        <div className="ProjectsSlider cover">
+        <div className="ProjectsSlider">
             {displayProjectLayout(project)}
             <ProjectsSliderNavBar setProjectIndex={setProjectIndex} setCurrentIndex={setCurrentIndex} currentIndex={currentIndex} />
             {/* <div className="projectDetails__pagination"></div> */}
@@ -44,7 +44,7 @@ export default function ProjectsSlider ( props ){
 function displayProjectLayout(project){
     const { cls, links, desc, imgs, projectName, subpageURL, role} = project;
     return(
-        <div key={`projectsDetails_${cls}`} className={"projectsDetails "+cls}>
+        <div key={`projectDetails_${cls}`} className={"projectDetails cover "+cls}>
             <div className='projectDetails_lft'>
                 <div>
                     <p className="details__name">{projectName.name}</p>
@@ -77,16 +77,21 @@ function ProjectsSliderNavBar(props){
     return <div className="projectsDetails__nav">
         <div className="projectsDetails__nav_lft" onClick={()=>slideToLeft(currentIndex,setCurrentIndex)}>&#10148;</div>
         <div className="projectsDetails__nav_rgt" onClick={()=>slideToRight(currentIndex,setCurrentIndex)}>&#10148;</div>
-        <div className="projectsDetails__nav_close" onClick={()=> setProjectIndex(-1)}>&#10006;</div>
+        <div className="projectsDetails__nav_close" onClick={()=>closeProjectSlider(setProjectIndex) }>&#10006;</div>
     </div>
 }
-
+function closeProjectSlider(setProjectIndex){
+    setProjectIndex(-1);
+    const ps = document.querySelector('.projects');
+    ps.style.display ='grid';
+}
 function slideToRight(index,cb){
     ++index;
     if(index>currentProjects.length-1){
         index = 0;
     }
     cb(index);
+    document.querySelector('.projectDetails').classList.add('right');
 }
 function slideToLeft(index,cb){
     --index;
@@ -94,7 +99,7 @@ function slideToLeft(index,cb){
         index = currentProjects.length-1;
     }
     cb(index);
-    document.querySelector('.projectsDetails').classList.add('left');
+    document.querySelector('.projectDetails').classList.add('left');
 }
 
 
