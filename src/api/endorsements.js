@@ -84,19 +84,33 @@ export const endorsements = [
 
 export const masterclassQuotes = [
     {
+        name:'JP Costa ',
+        role:'Chicago (Portuguese Tour), Godspell (Lisbon), Naked Boys Singing (Lisbon)',
+        link:null,
+        text:'Murray has been determinant to my personal growth and understanding of the Musical Theatre industry over the past few years. He is the type of person who believes in people’s talent, hard work and charisma. And if you are lucky enough to meet him and he believes in what you can bring to the table, then you’re in great hands. I have never met anyone so honest and this is hard to find nowadays. He is a dancer, a choreographer, a teacher, a casting director, a producer, a judge in dance competitions. And you can only achieve this much when you are as determined and passionate about what you do as Murray is.',
+        img:'costa.jpg',
+    },
+    {
         name:'Rowen Letham',
         role:'Production Assistant',
         institution:'New College Lanarkshire',
-        link:'https://www.nclanarkshire.ac.uk/',
+        // link:'https://www.nclanarkshire.ac.uk/',
         text:'Murray delivered two excellent Masterclass sessions for our Dancers & Musical Theatre students. Everything was so professional & organised from our first contact right through to the delivery of the class. All levels of performers were considered throughout & Murray adapted the choreography where needed. There was a variety of dance styles covered as well as singing sessions for our Musical Theatre performers. The time taken with each students was excellent & Murray used his wealth of industry knowledge to provide them with invaluable advice. The Q&A session was so informative, it was relaxed & no questions were disregarded, giving the students an opportunity to open up & really inquire about the industry. We could not recommend Murray enough & look forward to welcoming him back in the next academic year.',
-        img:'rebeca.jpg',
+        img:'noImg.jpg',
     },
     {
         name:'Elizabeth Ennis',
-        institution:'Westside Stage School Director',
-        link:'http://www.westsidestageschool.ie',
+        role:'Westside Stage School Director',
+        // link:'http://www.westsidestageschool.ie',
         text:'Murray has been teaching his masterclasses here at Westside for a number of years. His knowledge, passion and enthusiasm for the industry is an invaluable experience for our students. His professionalism, caring and high energy in the studio not only brings out the best of each dancer but encourages them to push out of their comfort zone and improve not only their technical ability but also their performance ability. The opportunity to work with Murray is one of the highlights of the term for Westside Students.',
         img:'rebeca.jpg',
+    },
+    {
+        name:'Thomas Doherty ',
+        role:'Disney’s Descendants 2 & 3, HBO’s Catherine the Great, High Strung',
+        link:null,
+        text:'The most striking thing for me about Murray isn’t just his incredible ability as a professional dancer, or the respect I have for his extensive capability as a choreographer, but as a teacher, he has the ability to see your potential, beyond even your own ideas of what that potential might be. He has the facility and the unwavering passion to get you there - and he won’t rest until you do. Trust me.',
+        img:'doherty.jpg',
     },
 
 

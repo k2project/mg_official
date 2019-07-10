@@ -10,9 +10,12 @@
 }
 .Quotes__quote.has_image {
     align-content: center;
+    grid-template-rows: 1fr;
     grid-template-columns: 20rem 1fr;
     padding: 4rem 8rem 0 4rem;
     .Quote__text{
+        display: grid;
+        align-content: center;
         grid-row: 1;
         grid-column: 2/3;
     }
