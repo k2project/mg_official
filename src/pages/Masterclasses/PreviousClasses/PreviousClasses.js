@@ -7,11 +7,9 @@ export default function PreviousClasses(){
 
     return(
         <section className="PreviousClasses">
-            {/* <div className="section__title">Workshops Associates</div> */}
-            <div className="wrapper">
+            <div className="wrapper flex">
                 {classes.map(cl=><img src={require('./../../../media/logos/'+cl.img)} alt={cl.name} key={cl.name}/>)}
             </div>
-            {/* <NavLink to="/home" className="btn">Other Projects</NavLink> */}
         </section>
     )
 }

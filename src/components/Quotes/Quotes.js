@@ -41,6 +41,7 @@ function displayQuotes(q){
                 {q.img && <img src={require("./../../media/imgs/"+q.img)} alt={q.name} className="Quote__img"/>}
                 <p>
                     {q.name && <b>{q.name}<br/></b>}
+                    {q.role &&<span> {q.role}<br/></span>}
                     {q.show && <i>{q.show}<br/></i>}
                     {q.institution && <a href={q.link} target="_blank"><u>
                         <i>{q.institution}</i>

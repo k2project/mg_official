@@ -18,14 +18,12 @@ export default function Masterclasses (){
             <div className="Masterclasses">
                 <Page data = {appPages.masterclasses.topContent}>
                     <section className="Masterclasses__info">
-                        {/* <div className="section__title">International workshops</div> */}
                         <div className="section__body">
                             <p>Since 2004, Murray has been providing masterclasses in Jazz, Musical Theatre, Dance and Audition Technique and has had opportunity to lead these in a range of locations around the world. Classes are usually aimed at students aged 14 and up with an interest in a career in performing arts, and students who are currently in full-time professional training.</p>
                             <p>Murray also teaches Audition Technique masterclasses at some of the most respected Performing Arts Colleges in the UK and across Europe. Recent tours have taken him around Germany, Austria, Croatia, Scandinavia, UK, Spain, Cyprus and Italy.</p>
 
                         </div>
                         <Map/>
-                        {/* <p>Murray’s masterclasses are for full-time students ( 14+ ) interested in a career in the arts.</p> */}
                     </section>
                     <PreviousClasses/>
                     <Quotes quotes={masterclassQuotes}/>

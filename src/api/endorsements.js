@@ -84,7 +84,8 @@ export const endorsements = [
 
 export const masterclassQuotes = [
     {
-        name:'Rowen Letham - Production Assistant',
+        name:'Rowen Letham',
+        role:'Production Assistant',
         institution:'New College Lanarkshire',
         link:'https://www.nclanarkshire.ac.uk/',
         text:'Murray delivered two excellent Masterclass sessions for our Dancers & Musical Theatre students. Everything was so professional & organised from our first contact right through to the delivery of the class. All levels of performers were considered throughout & Murray adapted the choreography where needed. There was a variety of dance styles covered as well as singing sessions for our Musical Theatre performers. The time taken with each students was excellent & Murray used his wealth of industry knowledge to provide them with invaluable advice. The Q&A session was so informative, it was relaxed & no questions were disregarded, giving the students an opportunity to open up & really inquire about the industry. We could not recommend Murray enough & look forward to welcoming him back in the next academic year.',
