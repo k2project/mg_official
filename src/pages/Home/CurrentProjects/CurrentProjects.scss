@@ -112,7 +112,9 @@
 }
 //max 768
 @include mobile{
-
+    .CurrentProjects{
+        margin-top: -7rem;
+    }
     .projects{
         // border: solid 1px red;
         grid-template-columns: 1fr 1fr;

@@ -2,7 +2,7 @@
 
 .EndorsementsList{
     display: grid;
-    padding: 0rem 0 10rem;
+    padding: 0rem 0 7rem;
     text-align: center;
     font-size: 1.3rem;
     .btn{
@@ -51,6 +51,9 @@
 }
 //max 1024
 @include tablet{
+    .EndorsementsList{
+        padding-bottom: 7rem;
+    }
     .EndorsementsList__quotes{
         grid-template-columns: 1fr;
     }
@@ -60,8 +63,11 @@
 }
 //max 768
 @include mobile{
+    .EndorsementsList{
+        padding-bottom: 5rem;
+    }
     .EndorsementsList__quotes{
-        width: 90%;
+        width: 98%;
     }
     .quote{
         padding: 3rem;
@@ -69,5 +75,11 @@
 }
 // max 480
 @include mobile-sm{
+    .EndorsementsList__quotes{
+        width: 100%;
+    }
+    .quote{
+        padding: 3rem 2rem;
+    }
 
 }

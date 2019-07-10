@@ -201,7 +201,11 @@ a.btn{
         }
     }
 }
-
+p{
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin: 1rem 0;
+}
 
 
 @include desktop-sm{
@@ -226,14 +230,18 @@ a.btn{
     .btn{
         width: 22rem;
     }
+    p{
+        font-size: 1.3rem;
+        margin: 1rem 0;
+    }
 }
 @include mobile{
     section{
         margin: 0 auto 2rem;
     }
     .section__body{
-        width: 80%;
-        padding-top: 10rem;
+        width: 100%;
+        padding: 10rem 5rem 7rem;
     }
     .section__title{
         font-size: 1.3rem;
@@ -262,6 +270,10 @@ a.btn{
     .mobile{
         display: none;
     }
+    p{
+        font-size: 1.2rem;
+
+    }
 }
 @media only screen and (max-width: 650px) {
     .wrapper{
@@ -284,5 +296,11 @@ a.btn{
     .section__title:after,
     .section__title:before{
         display: none;
+    }
+    .section__body{
+        padding: 8rem 3rem 5rem;
+    }
+    p{
+        text-align: justify;
     }
 }

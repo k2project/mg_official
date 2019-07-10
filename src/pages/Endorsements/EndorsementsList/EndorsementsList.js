@@ -11,7 +11,7 @@ export default function Endorsements (){
             <div className="EndorsementsList__quotes">
                 {endorsementsList}
             </div>
-            <NavLink to="/press" className="btn">In The News</NavLink>
+            {/* <NavLink to="/press" className="btn">In The News</NavLink> */}
         </section>
     )
 }

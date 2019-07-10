@@ -51,8 +51,6 @@ export default function Choreography (){
                                 Murray was also Director/Choreographer on the concert series <i>Tonight from the West End</i>, and worked with musical theatre stars Adam Garcia, Ruthie Henshall, Kerry Ellis, Christina Bianco, Ray Quinn, Zoe Tyler, Jai McDowall, Jon Lee and Louise Dearman.
                             </p>
 
-
-                            {/* <NavLink to="/home" className="btn btn_section">Other Projects</NavLink> */}
                         </div>
                     </section>
                     <Posters/>

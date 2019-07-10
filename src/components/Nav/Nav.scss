@@ -150,6 +150,7 @@
 //max 768
 @include mobile{
 .Nav{
+    top: 5rem;
     padding: 0 4rem;
     padding-left: 5rem;
 }
@@ -166,7 +167,8 @@
 @include mobile-sm{
 
     .Nav{
-        padding-left: 4rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
     }
     .Nav__brand{
         font-size: 1.8rem;
@@ -180,4 +182,5 @@
         top: calc(50% - 5.5rem);
         right: 8rem;
     }
+
 }

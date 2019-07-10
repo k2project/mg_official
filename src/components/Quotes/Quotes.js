@@ -31,36 +31,25 @@ export default function Quotes(props){
 }
 
 function displayQuotes(q){
+    const has_image = q.img? 'has_image' : '';
     return(
-        <div className="Quotes__quote cover" key={q.name}>
-
-            <p>
-                {q.name && <div className="Quotes_img">
-                    <img src={require("./../../media/imgs/rebeca.jpg")} alt='img'/>
-                    <span>
-                        <b>{q.name}</b><br/>
-                        <a href={q.link} target="_blank"><u>
-                            <i>{q.institution}</i>
-                        </u></a>
-
-                    </span>
-                    {/* {q.img && <img src={'./../../media/imgs/mg3.jpg'} alt={q.name}/>} */}
-                </div>
-                }
-                {q.show && <span>
-                    <i>{q.show}</i><br/>
-                    <b><a href={q.link} target="_blank"><u>
-                        {q.institution}
-                    </u></a></b>
-                </span>
-
-                }
-
-
-            </p>
-            <div className="Quotes__text">
-                {q.text}
+        <div className={"Quotes__quote cover "+has_image} key={q.name}>
+            <div className="Quote__text">
+                <p>{q.text}</p>
             </div>
+            <div className="Quote__contributor">
+                {q.img && <img src={require("./../../media/imgs/"+q.img)} alt={q.name} className="Quote__img"/>}
+                <p>
+                    {q.name && <b>{q.name}<br/></b>}
+                    {q.show && <i>{q.show}<br/></i>}
+                    {q.institution && <a href={q.link} target="_blank"><u>
+                        <i>{q.institution}</i>
+                    </u></a>}
+
+                </p>
+
+            </div>
+
         </div>
     )
 }

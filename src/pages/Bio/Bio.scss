@@ -2,23 +2,34 @@
 
 .Bio{
     .Page__top{
-        height: 60rem;
         background-image: url('./../../media/imgs/mg3.jpg');
         background-size: cover;
         background-position: center 70%;
-        -webkit-filter: grayscale(20%); /* Safari 6.0 - 9.0 */
-        filter: grayscale(20%);
     }
-    .Page__top .cover{
-    }
+
 }
-@include mobile{
+.About{
+
+    p:first-of-type{
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+
+}
+@include tablet{
 
     .Bio .Page__top{
         background-image: url('./../../media/imgs/mg3.mob.jpg');
         background-size: cover;
-        background-position: center ;
-        // -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-        // filter: grayscale(100%);
+        background-position: center;
+
+    }
+    .About{
+
+        p:first-of-type{
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+
     }
 }

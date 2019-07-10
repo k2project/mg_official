@@ -48,11 +48,11 @@
         transition: .25s;
         opacity: 1;
     }
-    p{
-        margin: 0 0 .5rem;
-        font-size: 1.4rem;
-        line-height: 1.6;
-    }
+    // p{
+    //     margin: 0 0 .5rem;
+    //     font-size: 1.4rem;
+    //     line-height: 1.6;
+    // }
     .btn{
         font-size: 1.2rem;
         color: $color_theme;
@@ -114,7 +114,7 @@
 
 }
 .projects__past_desc{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: #fff;
     width: 70rem;
     margin: 4rem auto 0;

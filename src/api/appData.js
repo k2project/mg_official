@@ -38,7 +38,7 @@ const biography = {
     topContent : {
         title:'Getting To Know Murray',
         subtitle:'Professional Background',
-        content:null
+        content:(<NavLink to="/contact"><div className="btn">Get In Touch</div></NavLink>),
     },
 }
 const choreography = {
@@ -98,7 +98,7 @@ const endorsements = {
     topContent : {
         title:"What They Say...",
         subtitle:'Industry Endorsements',
-        content: null,
+        content: (<NavLink to="/press"><div className="btn">In The News</div></NavLink>),
     },
 }
 const press = {
@@ -116,7 +116,7 @@ const press = {
         title:'In The News',
         title:'Making Headlines',
         subtitle:'Press release',
-        // content:(<NavHashLink to="/contact#press"><div className="btn">Press Enquiries</div></NavHashLink>),
+        content:(<NavHashLink to="/contact#media_enquiries"><div className="btn">Media Enquiries</div></NavHashLink>),
     },
 }
 const contact = {

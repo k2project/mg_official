@@ -132,13 +132,14 @@ a.details__btn{
         display: grid;
         align-content: center;
         text-align: center;
-        border: solid .1rem #6f6f6f;
+        // border: solid .1rem #6f6f6f;
         margin: .2rem;
 
     }
     div:hover{
-        background: #6f6f6f;
+        // background: #6f6f6f;
         color: $color_darker;
+        background: $color_theme;
         cursor: pointer;
     }
 }
@@ -303,6 +304,9 @@ a.details__btn{
         grid-auto-rows: 4rem;
         grid-template-columns: 4rem 4rem 4rem;
         font-size: 1.8rem;
+        div{
+            border: none;
+        }
 
     }
     .projectsDetails__nav_lft{
@@ -320,9 +324,7 @@ a.details__btn{
     .projectDetails.cover{
         padding: 5rem 4rem;
     }
-    .details__name{
-        font-size: 1.8rem;
-    }
+
     .details__role{
         font-size: 1.4rem;
     }

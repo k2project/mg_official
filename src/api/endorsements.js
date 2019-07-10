@@ -87,13 +87,15 @@ export const masterclassQuotes = [
         name:'Rowen Letham - Production Assistant',
         institution:'New College Lanarkshire',
         link:'https://www.nclanarkshire.ac.uk/',
-        text:'Murray delivered two excellent Masterclass sessions for our Dancers & Musical Theatre students. Everything was so professional & organised from our first contact right through to the delivery of the class. All levels of performers were considered throughout & Murray adapted the choreography where needed. There was a variety of dance styles covered as well as singing sessions for our Musical Theatre performers. The time taken with each students was excellent & Murray used his wealth of industry knowledge to provide them with invaluable advice. The Q&A session was so informative, it was relaxed & no questions were disregarded, giving the students an opportunity to open up & really inquire about the industry. We could not recommend Murray enough & look forward to welcoming him back in the next academic year.'
+        text:'Murray delivered two excellent Masterclass sessions for our Dancers & Musical Theatre students. Everything was so professional & organised from our first contact right through to the delivery of the class. All levels of performers were considered throughout & Murray adapted the choreography where needed. There was a variety of dance styles covered as well as singing sessions for our Musical Theatre performers. The time taken with each students was excellent & Murray used his wealth of industry knowledge to provide them with invaluable advice. The Q&A session was so informative, it was relaxed & no questions were disregarded, giving the students an opportunity to open up & really inquire about the industry. We could not recommend Murray enough & look forward to welcoming him back in the next academic year.',
+        img:'rebeca.jpg',
     },
     {
         name:'Elizabeth Ennis',
         institution:'Westside Stage School Director',
         link:'http://www.westsidestageschool.ie',
-        text:'Murray has been teaching his masterclasses here at Westside for a number of years. His knowledge, passion and enthusiasm for the industry is an invaluable experience for our students. His professionalism, caring and high energy in the studio not only brings out the best of each dancer but encourages them to push out of their comfort zone and improve not only their technical ability but also their performance ability. The opportunity to work with Murray is one of the highlights of the term for Westside Students.'
+        text:'Murray has been teaching his masterclasses here at Westside for a number of years. His knowledge, passion and enthusiasm for the industry is an invaluable experience for our students. His professionalism, caring and high energy in the studio not only brings out the best of each dancer but encourages them to push out of their comfort zone and improve not only their technical ability but also their performance ability. The opportunity to work with Murray is one of the highlights of the term for Westside Students.',
+        img:'rebeca.jpg',
     },
 
 
@@ -106,6 +108,7 @@ export const choreographyQuotes = [
         link:'http://www.alledinburghtheatre.com/review-the-producers/',
         show:'The Producers',
         text:'Choreographer Murray Grant’s contributions are seamless, they’ve wrangled their triple-threat charges to fantastic effect. The show never stops moving and it never stops being superb.'
+
     },
     {
         institution:'The Scotsman',

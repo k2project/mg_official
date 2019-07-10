@@ -4,7 +4,7 @@
     background: none;
     text-align: center;
     .btn_btm{
-        margin: 7rem auto 5rem;
+        margin: 5rem auto 3rem;
     }
 }
 
@@ -409,6 +409,13 @@ article.open{
         }
     }
 
+    .article__link{
+        margin-top: 4rem;
+    }
+    .Articles .btn_btm{
+        margin: 3rem auto;
+    }
+
 }
 // max 480
 @include mobile-sm{
@@ -418,6 +425,9 @@ article.open{
     }
     .article__heading{
         padding-left: 4rem;
+        p{
+            text-align: left;
+        }
 
     }
 
@@ -434,8 +444,10 @@ article.open{
         }
     }
     .article__body{
-        padding: 4rem;
-        padding-right: 3rem;
+        padding: 4rem 3rem;
+        p{
+            margin-bottom: 0;
+        }
     }
     .Articles_others{
         article.open{
@@ -447,5 +459,11 @@ article.open{
                     padding: 5rem 4rem 8rem;
             }
         }
+    }
+    .article__title{
+        font-size: 2rem;
+    }
+    .article__subtitle{
+        font-size: 1.3rem;
     }
 }

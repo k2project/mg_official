@@ -13,33 +13,35 @@
             opacity: .7;
         }
     }
-    b{
-        font-size: 2.4rem;
-        line-height: 2;
-        top: -1rem;
-    }
+
     .section__title{
-        margin-top: 5rem;
+        margin-top: 6rem;
         margin-bottom: 1.5rem;
     }
     .section__title:first-child{
-        margin-top: 0;
+        margin-top: 3rem;
     }
 
 
 }
 .Contact .Page__top{
     color: #e5e5e5;
+    height: 50rem;
 }
 .murrayEmail{
-    font-size: 2.6rem;
+    font-size: 2.4rem;
+    margin-top: 0;
+}
+.jennyMcLean{
+    font-size: 1.8rem;
 }
 .Contact__section{
     padding: 12rem 2rem;
     text-align: center;
-    font-size: 1.6rem;
-    line-height: 1.6;
     color: $color_silver;
+    p{
+        font-size: 1.6rem;
+    }
 
 
 }
@@ -67,9 +69,10 @@
 }
 //max 768
 @include mobile{
-    .Contact{
-        b{
-            font-size: 1.8rem;
+    .Contact__section{
+        padding: 8rem 2rem;
+        p{
+            text-align: center;
         }
     }
     .murrayEmail{
@@ -84,6 +87,7 @@
         }
 
     }
+
 
 
 }

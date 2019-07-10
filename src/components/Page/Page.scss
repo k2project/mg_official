@@ -1,6 +1,7 @@
 @import './../../App.scss';  //import vars and mixins
 .Page__top{
     height: 45rem;
+    height: 60rem;
     overflow: hidden;
     .cover{
         background: rgba($color_dark, .7);
@@ -126,8 +127,9 @@
 }
 @include mobile{
     .Page__top{
+        // height: 50rem;
         .cover{
-            padding-left: 6rem;
+            padding-left: 5rem;
         }
     }
     .Video{
@@ -157,5 +159,13 @@
     }
     .Page__top_subtitle{
         font-size: 1.4rem;
+    }
+    .Page__top{
+        .cover{
+            padding-left: 4rem;
+        }
+        p{
+            text-align: left;
+        }
     }
 }
