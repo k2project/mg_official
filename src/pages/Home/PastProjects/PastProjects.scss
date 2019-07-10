@@ -1,11 +1,6 @@
 @import './../../../App.scss';  //import vars and mixins
 .PastProjects{
-    // background: $color_black;
-    height: 100vh;
-    // padding-top: 10vh;
-    // margin-top: 4rem;
-    // margin:0 auto;
-    z-index: 2;
+    height: 90vh;
     .section__title{
         z-index: 3;
         color: #fff;
@@ -27,7 +22,7 @@
         position: absolute;
         width: 100%;
         text-align: center;
-        bottom: 7rem;
+        bottom: 5rem;
         z-index: 3;
     }
     li{
@@ -68,6 +63,7 @@
 
 }
 .Slideshow,
+//bg
 .Slideshow__slide,
 .Slideshow__slide_content{
     position: absolute;
@@ -76,21 +72,21 @@
     top: 0;
     left: 0;
     background-size: cover;
-    background-position: top;
+    background-position: top center;
     display: grid;
     align-content: center;
     overflow: hidden;
     text-align: center;
 }
 
-.Slideshow__slide,
-.Slideshow__slide_content{
+.Slideshow__slide{
     z-index: 1;
     opacity: 0;
     transform: scale(1.4);
     transition: 1.5s;
 }
 .Slideshow__slide_content{
+    opacity: 0;
     transition: none;
     padding-top: 7rem;
 }
@@ -98,13 +94,14 @@
 .Slideshow__slide_content.current{
     opacity: 1;
     z-index: 2;
+    top: 0;
     transform: scale(1);
     transition: 3s;
 }
 
 .projects__past_name{
     color: #fff;
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     line-height: 1;
 }
 .projects__past_role{
@@ -117,11 +114,10 @@
 
 }
 .projects__past_desc{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: #fff;
     width: 70rem;
     margin: 4rem auto 0;
-    line-height: 1.2;
 }
 .Slideshow__slide:nth-child(5){
     background-position: right;
@@ -135,40 +131,74 @@
 }
 //max 1024
 @include tablet{
+    .PastProjects{
+        height: 55rem;
+
+    }
     .Slideshow,
     .Slideshow__slide,
     .Slideshow__slide_content{
-        // height: 80rem;
-        padding: 10rem;
+        padding: 7rem 10rem 0;
+    }
+    .Slideshow ul{
+        bottom: 3rem;
     }
     .projects__past_name{
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
+    .Slideshow p,
     .projects__past_desc{
         font-size: 1.3rem;
+        // line-height: 1.2;
         width: 100%;
 
+    }
+    //customised bg slide
+    .Slideshow__slide.iabarcelona{
+        background-position: 90% top;
+    }
+
+    .Slideshow__slide.aurora{
+        background-position: 10% top;
+
+    }
+    .Slideshow__slide.zannaDont{
+        background-position: 20% top;
     }
 }
 //max 768
 @include mobile{
     .PastProjects{
-        height: 80rem;
+        height: 60rem;
     }
     .Slideshow,
     .Slideshow__slide,
     .Slideshow__slide_content{
-        padding: 7rem;
-        text-align: left;
+        padding: 7rem 5rem 0;
     }
+    .projects__past_name{
+        font-size: 2.6rem;
+    }
+    .projects__past_desc{
+        text-align: justify;
+
+    }
+    .Slideshow .btn{
+        width: 16rem;
+        left: 50%;
+        margin-left: -8rem;
+    }
+
 }
 // max 480
 @include mobile-sm{
+    .PastProjects{
+        height: 67rem;
+    }
     .Slideshow,
     .Slideshow__slide,
     .Slideshow__slide_content{
-        padding: 4rem;
-        padding-top: 10rem;
+        padding: 7rem 3rem 0;
     }
 
 }

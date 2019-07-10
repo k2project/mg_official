@@ -395,7 +395,7 @@ const zannaDont = {
         subtitle:null,
     },
     desc:(<div>
-        <p><b>Zanna, Don\'t!</b> (subtitled &quot;A Musical Fairy Tale&quot;) is a musical written by Tim Acito and with additional lyrics and material by Alexander Dinelaris</p>
+        <p>Zanna, Don't!(&quot;A Musical Fairy Tale&quot;) is a musical written by Tim Acito and with additional lyrics and material by Alexander Dinelaris</p>
         <p>Produced at Edinburgh Fringe 2015 for the graduating students of The MGA Academy of Performing Arts. Zanna Don’t ran for the full 3 weeks of the fringe and was a sell-out production. This production was choreographed by Murray Grant, directed by Andrew Gowland and Musically directed by Greg Davidson, it received many 5-star reviews along with a ‘Highly Recommended show’ from the fringe review.</p>
     </div>),
     links:null,

@@ -18,7 +18,7 @@ export default function Quotes(props){
     return(
         <section className="Quotes">
             <div className="section__body">
-                <img src={quotes} alt="quotes"/>
+                <img src={quotes} alt="quotes" className="Quotes__quoteIMG"/>
                 <div className="Quotes__slider">
                     {quotesList}
                     <ul>
@@ -33,16 +33,19 @@ export default function Quotes(props){
 function displayQuotes(q){
     return(
         <div className="Quotes__quote cover" key={q.name}>
-            <div className="Quotes__text">
-                {q.text}
-            </div>
+
             <p>
-                {q.name && <span>
-                    <b>{q.name}</b><br/>
-                    <a href={q.link} target="_blank"><u>
-                        <i>{q.institution}</i>
-                    </u></a>
-                </span>
+                {q.name && <div className="Quotes_img">
+                    <img src={require("./../../media/imgs/rebeca.jpg")} alt='img'/>
+                    <span>
+                        <b>{q.name}</b><br/>
+                        <a href={q.link} target="_blank"><u>
+                            <i>{q.institution}</i>
+                        </u></a>
+
+                    </span>
+                    {/* {q.img && <img src={'./../../media/imgs/mg3.jpg'} alt={q.name}/>} */}
+                </div>
                 }
                 {q.show && <span>
                     <i>{q.show}</i><br/>
@@ -55,6 +58,9 @@ function displayQuotes(q){
 
 
             </p>
+            <div className="Quotes__text">
+                {q.text}
+            </div>
         </div>
     )
 }

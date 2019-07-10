@@ -54,7 +54,7 @@ function Slideshow(){
 
         const bg=require('./../../../media/imgs/'+slide.imgs.bg);
         return (
-            <div className="Slideshow__slide"
+            <div className={"Slideshow__slide "+slide.cls}
                 key={`slideshow_slide_${slide.projectName.name}`}
                 style ={ { backgroundImage: "url("+bg+")" } }></div>
         )
