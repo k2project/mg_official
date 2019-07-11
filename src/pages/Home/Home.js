@@ -15,13 +15,15 @@ import Clients from './Clients/Clients';
 export default function Home (){
     const [showAllSections, setShowAllSections] = useState(false);
     useEffect(()=>{
+        //if there's no name anim timeout = 1000
+        const t = document.documentElementClientWidth> 768 ? 3500 : 1500;
         const initAnim = sessionStorage.getItem('initAnim');
         if(initAnim){
             setShowAllSections(true);
         }else{
             setTimeout(()=>{
                 setShowAllSections(true);
-            },3500)
+            },t)
             sessionStorage.setItem('initAnim', 'true');
         }
     });

@@ -59,11 +59,15 @@
 //
 // }
 
-.projects:hover .project__logo{
-    opacity: .3;
-}
+// .projects:hover .project__logo{
+//     opacity: .3;
+//
+//
+//
+// }
 .project:hover .project__logo{
-    opacity: 1;
+    transform: scale(1.1);
+    transition: .25s ease-in;
 }
 // .projects:hover .project:hover{
 //      // opacity: 0;

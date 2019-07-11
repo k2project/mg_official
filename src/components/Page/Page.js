@@ -36,24 +36,13 @@ export default function Page(props){
 function Video (props){
     const {path, sound} = props.video;
 
-    const [soundOn, setSound] = useState(true);
-    function toggleSound(){
-        const vid = document.getElementById("page-video");
-        if(soundOn){
-            setSound(false);
-            vid.muted = true;
-            sessionStorage.setItem('videoSound','off');
-        }
-        if(!soundOn){
-            setSound(true);
-            vid.muted = false;
-            sessionStorage.setItem('videoSound','on');
-        }
-    }
+    const [soundOn, setSound] = useState(false);
     const [videoLoading, setVideoLoading] = useState(true);
+
     useEffect(()=>{
         const vid = document.getElementById("page-video");
         //animate video on load
+
         vid.onloadeddata = function() {
             setVideoLoading(false);
             vid.classList.add('show');
@@ -62,6 +51,7 @@ function Video (props){
         //set the sound controls
         //mute when video out of viewport
         if(sound){
+            //setting mute video onload
             setSound(setVideoSounInSessionStorage(vid));
             document.addEventListener('scroll', muteVideoOnScroll)
             document.addEventListener('resize', muteVideoOnScroll)
@@ -69,7 +59,9 @@ function Video (props){
         return ()=>{
             document.removeEventListener('scroll', muteVideoOnScroll)
             document.removeEventListener('resize', muteVideoOnScroll)
+
         }
+
     })
     return(
         <div className="Video">
@@ -77,12 +69,25 @@ function Video (props){
             <video loop autoPlay id="page-video">
                  <source src={require('./../../media/videos/'+path)} type="video/mp4" />
             </video>
-            {sound && <div className="video_ctrl_sound" onClick={toggleSound}>
+            {sound && <div className="video_ctrl_sound" onClick={()=>toggleSound(soundOn, setSound)}>
                 {soundOn && <img src={soundIsOn} alt="sound on"/>}
                 {!soundOn && <img src={soundIsOff} alt="sound off"/>}
             </div>}
         </div>
     )
+}
+function toggleSound(soundOn, setSound){
+    const vid = document.getElementById("page-video");
+    if(soundOn){
+        setSound(false);
+        vid.muted = true;
+        sessionStorage.setItem('videoSound','off');
+    }
+    if(!soundOn){
+        setSound(true);
+        vid.muted = false;
+        sessionStorage.setItem('videoSound','on');
+    }
 }
 
 function muteVideoOnScroll(){
@@ -99,10 +104,11 @@ function muteVideoOnScroll(){
 function setVideoSounInSessionStorage(vid){
     const videoSound = sessionStorage.getItem('videoSound');
     //return boolen value for useState->soundOn on load
+    //set mute on load
     if(!videoSound){
-        sessionStorage.setItem('videoSound','on');
-        vid.muted = false;
-        return true;
+        sessionStorage.setItem('videoSound','off');
+        vid.muted = true;
+        return false;
     }else{
         if(videoSound === 'on'){
             vid.muted = false;

@@ -86,7 +86,7 @@ const edinburghReporterOnTheCoreLaunch = {
     link:'https://www.theedinburghreporter.co.uk/2018/12/the-core-now-open-in-stockbridge-for-would-be-performers/',
     img:{
         path:'edinburghReporterOnTheCoreLaunch.jpg',
-        caption:(<span>Murray Grant and Drew Gowland have opened The Core to raise funds for the MGA Foundation.  <br/><small>Picture:  Neil Hanna.</small></span>)
+        caption:(<span>Murray Grant and Drew Gowland have opened The Core to raise funds for the MGA Foundation.</span>)
     },
     text:(<div className="article__text">
         <p>This is a drop in café in the style of an airport lounge and it is now ready to welcome you if you just fancy a coffee or would-be performers who can go in and get career advice if they need it.</p>

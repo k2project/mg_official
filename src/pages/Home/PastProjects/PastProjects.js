@@ -63,8 +63,10 @@ function Slideshow(){
         return (
             <div key={`slideshow_slide_content_${slide.projectName.name}`}
                 className="Slideshow__slide_content">
-                <div className="projects__past_role">{slide.role.title}</div>
-                <div className="projects__past_name font_themed">{slide.projectName.name}</div>
+                <div>
+                    <div className="projects__past_role">{slide.role.title}</div>
+                    <div className="projects__past_name font_themed">{slide.projectName.name}</div>
+                </div>
                 <div className="projects__past_desc">{slide.desc}</div>
 
             </div>

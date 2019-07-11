@@ -42,7 +42,8 @@
     position: absolute;
 
 }
-.chrisStapelberg{
+.TellyLeung,
+.ChrisStapelberg{
     grid-column: span 2;
 }
 @include desktop-sm{
@@ -67,16 +68,22 @@
         padding-bottom: 5rem;
     }
     .EndorsementsList__quotes{
-        width: 98%;
+        width: 96%;
+        overflow: hidden;
     }
     .quote{
         padding: 3rem;
+        margin:0 0 2rem;
     }
 }
 // max 480
 @include mobile-sm{
+    .EndorsementsList{
+        padding:0 1rem 5rem;
+    }
     .EndorsementsList__quotes{
         width: 100%;
+
     }
     .quote{
         padding: 3rem 2rem;

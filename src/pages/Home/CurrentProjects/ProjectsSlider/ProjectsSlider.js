@@ -50,6 +50,8 @@ function displayProjectLayout(project){
                     <p className="details__name">{projectName.name}</p>
                     <p className="details__role color_themed">{role.title}</p>
                     {role.subtitle && <p className="details__subrole color_themed">{role.subtitle}</p>}
+                </div>
+                <div>
                     <p className="details__desc">{desc}</p>
                 </div>
                 <div>

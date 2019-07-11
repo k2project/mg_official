@@ -31,7 +31,7 @@ const natalieWeiss = {
     text:'Murray produced my entire European tour.  He is extremely efficient and detail-oriented during the booking process.  His budgeting and negotiating skills are unparalleled and you can always rely on him to respond in a timely manner.'
 }
 const chrisStapelberg = {
-    cls:'chrisStapelberg',
+    cls:'ChrisStapelberg',
     name:'Chris Stapelberg',
     title:'Director of SA Dance Talent ',
     link:'http://dancestar.co.za/',
@@ -62,6 +62,7 @@ const SteveLeatham = {
     text:'We work closely with Murray in a number of ways, as a leading industry creative, his skills, imagination and personality help us bring our theatrical projects to life through stunning direction and choreography. He also works as an ambassador for ted, delivering interactive workshops at the foremost performing arts colleges around the world. As an artistic expert he helps build relationships for us, with the highest calibre of performers and creatives from the US and UK theatre and entertainment scene. Finally, he is a joy to have as part of the wider creative team.'
 }
 const TellyLeung  = {
+    cls:'TellyLeung',
     name:'Telly Leung',
     title:'Performer &Producer',
     link:'http://www.tellyleung.com/',
@@ -71,24 +72,49 @@ const TellyLeung  = {
     },
     text:'I had a wonderful time collaborating with Murray Grant as both a producer and fellow educator of the arts. I was thrilled to get the opportunity to work with his students in Edinburgh - and he and his team at MGA are doing incredible work with the students as they venture into the professional world of show business. I also appreciate his passion for bringing Broadway artists to the UK as part of a mutually-fulfilling cultural exchange of ideas. His passion for bringing the arts to his hometown of Edinburgh is contagious and inspiring. I hope to have many more collaborations with Murray in the future.'
 }
+const ValerieFairnie  = {
+    name:'Valerie Fairnie',
+    title:'Events Manager, Bailie Gifford & Co',
+    link:'https://www.bailliegifford.com/en/uk/about-us/',
+    country:{
+        name:'United Kingdom',
+        flag:'uk.png'
+    },
+    text:'I love working with Murray for the passion, drive and energy he brings to every job.  Over the past 10 years I have worked with Murray, he has always understood my vision and exceeded my expectations.  He strives for perfection with the utmost professionalism, he is highly creative and LOTS of fun to work with.'
+}
 
 export const endorsements = [
-    christinaBianco,
-    natalieWeiss,
     markLethem,
-    sarahMilne,
-    chrisStapelberg,
     SteveLeatham,
+    chrisStapelberg,
+    natalieWeiss,
+    ValerieFairnie,
+    sarahMilne,
+    christinaBianco,
     TellyLeung,
 ];
 
 export const masterclassQuotes = [
     {
+        name:'Thomas Doherty ',
+        role:'Disney’s Descendants 2 & 3, HBO’s Catherine the Great, High Strung',
+        link:null,
+        text:'The most striking thing for me about Murray isn’t just his incredible ability as a professional dancer, or the respect I have for his extensive capability as a choreographer, but as a teacher, he has the ability to see your potential, beyond even your own ideas of what that potential might be. He has the facility and the unwavering passion to get you there - and he won’t rest until you do. Trust me.',
+        img:'imgs/doherty.jpg',
+    },
+    {
+        name:'Elizabeth Ennis',
+        role:'Westside Stage School Director',
+        // link:'http://www.westsidestageschool.ie',
+        text:'Murray has been teaching his masterclasses here at Westside for a number of years. His knowledge, passion and enthusiasm for the industry is an invaluable experience for our students. His professionalism, caring and high energy in the studio not only brings out the best of each dancer but encourages them to push out of their comfort zone and improve not only their technical ability but also their performance ability. The opportunity to work with Murray is one of the highlights of the term for Westside Students.',
+        img:'logos/ennis.jpg',
+    },
+    {
         name:'JP Costa ',
         role:'Chicago (Portuguese Tour), Godspell (Lisbon), Naked Boys Singing (Lisbon)',
         link:null,
         text:'Murray has been determinant to my personal growth and understanding of the Musical Theatre industry over the past few years. He is the type of person who believes in people’s talent, hard work and charisma. And if you are lucky enough to meet him and he believes in what you can bring to the table, then you’re in great hands. I have never met anyone so honest and this is hard to find nowadays. He is a dancer, a choreographer, a teacher, a casting director, a producer, a judge in dance competitions. And you can only achieve this much when you are as determined and passionate about what you do as Murray is.',
-        img:'costa.jpg',
+        img:'imgs/costa.jpg',
     },
     {
         name:'Rowen Letham',
@@ -96,22 +122,17 @@ export const masterclassQuotes = [
         institution:'New College Lanarkshire',
         // link:'https://www.nclanarkshire.ac.uk/',
         text:'Murray delivered two excellent Masterclass sessions for our Dancers & Musical Theatre students. Everything was so professional & organised from our first contact right through to the delivery of the class. All levels of performers were considered throughout & Murray adapted the choreography where needed. There was a variety of dance styles covered as well as singing sessions for our Musical Theatre performers. The time taken with each students was excellent & Murray used his wealth of industry knowledge to provide them with invaluable advice. The Q&A session was so informative, it was relaxed & no questions were disregarded, giving the students an opportunity to open up & really inquire about the industry. We could not recommend Murray enough & look forward to welcoming him back in the next academic year.',
-        img:'noImg.jpg',
+        img:'logos/rowenLetham.jpg',
     },
+
     {
-        name:'Elizabeth Ennis',
-        role:'Westside Stage School Director',
+        name:'Rebecca Stenhouse',
+        role:'Legally Blonde (UK Tour), Grease (European Arena Tour), Rock of Ages (NCL)',
         // link:'http://www.westsidestageschool.ie',
-        text:'Murray has been teaching his masterclasses here at Westside for a number of years. His knowledge, passion and enthusiasm for the industry is an invaluable experience for our students. His professionalism, caring and high energy in the studio not only brings out the best of each dancer but encourages them to push out of their comfort zone and improve not only their technical ability but also their performance ability. The opportunity to work with Murray is one of the highlights of the term for Westside Students.',
-        img:'rebeca.jpg',
+        text:'I wouldn\'t be where I am today without Murray. He taught me so many valuable lessons about being a performer. He will always push you to be the best you can be and make you have fun while doing it.',
+        img:'imgs/rebeca.jpg',
     },
-    {
-        name:'Thomas Doherty ',
-        role:'Disney’s Descendants 2 & 3, HBO’s Catherine the Great, High Strung',
-        link:null,
-        text:'The most striking thing for me about Murray isn’t just his incredible ability as a professional dancer, or the respect I have for his extensive capability as a choreographer, but as a teacher, he has the ability to see your potential, beyond even your own ideas of what that potential might be. He has the facility and the unwavering passion to get you there - and he won’t rest until you do. Trust me.',
-        img:'doherty.jpg',
-    },
+
 
 
 ]

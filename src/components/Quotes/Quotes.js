@@ -38,7 +38,7 @@ function displayQuotes(q){
                 <p>{q.text}</p>
             </div>
             <div className="Quote__contributor">
-                {q.img && <img src={require("./../../media/imgs/"+q.img)} alt={q.name} className="Quote__img"/>}
+                {q.img && <img src={require("./../../media/"+q.img)} alt={q.name} className="Quote__img"/>}
                 <p>
                     {q.name && <b>{q.name}<br/></b>}
                     {q.role &&<span> {q.role}<br/></span>}
