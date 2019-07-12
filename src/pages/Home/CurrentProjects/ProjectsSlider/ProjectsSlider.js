@@ -146,7 +146,6 @@ function handleTouchMove(e,  currentIndex, setCurrentIndex) {
 
     if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {
         if ( xDiff > 0 ) {
-            console.log('swiping rght')
             slideToRight(currentIndex,setCurrentIndex)
         } else {
             slideToLeft(currentIndex,setCurrentIndex)

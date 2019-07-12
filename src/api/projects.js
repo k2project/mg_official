@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const beyondBroadwayProduction = {
     cls:'beyondBroadwayProduction',
     current:true,
@@ -251,7 +252,27 @@ const theCore= {
 //              PAST PROJECTS
 //=============================================
 //=============================================
-
+const BeyondBroadwayPresents = {
+    cls:'BeyondBroadwayPresents',
+    current:false,
+    projectName:{
+        display:false,
+        name:'Beyond Broadway Presents…',
+    },
+    imgs:{
+        bg:'BeyondBroadwayPresents.jpg',
+        logo:null,
+    },
+    role:{
+        title:'Producer & Creative Director',
+        subtitle:null,
+    },
+    desc:(<div>
+        <p>Beyond Broadway Productions has spent the last four years producing masterclasses and cabarets with talent from West End to Broadway.</p>
+        <p> Guests in Edinburgh have included  Shoshana Bean, Jeremy Jordan, Katie Thomson, Natalie Weiss, Yanis Marshall, Adam Garcia, Kerry Ellis, Nikki Snelson, Telly Leung and many more.</p>
+    </div>),
+    links:null,
+}
 const theBourbonStreetBoys= {
     cls:'theBourbonStreetBoys',
     current:false,
@@ -332,7 +353,7 @@ const bestOfMusicalStarNights= {
         subtitle:null,
     },
     desc:(<div>
-        <p>Best of Musicals is a high energy review show with songs from some of the worlds best musicals including Chicago, Elisabeth, Hairspray, Wicked, Tanz der Vampire. Over the years the show has travelled to Austria, Germany, Denmark, Italy, Switzerland and many more.</p>
+        <p>Best of Musicals is a high energy review show with songs from some of the worlds best musicals including <i>Chicago, Elisabeth, Hairspray, Wicked, Tanz der Vampire</i>. Over the years the show has travelled to Austria, Germany, Denmark, Italy, Switzerland and many more.</p>
     </div>),
     links:null,
 }
@@ -353,7 +374,7 @@ const iba= {
         subtitle:null,
     },
     desc:(<div>
-        <p>The Institute of the Arts is an international conservatoire. A leader in performing arts education and training offering courses in Acting, Dance, Musical Theatre, Music, Aerial Arts, Physical Theatre and Postgraduate.</p>
+        <p>The Institute of the Arts is an international conservatoire. IAB is a leader in performing arts education and training offering courses in Acting, Dance, Musical Theatre, Music, Aerial Arts, Physical Theatre and Postgraduate.</p>
         <p><a href="https://www.iabarcelona.com/" target="_blank" rel="noopener noreferrer" className="btn">Website</a></p>
     </div>),
     links:null,
@@ -374,8 +395,9 @@ const aurora = {
         subtitle:null,
     },
     desc:(<div>
-        <p>P&amp;O Cruises is a British cruise lines which over the years has had many suppliers for entertainment. Murray was guest creative working for Cruising Musicals Consortium. He directed 2 shows onboard their beautiful ship Aurora.</p>
-        <p>Murray sailed from San Francisco to Sydney working on the show <b><i>“Carnaby Street Capers” </i></b> followed by Mumbai to Southampton with the show <b><i>“The Phantom of the Pop’era”</i></b>.</p>
+        <p>Murray was a guest creative working for Cruising Musicals Consortium, suppliers of entertainment to British cruise line P&O. He directed two shows onboard the beautiful ship Aurora. Murray sailed from San Francisco to Sydney working on <i>Carnaby Street Capers</i>, followed by Mumbai to Southampton with the show The <i>Phantom of the Pop’era.</i></p>
+        {/* <p>P&amp;O Cruises is a British cruise lines which over the years has had many suppliers for entertainment. Murray was guest creative working for Cruising Musicals Consortium. He directed 2 shows onboard their beautiful ship Aurora.</p>
+        <p>Murray sailed from San Francisco to Sydney working on the show <b><i>“Carnaby Street Capers” </i></b> followed by Mumbai to Southampton with the show <b><i>“The Phantom of the Pop’era”</i></b>.</p> */}
     </div>),
     links:null,
 }
@@ -395,31 +417,14 @@ const zannaDont = {
         subtitle:null,
     },
     desc:(<div>
-        <p>Zanna, Don't!(&quot;A Musical Fairy Tale&quot;) is a musical written by Tim Acito and with additional lyrics and material by Alexander Dinelaris</p>
-        <p>Produced at Edinburgh Fringe 2015 for the graduating students of The MGA Academy of Performing Arts. Zanna Don’t ran for the full 3 weeks of the fringe and was a sell-out production. This production was choreographed by Murray Grant, directed by Andrew Gowland and Musically directed by Greg Davidson, it received many 5-star reviews along with a ‘Highly Recommended show’ from the fringe review.</p>
+        <p><i>Zanna, Don’t!</i> - a musical written by Tim Acito and with additional lyrics and material by Alexander Dinelaris - was produced at Edinburgh Fringe 2015 with graduating students of The MGA Academy of Performing Arts.</p>
+        <p> <i>Zanna Don’t!</i> ran for the full duration of the Fringe and was a sell-out production. It received many five-star reviews along with a ‘Highly Recommended Show’ from the Fringe Review. It was choreographed by Murray Grant, directed by Andrew Gowland with musical direction by Greg Davidson.</p>
+        {/* <p>Zanna, Don't!(&quot;A Musical Fairy Tale&quot;) is a musical written by Tim Acito and with additional lyrics and material by Alexander Dinelaris</p>
+        <p>Produced at Edinburgh Fringe 2015 for the graduating students of The MGA Academy of Performing Arts. Zanna Don’t ran for the full 3 weeks of the fringe and was a sell-out production. This production was choreographed by Murray Grant, directed by Andrew Gowland and Musically directed by Greg Davidson, it received many 5-star reviews along with a ‘Highly Recommended show’ from the fringe review.</p> */}
     </div>),
     links:null,
 }
-const BeyondBroadwayPresents = {
-    cls:'BeyondBroadwayPresents',
-    current:false,
-    projectName:{
-        display:false,
-        name:'Beyond Broadway Presents…',
-    },
-    imgs:{
-        bg:'BeyondBroadwayPresents.jpg',
-        logo:null,
-    },
-    role:{
-        title:'Producer & Creative Director',
-        subtitle:null,
-    },
-    desc:(<div>
-        <p>Beyond Broadway Productions has spent the last 4 years producing Masterclasses and cabaret’s with talent from West End to Broadway. Some of the talent that have had in Edinburgh is Shoshana Bean, Jeremy Jordan, Katie Thomson, Natalie Weiss, Yanis Marshall, Adam Garcia, Kerry Ellis, Nikki Snelson, Telly Leung and many more.</p>
-    </div>),
-    links:null,
-}
+
 const tonight = {
     cls:'tonight',
     current:false,

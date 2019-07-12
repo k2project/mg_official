@@ -13,11 +13,12 @@ export default function PastProjects (){
 
 function Slideshow(){
     const [currentSlide, setCurrentSlide] = useState(0);
+    const t = 10000;
     let setSlideshowTimeout;
     function handleSlideChange(index){
         setCurrentSlide(index);
         clearTimeout(setSlideshowTimeout);
-        runSlideshow();
+        // runSlideshow();
     }
     function runSlideshow(){
 
@@ -44,11 +45,20 @@ function Slideshow(){
             ctrlsArr[next].classList.add('current');
 
             setCurrentSlide(next)
-        },8000);
+        },t);
+    }
+    function stopSlideshow(){
+        clearTimeout(setSlideshowTimeout);
     }
     useEffect(()=>{
         runSlideshow();
-        return()=>clearTimeout(setSlideshowTimeout);
+        // document.querySelector('.PastProjects').addEventListener('mouseenter',stopSlideshow)
+        // document.querySelector('.PastProjects').addEventListener('mouseleave', runSlideshow)
+        return ()=>{
+            stopSlideshow();
+            // document.querySelector('.PastProjects').removeEventListener('mouseenter',stopSlideshow)
+            // document.querySelector('.PastProjects').removeEventListener('mouseleave', runSlideshow)
+        }
     })
     const slidesBg = pastProjectsSlides.map((slide, index)=>{
 
