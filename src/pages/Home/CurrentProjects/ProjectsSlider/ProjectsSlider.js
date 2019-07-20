@@ -3,19 +3,27 @@ import { NavLink } from 'react-router-dom';
 
 import './ProjectsSlider.scss';
 import {currentProjects} from './../../../../api/projects';
+import {swippingCTRL} from './../../../../api/funs';
 
 import facebook from './../../../../media/icons/facebook.png';
 import twitter from './../../../../media/icons/twitter.png';
 import instagram from './../../../../media/icons/instagram.png';
 
 //for swipping
-var xDown = null;
-var yDown = null;
+let xDown = null;
+let yDown = null;
 export default function ProjectsSlider ( props ){
     const {index, setProjectIndex} = props;
     const [currentIndex, setCurrentIndex] = useState(index);
 
     useEffect(()=>{
+        //sipping fun for current project slider
+        // const cpsCTRL = new swippingCTRL(document.querySelector('.projectDetails'),currentProjects,currentIndex,setCurrentIndex);
+        // document.addEventListener('touchstart', cpsCTRL.handleTouchStart);
+        // document.addEventListener('touchmove',e=>cpsCTRL.handleTouchMove(e,currentIndex, setCurrentIndex));
+
+
+
         const handleKeyDown = function(e){
             slideProjectsListUsingArrowsKeys(e,currentIndex,setCurrentIndex);
         }
@@ -123,13 +131,8 @@ function slideProjectsListUsingArrowsKeys(e, currentIndex, setCurrentIndex){
 
 }
 //handle swipping
-function getTouches(e) {
-  return e.touches ||             // browser API
-         e.originalEvent.touches; // jQuery
-}
-
 function handleTouchStart(e) {
-    const firstTouch = getTouches(e)[0];
+    const firstTouch = e.touches[0] || e.originalEvent.touches[0];
     xDown = firstTouch.clientX;
     yDown = firstTouch.clientY;
 };
@@ -138,11 +141,11 @@ function handleTouchMove(e,  currentIndex, setCurrentIndex) {
         return;
     }
 
-    var xUp = e.touches[0].clientX;
-    var yUp = e.touches[0].clientY;
+    let xUp = e.touches[0].clientX;
+    let yUp = e.touches[0].clientY;
 
-    var xDiff = xDown - xUp;
-    var yDiff = yDown - yUp;
+    let xDiff = xDown - xUp;
+    let yDiff = yDown - yUp;
 
     if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {
         if ( xDiff > 0 ) {

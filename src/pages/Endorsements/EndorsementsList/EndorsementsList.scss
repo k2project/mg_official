@@ -55,11 +55,14 @@
     .EndorsementsList{
         padding-bottom: 7rem;
     }
-    .EndorsementsList__quotes{
-        grid-template-columns: 1fr;
-    }
-    .chrisStapelberg{
-        grid-column: span 1;
+    // .EndorsementsList__quotes{
+    //     grid-template-columns: 1fr;
+    // }
+    // .chrisStapelberg{
+    //     grid-column: span 1;
+    // }
+    .quote{
+        grid-column: span 2;
     }
 }
 //max 768

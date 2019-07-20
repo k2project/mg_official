@@ -96,6 +96,13 @@ export const endorsements = [
 
 export const masterclassQuotes = [
     {
+        name:'Tracy Baxter',
+        role:'Industry Coordinator at the Hammond',
+        link:'https://www.thehammondschool.co.uk/',
+        text:'A fabulous masterclass and an excellent insight into the Industry. The students where challenged and came away with so much experience and knowledge which is so important in their training. Murray really put them through their paces in a very encouraging manner and the advice her gave them both individually and as a year group was fantastic. We cannot wait to welcome Murray back again at the Hammond.  A true professional who knows the Industry and knows what skills the students need in order to succeed once they have graduated.',
+        img:'logos/theHammondLogo.png',
+    },
+    {
         name:'Thomas Doherty ',
         role:'Disney’s Descendants 2 & 3, HBO’s Catherine the Great, High Strung',
         link:null,

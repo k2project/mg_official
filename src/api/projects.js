@@ -289,8 +289,10 @@ const theBourbonStreetBoys= {
         subtitle:null,
     },
     desc:(<div>
-        <p>The Bourbon Street Boys are a slick, sassy and soulful Motown trio that will leave you feeling exhilarated by their explosive blend of electrifying music spanning soul, jazz, Motown, doo-wop and swing classes.</p>
-        <p>Their soaring emotion and roof-raising energy will have you dancing in your seats and dancing in the streets to the songs that you know and love!</p>
+        {/* <p>The Bourbon Street Boys are a slick, sassy and soulful Motown trio that will leave you feeling exhilarated by their explosive blend of electrifying music spanning soul, jazz, Motown, doo-wop and swing classes.</p>
+        <p>Their soaring emotion and roof-raising energy will have you dancing in your seats and dancing in the streets to the songs that you know and love!</p> */}
+        <p>Murray co-created this slick, sassy and soulful Motown trio performing an explosive blend of electrifying music spanning soul, jazz, Motown, doo-wop and swing classes.</p>
+        <p> Bourbon Street Boys perform as a corporate entertainment and cruise guest act.</p>
         <p><a href="http://thebourbonstreetboys.com/index.php" target="_blank" rel="noopener noreferrer" className="btn">Website</a></p>
     </div>),
     links:null,
@@ -332,8 +334,10 @@ const guysSingDolls= {
         subtitle:null,
     },
     desc:(<div>
-        <p>Imagine the greatest female songs of musical theatre, movies and pop/rock fame, presented for your viewing and listening pleasure from a completely different perspective. Our supremely talented male vocalists offer you an evening of the songs they were never allowed to sing in public… until now!</p>
-        <p>Get ready to experience stunning new arrangements of classics including Dolly Parton’s ‘9 to 5’, Broadway hit ‘Wicked’ & Disney’s ‘Let it go’</p>
+        {/* <p>Imagine the greatest female songs of musical theatre, movies and pop/rock fame, presented for your viewing and listening pleasure from a completely different perspective. Our supremely talented male vocalists offer you an evening of the songs they were never allowed to sing in public… until now!</p>
+        <p>Get ready to experience stunning new arrangements of classics including Dolly Parton’s ‘9 to 5’, Broadway hit ‘Wicked’ & Disney’s ‘Let it go’</p> */}
+        <p>The greatest female songs of musical theatre, movies and pop/rock fame, presented from a completely different perspective. This show, co-created and directed by Murray, features supremely talented male vocalists performing new arrangements of classics including Dolly Parton’s <i>‘9 to 5’</i>, Wicked's <i>‘Defying Gravity’</i> and Disney’s <i>‘Frozen’</i>. Guys Sing Dolls has been performed to a sell-out crowd in two runs in the Edinburgh Fringe and is available in a distilled format for corporate, event and cruise guest entertainment. </p>
+        <p><a href="https://www.beyond-broadway.com/guys-sing-dolls/" target="_blank" rel="noopener noreferrer" className="btn">Website</a></p>
     </div>),
     links:null,
 }
@@ -354,6 +358,7 @@ const bestOfMusicalStarNights= {
     },
     desc:(<div>
         <p>Best of Musicals is a high energy review show with songs from some of the worlds best musicals including <i>Chicago, Elisabeth, Hairspray, Wicked, Tanz der Vampire</i>. Over the years the show has travelled to Austria, Germany, Denmark, Italy, Switzerland and many more.</p>
+        <p>Murray has worked on Musical Starnights for over eight years and his role included creative director, choreographer and casting associate for the show. He also acted as UK producer, dealing with contracts and production on the UK side. </p>
     </div>),
     links:null,
 }

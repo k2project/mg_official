@@ -147,15 +147,19 @@
 @include mobile-sm{
     .Masterclasses{
         .Quotes__slider{
-            height: 70rem;
+            height: 72rem;
         }
         .Quotes .section__body{
             width: 100%;
-            padding-left: 3rem;
-            padding-right: 3rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
         }
     }
     // .Quotes__quote.has_image {
     //     // padding: 13rem 2rem 0;
     // }
+    .Quotes__quote.cover.has_image {
+        // padding: 12rem 3rem 0;
+        padding: 5rem 2.5rem 0;
+    }
 }

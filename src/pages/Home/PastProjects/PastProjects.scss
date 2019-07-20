@@ -53,6 +53,7 @@
         width: 18rem;
         padding: 1rem 0;
         margin-top: 3rem;
+        z-index: 10;
     }
 
 }
@@ -98,6 +99,7 @@
 .Slideshow__slide_content.current{
     opacity: 1;
     transition: 1s;
+    z-index: 3;
 }
 
 .projects__past_name{
@@ -142,7 +144,7 @@
 //max 1024
 @include tablet{
     .PastProjects{
-        height: 55rem;
+        height: 65rem;
 
 
     }
@@ -178,7 +180,7 @@
 //max 768
 @include mobile{
     .PastProjects{
-        height: 60rem;
+        height: 67rem;
 
     }
     .Slideshow,
@@ -200,12 +202,15 @@
         left: 50%;
         margin-left: -8rem;
     }
+    .Slideshow ul{
+        bottom: 2.5rem;
+    }
 
 }
 // max 480
 @include mobile-sm{
     .PastProjects{
-        height: 70rem;
+        height:70rem;
     }
     .Slideshow,
     .Slideshow__slide{
