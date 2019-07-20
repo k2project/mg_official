@@ -54,7 +54,7 @@ export default function Choreography (){
                         </div>
                     </section>
                     <Posters/>
-                    <Quotes quotes={choreographyQuotes}/>
+                    <Quotes quotes={choreographyQuotes} time={10000}/>
 
                 </Page>
             </div>

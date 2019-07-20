@@ -26,7 +26,7 @@ export default function Masterclasses (){
                         <Map/>
                     </section>
                     <PreviousClasses/>
-                    <Quotes quotes={masterclassQuotes}/>
+                    <Quotes quotes={masterclassQuotes} time={25000}/>
                 </Page>
             </div>
         </DocumentMeta>

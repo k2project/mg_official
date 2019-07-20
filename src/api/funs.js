@@ -75,3 +75,76 @@ export function selectNavLink(links){
         }
     })
 }
+
+//handle swipping and sliding with key arrows
+export function slideToRight(arr, el, index,cb){
+    ++index;
+    if(index>arr.length-1){
+        index = 0;
+    }
+    cb(index);
+    if(el){
+        el.classList.add('right');
+    }
+}
+export function slideToLeft(arr, el, index,cb){
+    --index;
+    if(index<0){
+        index = arr.length-1;
+    }
+    cb(index);
+    if(el){
+        el.classList.add('left');
+    }
+}
+export function handleTouchStart(e, stateData) {
+    const firstTouch = e.touches[0] || e.originalEvent.touches[0];
+    // xDown = firstTouch.clientX;
+    stateData.setxDown(firstTouch.clientX);
+    // yDown = firstTouch.clientY;
+    stateData.setyDown(firstTouch.clientY);
+};
+
+export function handleTouchMove(e, stateData) {
+    const {arr, el, xDown, yDown, setxDown, setyDown, currentIndex, setCurrentIndex} = stateData;
+    if ( ! xDown || ! yDown ) {
+        return;
+    }
+
+    let xUp = e.touches[0].clientX;
+    let yUp = e.touches[0].clientY;
+
+    let xDiff = xDown - xUp;
+    let yDiff = yDown - yUp;
+
+    if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {
+        if ( xDiff > 0 ) {
+            console.log('slide rgt')
+            slideToRight(arr, el, currentIndex,setCurrentIndex)
+        } else {
+            console.log('slide lft')
+            slideToLeft(arr, el, currentIndex,setCurrentIndex)
+        }
+    }
+
+    // /* reset values */
+    // xDown = null;
+    setxDown(null);
+    // yDown = null;
+    setyDown(null);
+};
+//handle arrows
+export function slidingUsingArrowsKeys(e, stateData){
+    const {arr, el, rightKey, leftKey,currentIndex, setCurrentIndex} = stateData;
+    if (e.code === 'ArrowLeft' && leftKey) {
+        e.preventDefault();
+        // left arrow
+        slideToLeft(arr, el, currentIndex,setCurrentIndex)
+    }
+    if (e.code === 'ArrowRight' && rightKey) {
+        e.preventDefault();
+        // right arrow
+        slideToRight(arr, el, currentIndex,setCurrentIndex)
+    }
+
+}

@@ -1,16 +1,69 @@
-import React,{useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
 import './Quotes.scss';
 
-import quotes from './../../media/icons/quotes.png'
-let index = 0;
-let slider =null;
+import {slideToLeft, slideToRight,handleTouchStart, handleTouchMove, slidingUsingArrowsKeys} from './../../api/funs';
+import quotesIMG from './../../media/icons/quotes.png'
 
 export default function Quotes(props){
-    useEffect(()=>{
+    let slider =null;
+    const {quotes, time} = props;
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [xDown, setxDown] = useState(null);
+    const [yDown, setyDown] = useState(null);
+
+    function runQuotes(){
+        // clearSlider();
+        const quotes = document.querySelectorAll('.Quotes__quote');
+        const ctrls = document.querySelectorAll('.Quotes__slider li');
+        quotes.forEach((q,z)=>{
+            q.classList.remove('current');
+            ctrls[z].classList.remove('current');
+        })
+        quotes[currentIndex].classList.add('current')
+        ctrls[currentIndex].classList.add('current')
+        slider = setTimeout(()=>{
+            let index = currentIndex === quotes.length-1 ? 0 : currentIndex+1;
+            setCurrentIndex(index);
+            runQuotes();
+        },time);
+
+    }
+    function getQuote(e){
         clearSlider();
-        runQuotes(0);
+        setCurrentIndex(Number(e.target.dataset.index));
+    }
+    function clearSlider(){
+        if(slider){
+            clearTimeout(slider);
+        }
+    }
+    useEffect(()=>{
+        runQuotes();
+        const el = document.querySelector('.Quotes');
+        // //swipping
+        const stateData = {
+            arr:props.quotes,
+            currentIndex,
+            setCurrentIndex,
+            xDown,
+            setxDown,
+            yDown,
+            setyDown,
+        }
+
+        const runHandleTouchStart = function(e){
+            handleTouchStart(e,stateData);
+        }
+        el.addEventListener('touchstart', runHandleTouchStart);
+        const runHandleTouchMove = function(e){
+            handleTouchMove(e, stateData);
+        }
+        el.addEventListener('touchmove', runHandleTouchMove);
+
         return ()=>{
             clearSlider();
+            el.removeEventListener('touchstart', runHandleTouchStart);
+            el.removeEventListener('touchmove', runHandleTouchMove);
         }
     })
     const quotesList = props.quotes.map(q => displayQuotes(q));
@@ -18,7 +71,7 @@ export default function Quotes(props){
     return(
         <section className="Quotes">
             <div className="section__body">
-                <img src={quotes} alt="quotes" className="Quotes__quoteIMG"/>
+                <img src={quotesIMG} alt="quotes" className="Quotes__quoteIMG"/>
                 <div className="Quotes__slider">
                     {quotesList}
                     <ul>
@@ -32,8 +85,9 @@ export default function Quotes(props){
 
 function displayQuotes(q){
     const has_image = q.img? 'has_image' : '';
+    const keyProp = q.name? q.name: q.institution;
     return(
-        <div className={"Quotes__quote cover "+has_image} key={q.name}>
+        <div className={"Quotes__quote cover "+has_image} key={keyProp}>
             <div className="Quote__text">
                 <p>{q.text}</p>
             </div>
@@ -55,26 +109,26 @@ function displayQuotes(q){
     )
 }
 
-function runQuotes(i){
-    index = i;
-    const quotes = document.querySelectorAll('.Quotes__quote');
-    const ctrls = document.querySelectorAll('.Quotes__slider li');
-    quotes.forEach((q,z)=>{
-        q.classList.remove('current');
-        ctrls[z].classList.remove('current');
-    })
-    quotes[index].classList.add('current')
-    ctrls[index].classList.add('current')
-    index = index === quotes.length-1 ? 0 : index+1;
-    slider = setTimeout(()=>runQuotes(index),10000);
-
-}
-function getQuote(e){
-    clearSlider();
-    runQuotes(Number(e.target.dataset.index));
-}
-function clearSlider(){
-    if(slider){
-        clearTimeout(slider);
-    }
-}
+// function runQuotes(i){
+//     index = i;
+//     const quotes = document.querySelectorAll('.Quotes__quote');
+//     const ctrls = document.querySelectorAll('.Quotes__slider li');
+//     quotes.forEach((q,z)=>{
+//         q.classList.remove('current');
+//         ctrls[z].classList.remove('current');
+//     })
+//     quotes[index].classList.add('current')
+//     ctrls[index].classList.add('current')
+//     index = index === quotes.length-1 ? 0 : index+1;
+//     slider = setTimeout(()=>runQuotes(index),15000);
+//
+// }
+// function getQuote(e){
+//     clearSlider();
+//     runQuotes(Number(e.target.dataset.index));
+// }
+// function clearSlider(){
+//     if(slider){
+//         clearTimeout(slider);
+//     }
+// }

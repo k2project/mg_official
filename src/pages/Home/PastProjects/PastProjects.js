@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './PastProjects.scss';
 import {pastProjectsSlides} from './../../../api/projects';
+import {slideToLeft, slideToRight,handleTouchStart, handleTouchMove, slidingUsingArrowsKeys} from './../../../api/funs';
 
 export default function PastProjects (){
     return(
@@ -12,6 +13,8 @@ export default function PastProjects (){
 }
 
 function Slideshow(){
+    const [xDown, setxDown] = useState(null);//swipping
+    const [yDown, setyDown] = useState(null);//swipping
     const [currentSlide, setCurrentSlide] = useState(0);
     const t = 10000;
     let setSlideshowTimeout;
@@ -21,7 +24,6 @@ function Slideshow(){
         // runSlideshow();
     }
     function runSlideshow(){
-
 
         const slidesArr = document.querySelectorAll('.Slideshow__slide');
         const slideContentArr = document.querySelectorAll('.Slideshow__slide_content');
@@ -50,14 +52,36 @@ function Slideshow(){
     function stopSlideshow(){
         clearTimeout(setSlideshowTimeout);
     }
+
+
+
     useEffect(()=>{
         runSlideshow();
-        // document.querySelector('.PastProjects').addEventListener('mouseenter',stopSlideshow)
-        // document.querySelector('.PastProjects').addEventListener('mouseleave', runSlideshow)
+        const el = document.querySelector('.Slideshow');
+        // //swipping
+        const stateData = {
+            arr:pastProjectsSlides,
+            currentIndex:currentSlide,
+            setCurrentIndex:setCurrentSlide,
+            xDown,
+            setxDown,
+            yDown,
+            setyDown,
+        }
+
+        const runHandleTouchStart = function(e){
+            handleTouchStart(e,stateData);
+        }
+        el.addEventListener('touchstart', runHandleTouchStart);
+        const runHandleTouchMove = function(e){
+            handleTouchMove(e, stateData);
+        }
+        el.addEventListener('touchmove', runHandleTouchMove);
+
         return ()=>{
             stopSlideshow();
-            // document.querySelector('.PastProjects').removeEventListener('mouseenter',stopSlideshow)
-            // document.querySelector('.PastProjects').removeEventListener('mouseleave', runSlideshow)
+            el.removeEventListener('touchstart', runHandleTouchStart);
+            el.removeEventListener('touchmove', runHandleTouchMove);
         }
     })
     const slidesBg = pastProjectsSlides.map((slide, index)=>{

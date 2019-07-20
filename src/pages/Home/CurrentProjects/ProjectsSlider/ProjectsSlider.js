@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 import './ProjectsSlider.scss';
 import {currentProjects} from './../../../../api/projects';
-import {swippingCTRL} from './../../../../api/funs';
+import {slideToLeft, slideToRight,handleTouchStart, handleTouchMove, slidingUsingArrowsKeys} from './../../../../api/funs';
 
 import facebook from './../../../../media/icons/facebook.png';
 import twitter from './../../../../media/icons/twitter.png';
@@ -13,30 +13,44 @@ import instagram from './../../../../media/icons/instagram.png';
 let xDown = null;
 let yDown = null;
 export default function ProjectsSlider ( props ){
+
     const {index, setProjectIndex} = props;
     const [currentIndex, setCurrentIndex] = useState(index);
+    const [xDown, setxDown] = useState(null);
+    const [yDown, setyDown] = useState(null);
 
     useEffect(()=>{
-        //sipping fun for current project slider
-        // const cpsCTRL = new swippingCTRL(document.querySelector('.projectDetails'),currentProjects,currentIndex,setCurrentIndex);
-        // document.addEventListener('touchstart', cpsCTRL.handleTouchStart);
-        // document.addEventListener('touchmove',e=>cpsCTRL.handleTouchMove(e,currentIndex, setCurrentIndex));
+        const el = document.querySelector('.projectDetails');
+        const stateData = {
+            arr:currentProjects,
+            el,
+            rightKey:true,
+            leftKey:true,
+            currentIndex,
+            setCurrentIndex,
+            xDown,
+            setxDown,
+            yDown,
+            setyDown,
+        }
 
-
+        const runHandleTouchStart = function(e){
+            handleTouchStart(e,stateData);
+        }
+        el.addEventListener('touchstart', runHandleTouchStart);
+        const runHandleTouchMove = function(e){
+            handleTouchMove(e, stateData);
+        }
+        el.addEventListener('touchmove', runHandleTouchMove);
 
         const handleKeyDown = function(e){
-            slideProjectsListUsingArrowsKeys(e,currentIndex,setCurrentIndex);
-        }
-        const runHandleTouchMove = function(e){
-            handleTouchMove(e,currentIndex,setCurrentIndex);
+            slidingUsingArrowsKeys(e,stateData);
         }
         document.addEventListener('keydown', handleKeyDown);
-        document.addEventListener('touchstart', handleTouchStart);
-        document.addEventListener('touchmove', runHandleTouchMove);
         return ()=>{
+            el.removeEventListener('touchstart', runHandleTouchStart);
+            el.removeEventListener('touchmove', runHandleTouchMove);
             document.removeEventListener('keydown', handleKeyDown);
-            document.removeEventListener('touchstart', handleTouchStart);
-            document.removeEventListener('touchmove', runHandleTouchMove);
         }
     })
     let  project = currentProjects[currentIndex];
@@ -84,9 +98,15 @@ function displayProjectLayout(project){
 
 function ProjectsSliderNavBar(props){
     const {setProjectIndex, setCurrentIndex, currentIndex} = props;
+    const handleSlidingToRight = function(){
+        slideToRight(currentProjects,document.querySelector('.projectDetails'), currentIndex,setCurrentIndex)
+    }
+    const handleSlidingToLeft = function(){
+        slideToLeft(currentProjects,document.querySelector('.projectDetails'), currentIndex,setCurrentIndex)
+    }
     return <div className="projectsDetails__nav">
-        <div className="projectsDetails__nav_lft" onClick={()=>slideToLeft(currentIndex,setCurrentIndex)}>&#10148;</div>
-        <div className="projectsDetails__nav_rgt" onClick={()=>slideToRight(currentIndex,setCurrentIndex)}>&#10148;</div>
+        <div className="projectsDetails__nav_lft" onClick={handleSlidingToLeft}>&#10148;</div>
+        <div className="projectsDetails__nav_rgt" onClick={handleSlidingToRight}>&#10148;</div>
         <div className="projectsDetails__nav_close" onClick={()=>closeProjectSlider(setProjectIndex) }>&#10006;</div>
     </div>
 }
@@ -95,67 +115,7 @@ function closeProjectSlider(setProjectIndex){
     const ps = document.querySelector('.projects');
     ps.style.display ='grid';
 }
-function slideToRight(index,cb){
-    ++index;
-    if(index>currentProjects.length-1){
-        index = 0;
-    }
-    cb(index);
-    document.querySelector('.projectDetails').classList.add('right');
-}
-function slideToLeft(index,cb){
-    --index;
-    if(index<0){
-        index = currentProjects.length-1;
-    }
-    cb(index);
-    document.querySelector('.projectDetails').classList.add('left');
-}
 
 
 // const page  = projectIndex + 1;
 // document.querySelector('.projectDetails__pagination').textContent = page +' / '+currentProjects.length;
-
-//handle arrows
-function slideProjectsListUsingArrowsKeys(e, currentIndex, setCurrentIndex){
-    if (e.code === 'ArrowLeft') {
-        e.preventDefault();
-        // left arrow
-        slideToLeft(currentIndex,setCurrentIndex)
-    }
-    if (e.code === 'ArrowRight') {
-        e.preventDefault();
-        // right arrow
-        slideToRight(currentIndex,setCurrentIndex)
-    }
-
-}
-//handle swipping
-function handleTouchStart(e) {
-    const firstTouch = e.touches[0] || e.originalEvent.touches[0];
-    xDown = firstTouch.clientX;
-    yDown = firstTouch.clientY;
-};
-function handleTouchMove(e,  currentIndex, setCurrentIndex) {
-    if ( ! xDown || ! yDown ) {
-        return;
-    }
-
-    let xUp = e.touches[0].clientX;
-    let yUp = e.touches[0].clientY;
-
-    let xDiff = xDown - xUp;
-    let yDiff = yDown - yUp;
-
-    if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {
-        if ( xDiff > 0 ) {
-            slideToRight(currentIndex,setCurrentIndex)
-        } else {
-            slideToLeft(currentIndex,setCurrentIndex)
-        }
-    }
-
-    /* reset values */
-    xDown = null;
-    yDown = null;
-};

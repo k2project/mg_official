@@ -28,12 +28,12 @@ export default function Map(){
                 <img src={eMap} alt="world map"/>
                 <div className="Map__cities_lft">
                     {
-                        citiesLft.map(city=><span>{city}</span>)
+                        citiesLft.map(city=><span key={city}>{city}</span>)
                     }
                 </div>
                 <div className="Map__cities_rgt">
                     {
-                        citiesRgt.map(city=><span>{city}</span>)
+                        citiesRgt.map(city=><span key={city}>{city}</span>)
                     }
                 </div>
 
