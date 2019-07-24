@@ -21,7 +21,7 @@
     grid-column-gap: 4rem;
     text-align: left;
     font-size: 1.3rem;
-    padding: 12rem 12rem 15rem;
+    padding: 15rem 12rem 15rem;
     align-content: start;
 }
 //sliding anim from right
@@ -38,15 +38,15 @@
     @include anim( showDetailName, .25s, 0s, ease-out);
 
 }
-.projectDetails_lft{
-    // border: solid 1px yellow;
-    display: grid;
-    align-content: space-between;
-}
+
 .projectDetails_rgt{
-    // border: solid 1px yellow;
     display: grid;
-    align-content:end;
+    grid-template-rows:1fr auto;
+
+}
+.projectDetails_lft{
+    display: grid;
+    grid-template-rows: 12rem 1fr auto;
 }
 .details__name{
     text-align: left;
@@ -84,7 +84,9 @@ a.details__btn{
 .details__logo{
     width: 100%;
     margin:0 auto 2rem;
-    left: 2rem;
+    // left: 2rem;
+    // border: solid 1px red;
+    align-self:center;
 
 }
 .details__links{
@@ -98,28 +100,10 @@ a.details__btn{
         margin-bottom: 1rem;
     }
 }
-//=======CUSTOMISED PROJECTS=======
-.projectDetails.beyondBroadwayProduction{
-    .details__logo{
-        top: 4rem;
-    }
-}
-.projectDetails.mgaManagement{
-    .details__logo{
-        top: -1rem;
-        left: 0;
-    }
-
-}
-.projectDetails.choreographyProjects{
-    .details__logo{
-        top: -4rem;
-    }
-}
 
 .projectDetails.ted{
     .details__logo{
-        top: -7rem;
+        padding: 7rem 0;
     }
 }
 
@@ -167,17 +151,14 @@ a.details__btn{
     .ProjectsSlider{
         width: 80%;
         height: 65rem;
+
     }
     .projectDetails.cover{
         font-size: 1.2rem;
-        // padding: 7rem 10rem 15rem;
-        padding: 15rem 10rem 12rem;
+        padding: 12rem 10rem 12rem;
         grid-template-columns: 1.5fr 1fr;
     }
-    .details__logo{
-        margin-bottom: 9rem;
 
-    }
     .details__name{
         font-size: 2.5rem;
     }
@@ -190,23 +171,7 @@ a.details__btn{
         margin: -3rem 0 3rem;
 
     }
-    //=======CUSTOMISED PROJECTS=======
-    .projectDetails.ted,
-    .projectDetails.mgaAcademy{
-        .details__logo{
-            margin-bottom: 7rem;
-        }
-    }
-    .projectDetails.masterclasses{
-        .details__logo{
-            margin-bottom: 11rem;
-        }
-    }
-    .projectDetails.beyondBroadwayProduction{
-        .details__logo{
-            top: 1rem;
-        }
-    }
+
 
 }
 //max 1024
@@ -217,137 +182,71 @@ a.details__btn{
     }
     .projectDetails.cover{
         font-size: 1.2rem;
-        padding: 9rem 6rem 7rem;
+        padding: 10rem 6rem 10rem;
         grid-template-columns: 1.5fr 1fr;
         grid-gap: 0;
     }
-    .details__logo{
-        width: 22rem;
-        margin-bottom: 6rem;
+    .projectDetails_lft{
+        grid-template-rows: 10rem 1fr auto;
+        p{
+            width: 90%;
+        }
     }
-    //=======CUSTOMISED PROJECTS=======
 
-    .projectDetails.ted{
-        .details__logo{
-            width: 20rem;
-            left: 2rem;
-            // left: 4rem;
-            top: -4rem;
-        }
-    }
-    .projectDetails.masterclasses{
-        .details__logo{
-            margin-bottom: 8rem;
-        }
-    }
-    .projectDetails.choreographyProjects{
-        .details__logo{
-            margin-bottom: 7rem;
-        }
-    }
-    // .projectDetails.masterclasses,
-    // .projectDetails.mgaFoundation,
-    // .projectDetails.mgaAcademy{
-    //     .details__logo{
-    //         top: -1rem;
-    //     }
-    // }
+
+
+
 }
 //max 768
 @include mobile{
     .ProjectsSlider{
         width: 90%;
-        height: 63rem;
+        height: 57rem;
+        .btn{
+            width: 18rem;
+            font-size: 1.2rem;
+            padding: 1.2rem 0;
+            top: 4rem;
+        }
     }
     .projectDetails.cover{
-        // display: block;
         padding: 12rem 5rem 7rem;
-        grid-template-rows: 1fr auto;
+        grid-template-rows: auto 5rem;
+        grid-template-columns: 1fr;
+        align-content: center;
+        p{
+            width: 100%;
+        }
     }
-    // .projectDetails.cover.theBeyondBroadwayExperience,
-    // .projectDetails.cover.mgaAcademy{
-    //     padding-top: 0;
-    // }
+
     .details__name{
-        font-size: 2.2rem;
+        font-size: 2rem;
         text-align: left;
     }
+    .projectDetails_rgt,
     .projectDetails_lft{
-        grid-column: span 2;
-        padding-bottom: 2rem;
+        display: block;
 
     }
-    .projectDetails_rgt{
-        // display: none;
-    }
+
 
     .details__logo{
         display: none;
-    //     width: auto;
-    //     height: 15rem;
-    //     position: fixed;
-    //     top: 5rem;
-    //     left: 5rem;
     }
-    // .projectDetails.beyondBroadwayProduction,
-    // .projectDetails.theBeyondBroadwayExperience,
-    // .projectDetails.mgaManagement,
-    // .projectDetails.choreographyProjects,
-    // .projectDetails.ted,
-    // .projectDetails.masterclasses,
-    // .projectDetails.mgaFoundation,
-    // .projectDetails.theCore,
-    // .projectDetails.danceStar,
-    // .projectDetails.fierceTheatreSchools,
-    // .projectDetails.mgaAcademy{
-    //     .details__logo{
-    //         width: auto;
-    //         height: 15rem;
-    //         position: fixed;
-    //         top: 5rem;
-    //         left: 5rem;
-    //     }
-    // }
-    // .projectDetails.mgaAcademy,
-    // .projectDetails.theBeyondBroadwayExperience{
-    //     .details__logo{
-    //         left: 3rem;
-    //     }
-    // }
-    //
-    // .projectDetails.choreographyProjects,
-    // .projectDetails.mgaManagement{
-    //     .details__logo{
-    //         left: 2rem;
-    //     }
-    // }
-    //
-    // .projectDetails.ted{
-    //     .details__logo{
-    //         height: 8rem;
-    //         top: 8rem;
-    //         left: 5rem;
-    //     }
-    // }
-    // .projectDetails_lft{
-    //     padding-top: 17rem;
-    // }
-    // .mgaAcademy{
-    //     .projectDetails_lft{
-    //         padding-top: 20rem;
-    //     }
-    // }
+
     .details__links{
         text-align: left;
-        top: 4rem;
+        top: -5rem;
+        img{
+            height: 1.6rem;
+            margin-right: 0;
+        }
     }
     .projectsDetails__nav{
         grid-auto-rows: 4rem;
         grid-template-columns: 4rem 4rem 4rem;
         font-size: 1.8rem;
-        // div{
-        //     border: none;
-        // }
+        top: 2rem;
 
     }
     .projectsDetails__nav_lft{
@@ -359,45 +258,20 @@ a.details__btn{
 @include mobile-sm{
     .ProjectsSlider{
         width: 94%;
-        // height: 62rem;
-        // border: solid 1px yellow;
     }
     .projectDetails.cover{
-        // padding: 5rem 4rem;
-        padding-right: 2.5rem;
-        padding-left: 3rem;
+        padding: 12rem 10% 7rem;
     }
 
     .details__role{
         font-size: 1.4rem;
+        text-align: left;
     }
     a.details__btn{
         margin-top: 2rem;
         font-size: 1.3rem;
     }
-    .details__links{
-        // top: 4rem;
-        img{
-            height: 1.8rem;
-        }
-    }
-    .projectDetails_lft{
-        padding-bottom: 1rem;
 
-    }
-    // .details__logo{
-    //     display: none;
-    // }
-    //
-    // .projectDetails_lft{
-    //     padding-top: 12rem;
-    // }
-    // .theBeyondBroadwayExperience,
-    // .mgaAcademy{
-    //     .projectDetails_lft{
-    //         padding-top: 14rem;
-    //     }
-    // }
     .projectsDetails__nav_lft{
         padding-bottom: .5rem;
     }

@@ -23,8 +23,8 @@ class App extends Component {
         <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Analytics id={analiticsID} debug>
                 <Switch>
-                    <Route exact path='/' component={Holdingpage}/>
-                    <Route exact path='/home' component={Home}/>
+                    {/* <Route exact path='/' component={Holdingpage}/> */}
+                    <Route exact path='/' component={Home}/>
                     <Route exact path='/biography' component={Bio}/>
                     <Route exact path='/press' component={Press}/>
                     <Route exact path='/masterclasses' component={Masterclasses}/>

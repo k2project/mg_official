@@ -10,7 +10,7 @@ export default function Footer(){
                 Murray Grant Official Website &copy;{new Date().getFullYear()}
             </div>
             <div className="Footer_nav">
-                <NavLink to="/home" exact >Home</NavLink>
+                <NavLink to="/" exact >Home</NavLink>
                 <NavLink to="/biography" >Biography</NavLink>
                 <NavLink to="/choreography" >Choreography</NavLink>
                 <NavLink to="/masterclasses" >Masterclasses</NavLink>

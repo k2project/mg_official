@@ -49,7 +49,7 @@ const christinaBianco = {
         name:'USA',
         flag:'usa.png'
     },
-    text:'Murray is a human Swiss Army knife for the performing arts! His ability to navigate the international acrts scene, in all it’s facets, is unmatched.'
+    text:'Murray is a human Swiss Army knife for the performing arts! His ability to navigate the international arts scene, in all it’s facets, is unmatched.'
 }
 const SteveLeatham = {
     name:'Steve Leatham, FEAA',

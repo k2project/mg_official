@@ -128,7 +128,11 @@ article.open{
     column-count: 2;
     column-gap: 5rem;
     p{
-        display: inline-block;
+        // display: inline-block;
+    }
+    p:first-child{
+        margin-top: 0;
+
     }
 
     a{

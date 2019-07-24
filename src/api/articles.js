@@ -1,7 +1,7 @@
 import React from 'react';
 
 const scotsmanOnMGAAcademy = {
-    display:true,
+    featured:true,
     cls:'scotsmanOnMGAAcademy',
     title:'Performing arts academy predicts threefold revenue rise',
     subtitle:'An Edinburgh-based performing arts school is eying a threefold revenue rise and a major expansion after requests for its services have soared.',
@@ -24,7 +24,7 @@ const scotsmanOnMGAAcademy = {
     </div>),
 }
 const stagenOnMGAFundation = {
-    display:true,
+    featured:true,
     cls:'stagenOnMGAFundation',
     title:'New charity to offer financial support to Scottish performing arts students',
     subtitle:'A charity has been launched in Edinburgh to support Scottish students who cannot afford to train in the performing arts.',
@@ -50,7 +50,7 @@ const stagenOnMGAFundation = {
     </div>),
 }
 const dublinLiveOnMurrayChoreographer = {
-    display:true,
+    featured:true,
     cls:'dublinLiveOnMurrayChoreographer',
     title:'Dublin dance troops given opportunity of a lifetime with masterclass from international choreographer Murray Grant',
     subtitle:'',
@@ -67,16 +67,49 @@ const dublinLiveOnMurrayChoreographer = {
         <p>Phoenix Performing Arts College and WestSide Performing Arts recently took part in a masterclass from international choreographer and performer Murray Grant.</p>
         <p>Murray visited Dublin to give youngsters from Phoenix Performing Arts College in East Wall and WestSide Performing Arts in Lucan an insight into what is expected of professional performers by guiding them through a fun and engaging masterclass.</p>
         <p>He said: “I had a great time working with the students in Dublin as they were all focused and keen to learn.</p>
-        <p>"It was great to be able to travel to Dublin to share my passion for the industry and hopefully inspire some future stars of the stage from the area.”</p>
+        <p>It was great to be able to travel to Dublin to share my passion for the industry and hopefully inspire some future stars of the stage from the area.”</p>
         <p>Elizabeth Ennis, creative director of WestSide Performing Arts, said: “Murray sharing his knowledge, passion and enthusiasm for the industry is an invaluable experience for our students.</p>
-        <p>"His professionalism, caring attitude and high energy in the studio not only brings out the best of each dancer but encourages them to push out of their comfort zone and improve their technical and performance ability.</p>
-        <p>“The opportunity to work with Murray has been one of the highlights of the terms for our students.”</p>
+        <p>His professionalism, caring attitude and high energy in the studio not only brings out the best of each dancer but encourages them to push out of their comfort zone and improve their technical and performance ability.</p>
+        <p>The opportunity to work with Murray has been one of the highlights of the terms for our students.”</p>
         <p>The MGA Academy of Performing Arts is currently accepting applications for auditions in Ireland in February next year.</p>
         <p>Auditions for places on full-time degree courses will take place in Dublin on Sunday 17 February, 2019. Candidates can apply at <a href="https://www.themgaacademy.com/apply/" target="_blank"  rel="noopener noreferrer">www.themgaacademy.com/apply</a>. </p>
     </div>),
 }
+const thomasDohertyTeenVogue = {
+    featured:true,
+    cls:'thomasDohertyTeenVogue',
+    title:'Thomas Doherty Is Excited to Leave His Boy Next Door Days Behind Him in the New Movie High Strung Free Dance',
+    subtitle:'“I did base Zander off of [...] Murray Grant. He was the first dance teacher I had and he was just scary hard — like no bullsh*t, very focused.”',
+    author:'Sara Delgado',
+    source:'Teen Vogue',
+    date:'July 17, 2019',
+    link:'https://www.teenvogue.com/story/thomas-doherty-new-movie-trailer-high-strung-free-dance',
+    img:{
+        path:'teenVogue.jpg',
+        caption:'Image: GVN Releasing'
+    },
+    text:(<div className="article__text">
+        <p>“I feel like it’s been in production forever,” Thomas Doherty tells <i>Teen Vogue</i> of his latest movie, <i>High Strung Free Dance</i>, but the wait has been worth it. Now officially set for an October 11 release, <i>Teen Vogue</i> has the exclusive first look at the film’s trailer, plus firsthand intel from Thomas himself.</p>
+        <p>With dance and romance galore, the sequel to 2016’s <i>High Strung</i> follows dancer Barlow (Juliet Doherty — no relation to Thomas) and pianist Charlie (Harry Jarvis) as they cross paths and get their big breaks on Broadway’s highly anticipated musical, <i>Free Dance</i>, thanks to a fortuitous casting call from “dazzling young choreographer” Zander Raines, played by Thomas.</p>
+        <p>But the 24-year-old Thomas’s first steps as Zander weren’t exactly destiny. “I actually auditioned for the role of Charlie initially,” the Scottish actor reveals. After trying out for the main part with a well-researched American accent, Michael and Janeen Damian, the minds behind the <i>High Strung</i> series, encouraged him to audition for antagonist Zander, this time with an RP British accent.</p>
+        <p>And Thomas is more than happy with the trade. “I wasn’t right for Charlie but I was right for Zander,” he says, emphasizing that the latter is nothing like characters he has portrayed in the past. “Because of the way I look, I tend to be cast as boy-next-door kind of characters, which are sh*t. They aren’t fun to watch, let alone film,” he says candidly. “This part was something to sink my teeth into, something to play around with and have fun.”</p>
+        <p>“Zander's quite a complex character,” Thomas adds. “He's nothing like me. I'm quite a chill, laid-back person, but he's focused, on, and very ambitious. He’s passionate about his dancing and choreographing,” he adds, before jokingly dubbing the character “an egotistical madman.”</p>
+        <p>That last characteristic was especially demanding. “Staying in the same zone — physically and mentally — as Zander was tough,” the actor explains. “These were 15 or 16 hours a day filming, and it was hard for me to remain in that space forever. I had to take mental breaks.” Surprisingly enough, the taxing mindset of tempestuous Zander wasn’t the hardest part for Thomas.</p>
+        <p>“Honestly, the most challenging part was telling all these amazing dancers they were bad and shouting at them. I felt so weird,” Thomas says of his experience on the film, which features choreography from Emmy-winner Tyce Diorio and includes 80 of the world’s top dancers as cast members. “I trained in contemporary and ballet, but not at this level. These people are pros. I think someone had danced with Beyoncé. I was just pretending to know I knew what I was talking about. After the breaks, I would apologize to them.”</p>
+        <p>Playing a Broadway choreographer, it’s only natural to wonder whether Thomas got any intel for the role from his theater-pro girlfriend, Dove Cameron. But, he says, the endearing couple “actually never really speak of work — unless one of us asks.”</p>
+        <p>Instead, Thomas tapped into his own repertoire, pulling from years of musical theater and on-set experiences. “I've worked with a good fair share of choreographers on <i>Descendants</i> and <i>The Lodge</i>, but I did base Zander off of one,” Thomas reveals. “He's called Murray Grant. He was the first dance teacher I had and he was just scary hard — like no bullsh*t, very focused. He'd snap at you if you were f*cking about, which I always was. He was never happy; it was never enough. And that's definitely how I envisioned Zander.”</p>
+        <p>But Grant, with whom Thomas is still very close, wasn’t the only IRL inspiration — the actor also looked to none other than <i>High School Musical</i> and <i>Descendants</i> choreographer Kenny Ortega. “I tried to put some of the pure passion that Kenny has into the character,” Thomas says.</p>
+        <p><i>High Strung Free Dance</i> sees Thomas behind-the-scenes of the fictional world, but coming from a thespian background, he’s just as natural on the stage as he is on the screen. And, despite initial hesitation, he admits he “would like to jump back on the stage” eventually. But that might have to wait a bit. “Right now, in my life, I like traveling about,"Thomas says. "I love going all over the world, and I know myself; I know I’ll get really bored in one place for more than six months. It's not a commitment that I want to make.”</p>
+        <p>But short runs aren’t completely off the table; in fact, they’re pretty much on the table. “I was speaking to a director a couple of weeks ago about potentially doing something in London, so, definitely, I'd never rule it out,” the actor teases nonchalantly. “I'll always love it — I mean it's far superior than film and TV.”</p>
+        <p>So far, theater and musicals have intertwined in Thomas’s trajectory on film, even if unbeknownst to him. “It's weird, actually. Everything I've booked has, like, a musical element to it, whether dancing, singing, or playing an instrument,” he says. “But it's nice. It spices it up a little bit, it keeps it exciting. That additional element I always think makes a piece so much deeper.”</p>
+        <p>Although he doesn't mind the unifying musical element, he’s looking forward to releasing other projects. First on the list is <i>Catherine the Great</i>, an upcoming HBO miniseries centered on the Russian monarch in which he’ll star alongside Helen Mirren.</p>
+        <p>“When you hear 'Dame Helen Mirren' you think she's going to be all serious and scary, but she's soooo lovely and so kind… and just really normal as well. I think that was the most surprising thing about it all, how normal she was,” Thomas gushes of his costar. “She swears like a trooper. She's class. She's just really, really good fun, and a real professional.”</p>
+        <p>With a few projects in the pipeline this summer, including <i>Descendants 3</i>, and <i>High Strung Free Dance</i> in the fall, Thomas assures us we “are going to be sick of seeing my face.” But that’s a sickness we’ll gladly accept.</p>
+    
+    </div>),
+}
 const edinburghReporterOnTheCoreLaunch = {
-    display:true,
+    featured:true,
     cls:'edinburghReporterOnTheCoreLaunch',
     title:'The Core now open in Stockbridge for would be performers',
     subtitle:'There is a new space in Stockbridge designed to help performers in Edinburgh start their careers off on the right foot.',
@@ -110,7 +143,7 @@ const edinburghReporterOnTheCoreLaunch = {
     </div>),
 }
 const AEonFreeCourse = {
-    display:false,
+    featured:false,
     cls:'AEonFreeCourse',
     title:(<div>Free course at MGA <br/><small>Free course for young male performers</small></div>),
     subtitle:'The MGA Academy of Performing Arts is inviting budding young male performers for a week of free classes, workshops and question-and-answer sessions.',
@@ -138,7 +171,7 @@ const AEonFreeCourse = {
     </div>),
 }
 const AEonFame = {
-    display:false,
+    featured:false,
     cls:'AEonFame',
     title:(<div>Fame – The Musical <br/><small>★★★★★   Electrifying <br/><small>King’s Theatre: Fri 21 – Sat 22 July</small></small></div>),
     subtitle:'Edinburgh youth group The Beyond Broadway Experience introduce the new intake of students to the King’s stage in this electrifying performance of the classic musical.',
@@ -173,7 +206,7 @@ const AEonFame = {
     </div>),
 }
 const AEonBroadwayBound = {
-    display:false,
+    featured:false,
     cls:'AEonBroadwayBound',
     title:(<div>Broadway Bound<br/><small>★★★★  All that Jazz <br/><small>King’s Theatre: Thurs 2 April 2015</small></small></div>),
     subtitle:'Bright and crisp and even, the aspirations of the dancers on stage at the King’s on Thursday night shone through their performances. These youngsters were Broadway Bound in more ways than one.',
@@ -218,7 +251,7 @@ const AEonBroadwayBound = {
     </div>),
 }
 const AEonAdamsFamily = {
-    display:false,
+    featured:false,
     cls:'AEonAdamsFamily',
     title:(<div>The Addams Family<br/><small>★★★★  Addams fine show <br/><small>King’s Theatre: Friday 27 – Saturday 28 June</small></small></div>),
     subtitle:'They’re creepy and they’re kooky, mysterious and spooky, and they’re altogether on stage at the King’s Theatre. ',
@@ -264,7 +297,7 @@ const AEonAdamsFamily = {
     </div>),
 }
 const edinburghGuideOnTen = {
-    display:false,
+    featured:false,
     cls:'edinburghGuideOnTen',
     title:'TEN, King\'s Theatre, Review',
     subtitle:'The MGA Academy of Performing Arts in Edinburgh was founded by Murray Grant and Andrew Gowland in 2005, developing from small-scale workshops into a renowned College and “Centre of Excellence”, to study for a professional career in musical theatre, dance and drama. ',
@@ -304,7 +337,7 @@ const edinburghGuideOnTen = {
     </div>),
 }
 const accessAllAreasOnKEllis = {
-    display:false,
+    featured:false,
     cls:'accessAllAreasOnKEllis',
     title:'Young Edinburgh actors have Wicked time with Kerry Ellis',
     subtitle:'Aspiring local stage stars from The MGA Academy of Performing Arts in Edinburgh have taken part in a masterclass with one of musical theatre’s biggest icons.',
@@ -331,7 +364,7 @@ const accessAllAreasOnKEllis = {
     </div>),
 }
 const alloaHillfootsAdvertsier = {
-    display:false,
+    featured:false,
     cls:'alloaHillfootsAdvertsier',
     title:'Budding male performers in Clackmannanshire can take part in Boys’ Scholarship Week',
     subtitle:'BUDDING male performers from Clackmannanshire are being invited to take part in a summer programme. ',
@@ -360,7 +393,7 @@ const alloaHillfootsAdvertsier = {
     </div>),
 }
 const newsAndStar = {
-    display:false,
+    featured:false,
     cls:'newsAndStar',
     title:'Performers get visit from top choreographer',
     subtitle:'A group of young performers have been given a unique insight into the exciting world of performing arts, thanks to a visit from international choreographer Murray Grant. ',
@@ -401,6 +434,7 @@ let articles = [
     edinburghReporterOnTheCoreLaunch,
     stagenOnMGAFundation,
     dublinLiveOnMurrayChoreographer,
+    thomasDohertyTeenVogue,
     newsAndStar,
     AEonFame,
     AEonFreeCourse,
@@ -411,6 +445,6 @@ let articles = [
     accessAllAreasOnKEllis,
 
 ];
-const articlesFeatured = articles.filter(article => article.display);
-const articlesOther = articles.filter(article => !article.display);
+const articlesFeatured = articles.filter(article => article.featured);
+const articlesOther = articles.filter(article => !article.featured);
 export {articlesFeatured, articlesOther};
