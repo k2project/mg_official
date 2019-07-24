@@ -239,7 +239,11 @@ article.open{
         font-size: 2.4rem;
     }
 }
-
+.thomasDohertyTeenVogue{
+    .article__img{
+        background-position:center center;
+    }
+}
 
 //max 1300
 @include desktop-sm{
