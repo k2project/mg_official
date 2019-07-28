@@ -105,7 +105,7 @@ const thomasDohertyTeenVogue = {
         <p>Although he doesn't mind the unifying musical element, he’s looking forward to releasing other projects. First on the list is <i>Catherine the Great</i>, an upcoming HBO miniseries centered on the Russian monarch in which he’ll star alongside Helen Mirren.</p>
         <p>“When you hear 'Dame Helen Mirren' you think she's going to be all serious and scary, but she's soooo lovely and so kind… and just really normal as well. I think that was the most surprising thing about it all, how normal she was,” Thomas gushes of his costar. “She swears like a trooper. She's class. She's just really, really good fun, and a real professional.”</p>
         <p>With a few projects in the pipeline this summer, including <i>Descendants 3</i>, and <i>High Strung Free Dance</i> in the fall, Thomas assures us we “are going to be sick of seeing my face.” But that’s a sickness we’ll gladly accept.</p>
-    
+
     </div>),
 }
 const edinburghReporterOnTheCoreLaunch = {
@@ -428,6 +428,60 @@ const newsAndStar = {
 
     </div>),
 }
+const edinburghNews = {
+    featured:false,
+    cls:'edinburghNews',
+    title:'Edinburgh arts academy encourages young male performers to break a leg',
+    subtitle:'A LEADING performance school has announced a pioneering plan to attract more male talent to the industry through an innovative programme of free theatre education.',
+    author:'James Delaney',
+    source:'Edinburgh News',
+    date:'July 26, 2019',
+    link:'https://www.edinburghnews.scotsman.com/education/edinburgh-arts-academy-encourages-young-male-performers-to-break-a-leg-1-4971911?fbclid=IwAR14AmgmAHp4vW9RWI2fRHXMACtaSJWNctv8MKxOUn_DIcb3_135CtyB3zc',
+    img:{
+        path:'scotsmanOnMGAAcademy.jpg',
+        caption:'Drew Gowland and Murray Grant founded MGA in 2005'
+    },
+    text:(<div className="article__text">
+
+        <p>The Capital-based MGA Academy of Performing Arts has launched its inaugural Lads’ Week training initiative in a bid to encourage more young males to consider pursuing professional careers on the stage.</p>
+        <p>It is hoped the scheme - which will see dozens of youngsters from across the UK take part - can reduce the stigma faced by those pursuing careers on the stage, while paving the way for the next generation of performers.</p>
+        <p>Around 70 students have signed up for a range of classes and workshops focusing on either acting, dance or musical theatre with specialist training from MGA’s creative director, Murray Grant.</p>
+        <p>As well as teaching top of the range performance skills, it is also hoped the course can break down the barriers for young men taking their first step in the industry.</p>
+        <p>Grant, who has performed international musical theatre, opera, and cabaret productions in Los Angeles, Sydney and Vienna, said: “When I was growing up, I was always the only boy in the dance and drama classes I attended and it would have made such a difference if opportunities like Lads’ Week had been available then.” </p>
+        <p>“While I was teaching choreography workshops across the UK recently , I was surprised to see that there were still only one or two boys at each of the schools and wanted to do something about it.”</p>
+        <p>MGA was established in 2005 to provide a platform for aspiring performers to remain in Scotland while studying at a level equivalent to prestigious London colleges. </p>
+        <p>It has since grown from having just seven students in its first year to a current full-time enrolment of more than 200, attracting prospective performers from across Europe.</p>
+        <p>Previous graduates have included Edinburgh born Disney Channel star Thomas Doherty, who recently starred in in Catherine The Great alongside Helen Mirren.</p>
+        <p>Others, such as Fergal McGoff and Ronan Burns, have starred in West End productions including Book of Mormon and The Bodyguard.</p>
+        <p>Managing director Drew Gowland said: “Many of the male graduates from The MGA Academy have gone on to achieve great things.”</p>
+        <p>“Our Lads’ Week is about bringing a large group of teenage boys with the same interests together so that they can experience what training to be a professional performer is like without having to be the only boy in the class.”</p>
+    </div>),
+}
+const falkirkHeraldOnCaitlinForret = {
+    featured:false,
+    cls:'falkirkHeraldOnCaitlinForret',
+    title:'Falkirk musical actress is all at sea after landing Grease role',
+    subtitle:'A talented young actress from Larbert cried tears of joy after being offered a contract to spend a year travelling the world while performing in a production of Grease.',
+    author:'Jill Buchanan',
+    source:'The Falkirk Herald',
+    date:'July 26, 2019',
+    link:'https://www.falkirkherald.co.uk/news/people/falkirk-musical-actress-is-all-at-sea-after-landing-grease-role-1-4971871',
+    img:{
+        path:'falkirkHeraldOnCaitlinForret.jpg',
+        caption:''
+    },
+    text:(<div className="article__text">
+        <p>Caitlin Forret, who has just graduated with a BA (Hons) Musical Theatre degree from The MGA Academy for Performing Arts in Edinburgh, was offered a year-long contract performing in Grease on board Royal Caribbean’s prestigious Independence of the Seas cruise ship. </p>
+        <p>The former Larbert High School pupil’s around-the-world adventure will begin in Miami in September with two months of rehearsals before she sets sail around the Caribbean. </p>
+        <p>The 20-year-old will perform for thousands of passengers each night.</p>
+        <p>Caitlin said: “As soon as I received the email from Royal Caribbean, I called my mum to tell her the good news. She was screaming down the phone with happiness and I bawled my eyes out. It’s such an amazing opportunity and I am very grateful to have been given an opportunity like so soon after graduating from The MGA Academy.</p>
+        <p>“I owe so much to The MGA Academy and to founders Drew Gowland and Murray Grant as they have taught me so much. All the tutors at The MGA Academy still work in the industry which means they always know what’s happening and have access to the latest opportunities.”</p>
+        <p>Caitlin’s final show with The MGA Academy was a production of Little Shop of Horrors at Leith Theatre in Edinburgh, directed by Drew Gowland and choreographed by Murray Grant.</p>
+        <p>She said: “The atmosphere during our run of Little Shop of Horrors was electric and it was a great way to end my time at The MGA Academy.”</p>
+        <p>Caitlin landed her role with Royal Caribbean through her talent agency, MGA Management. During her time at The MGA Academy, Caitlin consistently impressed talent scouts but it was after her performance at a special showcase in London that MGA Management offered to represent her as a professional performer.</p>
+    
+    </div>),
+}
 
 let articles = [
     scotsmanOnMGAAcademy,
@@ -435,6 +489,9 @@ let articles = [
     stagenOnMGAFundation,
     dublinLiveOnMurrayChoreographer,
     thomasDohertyTeenVogue,
+    //non-featured
+    edinburghNews,
+    falkirkHeraldOnCaitlinForret,
     newsAndStar,
     AEonFame,
     AEonFreeCourse,
