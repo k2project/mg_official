@@ -31,7 +31,7 @@ const natalieWeiss = {
     text:'Murray produced my entire European tour.  He is extremely efficient and detail-oriented during the booking process.  His budgeting and negotiating skills are unparalleled and you can always rely on him to respond in a timely manner.'
 }
 const chrisStapelberg = {
-    cls:'ChrisStapelberg',
+    cls:'quote_span2',
     name:'Chris Stapelberg',
     title:'Director of SA Dance Talent ',
     link:'http://dancestar.co.za/',
@@ -62,7 +62,6 @@ const SteveLeatham = {
     text:'We work closely with Murray in a number of ways, as a leading industry creative, his skills, imagination and personality help us bring our theatrical projects to life through stunning direction and choreography. He also works as an ambassador for ted, delivering interactive workshops at the foremost performing arts colleges around the world. As an artistic expert he helps build relationships for us, with the highest calibre of performers and creatives from the US and UK theatre and entertainment scene. Finally, he is a joy to have as part of the wider creative team.'
 }
 const TellyLeung  = {
-    cls:'TellyLeung',
     name:'Telly Leung',
     title:'Performer &Producer',
     link:'http://www.tellyleung.com/',
@@ -82,6 +81,16 @@ const ValerieFairnie  = {
     },
     text:'I love working with Murray for the passion, drive and energy he brings to every job.  Over the past 10 years I have worked with Murray, he has always understood my vision and exceeded my expectations.  He strives for perfection with the utmost professionalism, he is highly creative and LOTS of fun to work with.'
 }
+const GregorMcPhie  = {
+    name:'Gregor McPhie',
+    title:'Musician & Director, The Bag Rockers',
+    link:'https://www.thebagrockers.com/',
+    country:{
+        name:'Scotland, UK',
+        flag:'scotland.png'
+    },
+    text:'Murray and I go back a very long way. He and his team provide the talented dancers who add so much to the visual spectacle of The Bag Rockers. Over the years he has ensured the choreography meets the needs of our continually evolving show with refreshingly exciting, on the ball suggestions and solutions. An excellent problem solver, totally dependable, level-headed and trustworthy, a great guy to work with!'
+}
 
 export const endorsements = [
     markLethem,
@@ -92,6 +101,7 @@ export const endorsements = [
     sarahMilne,
     christinaBianco,
     TellyLeung,
+    GregorMcPhie,
 ];
 
 export const masterclassQuotes = [
