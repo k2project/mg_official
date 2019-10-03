@@ -180,6 +180,8 @@ article.open{
     display: flex;
     flex-wrap: wrap ;
     justify-content: center;
+    width: 102%;
+    left: -1%;
     .article__img{
         display: none;
     }
@@ -213,7 +215,8 @@ article.open{
     //     margin-right: 2%;
     // }
     article.open{
-        width: 100%;
+        width: 98%;
+        left: 0;
         order:-1;
         margin: 0 0 4rem;
         .article__img{
@@ -309,6 +312,7 @@ article.open{
     .Articles_others{
         article{
             width: 49%;
+            left: 0;
         }
         // article:nth-child(3n+2){
         //     margin-left: 0%;
@@ -371,13 +375,13 @@ article.open{
     }
     .Articles_others{
         article{
-            width: 100%;
+            width: 98%;
             min-height: 45rem;
             margin-bottom: 2rem;
         }
 
         article:nth-child(odd){
-            margin-right: 0%;
+            // margin-right: 0%;
         }
         .article__img,
         .article__heading{
