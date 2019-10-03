@@ -479,7 +479,55 @@ const falkirkHeraldOnCaitlinForret = {
         <p>Caitlin’s final show with The MGA Academy was a production of Little Shop of Horrors at Leith Theatre in Edinburgh, directed by Drew Gowland and choreographed by Murray Grant.</p>
         <p>She said: “The atmosphere during our run of Little Shop of Horrors was electric and it was a great way to end my time at The MGA Academy.”</p>
         <p>Caitlin landed her role with Royal Caribbean through her talent agency, MGA Management. During her time at The MGA Academy, Caitlin consistently impressed talent scouts but it was after her performance at a special showcase in London that MGA Management offered to represent her as a professional performer.</p>
-    
+
+    </div>),
+}
+const thenorthernscot30Aug19 = {
+    featured:false,
+    cls:'thenorthernscot30Aug19',
+    title:'Young dancers learn from choreographer Murray Grant',
+    subtitle:'A group of young dancers from Elgin were given the opportunity to learn some tricks of the trade from international choreographer and performer Murray Grant.',
+    author:'Jonathan Clark',
+    source:'The Northern Scot',
+    date:'August 30, 2019',
+    link:'https://www.northern-scot.co.uk/news/young-dancers-learn-from-choreographer-murray-grant-182357/',
+    img:{
+        path:'thenorthernscot30Aug19.jpg',
+        caption:(<span>St Giles Theatre group hosted a dance masterclass with Murray Grant (MGA Founder) and Lori Davidson (MGA Student).<br/> Picture: Becky Saunderson.</span>)
+    },
+    text:(<div className="article__text">
+        <p>The stage hopefuls from St Giles’ Theatre Group took part in an exclusive masterclass with Mr Grant, who visited Elgin to give youngsters an insight into what is expected of professional performers.</p>
+        <p>Mr Grant graduated from London’s Bird College in 2001 and immediately won a contract in London City Opera’s US tour of The Merry Widow. He subsequently performed in professional musical theatre, opera, and cabaret productions in Los Angeles, New York, Sydney and Vienna.</p>
+        <p>And there was glowing praise for the young students in Elgin. Mr Grant said: "I had a great time working with the students in Elgin as they were all focused and keen to learn. It was great to be able to travel to Moray to share my passion for the industry and hopefully inspire some future stars of the stage from the area."</p>
+        <p>Mr Grant is the founder and creative director of The MGA Academy of Performing Arts in Edinburgh, talent agency MGA Management, Beyond Broadway Productions and Fierce Theatre Schools.</p>
+        <p>He is also founder and trustee of The MGA Foundation, a charity offering financial support to people from non-privileged backgrounds in Scotland to pursue performing arts training and an international judge for DanceStar world dance competitions, judging qualifiers in South Africa and the world final in Croatia.</p>
+        <p>Successful north-east performers to have trained under Mr Grant and at The MGA Academy include Lori Davidson (pictured) from Elgin, a former member of St Giles’ Theatre Group who last year performed at Edinburgh’s Queen Hall alongside London West End leading lady Kerry Ellis, and recent graduate Aaron Bisset from Rothienorman, who has just signed for top London agency Becky Barratt Management.</p>
+        
+    </div>),
+}
+const fraserburghherald12Sep19 = {
+    featured:false,
+    cls:'fraserburghherald12Sep19',
+    title:'Talented Buchan dancers learn tricks of trade',
+    subtitle:'A group of talented young dancers from the Buchan area have been given the opportunity to learn some tricks of the trade from international choreographer and performer Murray Grant.',
+    author:'Morag Kuc',
+    source:'The Fraserburgh Herald',
+    date:'September 12, 2019',
+    link:'https://www.fraserburghherald.co.uk/news/people/talented-buchan-dancers-learn-tricks-of-trade-1-5002800',
+    img:{
+        path:'fraserburghherald12Sep19.jpeg',
+        caption:'Murray with students from the Lucie Summers Dance School. '
+    },
+    text:(<div className="article__text">
+        <p>Stage hopefuls from Fraserburgh Academy, Lucie Summers Dance, and 6.1.0 Dance Academy took part in an exclusive masterclasses with Murray, who visited Buchan to give youngsters an insight into what is expected of professional performers by guiding them through a fun and engaging masterclass. </p>
+        <p>Murray was glowing in his praise for the young students. He said: “I had a great time working with the students in Fraserburgh as they were all focused and keen to learn. </p>
+        <p>“It was great to be able to travel to the north-east to share my passion for the industry and hopefully inspire some future stars of the stage from the area.”</p>
+        <p>Murray is the founder and creative director of The MGA Academy of Performing Arts in Edinburgh, talent agency MGA Management, Beyond Broadway Productions and Fierce Theatre Schools. </p>
+        <p>He is a founder and trustee of The MGA Foundation, a charity offering financial support to people from non-privileged backgrounds in Scotland to pursue performing arts training. </p>
+        <p>Murray has served as a freelance advisor for the Institute of the Arts Barcelona, Cyprus Performing Arts and The Entertainment Department. </p>
+        <p>He is also an international judge for DanceStar world dance competitions, judging Qualifiers in South Africa and World Final in Croatia.</p>
+        <p>Successful north-east performers to have trained under Murray and at The MGA Academy include Fraserburgh’s own Elly Jay, who completed a Musical Theatre diploma at the Edinburgh school before embarking on a two-year stint as a performer at Universal Studios in Japan and several months in London. Next month she will be part of Ghost Das Musical at the Palladium in Stuttgart, Germany.</p>
+
     </div>),
 }
 
@@ -490,6 +538,8 @@ let articles = [
     dublinLiveOnMurrayChoreographer,
     thomasDohertyTeenVogue,
     //non-featured
+    fraserburghherald12Sep19,
+    thenorthernscot30Aug19,
     edinburghNews,
     falkirkHeraldOnCaitlinForret,
     newsAndStar,

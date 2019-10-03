@@ -206,12 +206,12 @@ article.open{
     article{
         width: 32%;
         display: inline-block;
-        margin-bottom: 2%;
+        margin:.5%;
     }
-    article:nth-child(3n+2){
-        margin-left: 2%;
-        margin-right: 2%;
-    }
+    // article:nth-child(3n+2){
+    //     margin-left: 2%;
+    //     margin-right: 2%;
+    // }
     article.open{
         width: 100%;
         order:-1;
@@ -310,13 +310,13 @@ article.open{
         article{
             width: 49%;
         }
-        article:nth-child(3n+2){
-            margin-left: 0%;
-            margin-right: 0%;
-        }
-        article:nth-child(odd){
-            margin-right: 2%;
-        }
+        // article:nth-child(3n+2){
+        //     margin-left: 0%;
+        //     margin-right: 0%;
+        // }
+        // article:nth-child(odd){
+        //     margin-right: 2%;
+        // }
         .article__heading{
             padding-top: 8rem;
         }
