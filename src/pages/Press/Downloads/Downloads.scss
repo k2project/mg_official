@@ -2,15 +2,12 @@
 
 .Downloads{
     color: $color_black;
-    margin-bottom: 4rem;
-    overflow: hidden;
-
 }
 .Downloads__link{
     cursor: pointer;
     color: #eee;
-    padding: 1rem 0;
-    margin-bottom: 0;
+    padding: 3rem 0;
+
 }
 .Login{
     background: #efefef;
@@ -84,6 +81,10 @@
     display: grid;
     align-content: center;
     // padding-left: 10%;
+    div{
+        margin-bottom: 2rem;
+        padding-left: 2rem;
+    }
     .btn{
         border-color: #fff;
         background: #fff;

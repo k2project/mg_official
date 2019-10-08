@@ -27,7 +27,7 @@ export default function Downloads (){
 
     })
     return(<div className="Downloads" id="downloads">
-        {link && <div className="Downloads__link" onClick={handleLinkClick}>Press Materials For Download.</div>}
+        {link && <section className="Downloads__link" onClick={handleLinkClick}>Download Press Materials.</section>}
         {login && <Login loadGallery={ loadGallery }/>}
         {gallery && <Gallery hideGallery={hideGallery}/>}
     </div>)
@@ -86,13 +86,16 @@ function Gallery(props){
 }
 
 function Thumbnail(props){
-    const{webIMG, printIMG, caption} = props.data;
+    const{webIMG, printIMG, caption, details} = props.data;
     const bgUrl = 'url('+webIMG+')';
     return(<div className="Thumbnail" >
         {/* <div className="Thumbnail__img" style={{backgroundImage:bgUrl}}></div> */}
         <img src={webIMG} alt={caption}/>
         <div className="Thumbnail__btns">
-            {caption && <p>{caption}</p>}
+            <div>
+                {caption && <p>{caption}</p>}
+                {details && <i>{details}</i>}
+            </div>
             <a href={webIMG} download className="btn"> Download Web Media</a>
             <a href={printIMG} download className="btn"> Download Print Media</a>
         </div>
