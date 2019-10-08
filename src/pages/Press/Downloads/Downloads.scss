@@ -1,0 +1,96 @@
+@import './../../../App.scss';  //import vars and mixins
+
+.Downloads{
+    color: $color_black;
+    margin-bottom: 4rem;
+    overflow: hidden;
+
+}
+.Downloads__link{
+    cursor: pointer;
+    color: #eee;
+    padding: 1rem 0;
+    margin-bottom: 0;
+}
+.Login{
+    background: #efefef;
+    padding-bottom: 5rem;
+    input{
+        text-align: center;
+        background: none;
+        border: solid .2rem $color_theme;
+        border-radius: 2.5rem;
+        width: 30rem;
+        padding: 1rem 2rem;
+        font-size: 1.4rem;
+        // color: #fff;
+    }
+    .btn{
+        background: $color_theme;
+        color: $color_black;
+        width: 13rem;
+        font-size: 1.2rem;
+        padding: 1.2rem;
+        margin-left: 2rem;
+
+    }
+}
+.Login_err{
+    font-size: 1.1rem;
+    position: absolute;
+    bottom: 1rem;
+    text-align: center;
+    width: 100%;
+}
+.Gallery{
+    background: #efefef;
+    padding: 7rem 0;
+    section{
+        background: none;
+    }
+
+}
+.Gallery__close{
+    position: absolute;
+    right: 0;
+    top: -5rem;
+    font-size: 5rem;
+    cursor: pointer;
+}
+.Thumbnail{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    grid-column-gap: 5vw;
+    width: 80%;
+    padding: 2rem 0 4rem;
+    margin: auto;
+    img{
+        width: 40vw;
+    }
+
+}
+
+.Thumbnail__img{
+    background-size: cover;
+    background-position: center;
+    width: 35vw;
+    // height: 20vw;
+
+}
+.Thumbnail__btns{
+    width: 20vw;
+    text-align: left;
+    display: grid;
+    align-content: center;
+    // padding-left: 10%;
+    .btn{
+        border-color: #fff;
+        background: #fff;
+        color: #111;
+        display: block;
+        margin: 2rem 0 0;
+        font-size: 1.2rem;
+
+    }
+}
