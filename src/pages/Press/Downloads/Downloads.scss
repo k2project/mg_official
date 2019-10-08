@@ -102,4 +102,19 @@
     position: absolute;
     display: grid;
     align-content: center;
+    img{
+        width: 8rem;
+        margin: auto;
+        animation: imgloader 1s .5s infinite linear;
+        margin-bottom: 1rem;
+    }
+}
+@keyframes imgloader{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 1;
+        transform: rotate(360deg);
+    }
 }

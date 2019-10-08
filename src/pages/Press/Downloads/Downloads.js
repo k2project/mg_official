@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Downloads.scss';
 import {mediaDownloads} from './mediaDownloads';
+import loader from '../../../media/icons/loader.png';
 
 export default function Downloads (){
     const[link, showLink] = useState(true);
@@ -89,6 +90,7 @@ function Thumbnail(props){
     const[imgLoaded, setImgToLoaded] = useState(false)
     function loadingImg(){
         setImgToLoaded(true)
+
     }
     return(
         <div>
@@ -102,7 +104,10 @@ function Thumbnail(props){
                     <a href={webIMG} download className="btn"> Download Web Media</a>
                     <a href={printIMG} download className="btn"> Download Print Media</a>
                 </div>
-                {!imgLoaded && <div className="Thumbnail__loader">Loading ...</div>}
+                {!imgLoaded && <div className="Thumbnail__loader">
+                    <img src={loader} alt='Loading...'/>
+                    <p>Loading...</p>
+                </div>}
             </div>
 
         </div>
