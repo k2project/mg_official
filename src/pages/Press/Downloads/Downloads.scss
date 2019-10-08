@@ -95,3 +95,11 @@
 
     }
 }
+.Thumbnail__loader{
+    width: 100%;
+    height: 100%;
+    background: #efefef;
+    position: absolute;
+    display: grid;
+    align-content: center;
+}

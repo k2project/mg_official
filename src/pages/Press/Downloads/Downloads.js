@@ -11,7 +11,6 @@ export default function Downloads (){
         showLogin(true);
     }
     function loadGallery(){
-        console.log('gallery')
         showLogin(false)
         showGallery(true);
     }
@@ -39,8 +38,7 @@ function Login(props){
 
         const input = document.querySelector('.Login input');
         if(input.value){
-            if(process.env.REACT_APP_LOGIN_PASS === input.value){
-                console.log('loadding gallery...')
+            if(process.env.REACT_APP_LOGIN_PASS === input.value.trim()){
                 props.loadGallery();
             }else{
                 setErr('INCORRECT PASSWORD! Try again or contact Murray at murray@murraygrantofficial.com.')
@@ -76,6 +74,7 @@ function Login(props){
 }
 
 function Gallery(props){
+
     const thumbnails = mediaDownloads.map((download,i)=><Thumbnail data={download} key={'Thumbnail_'+i}/>)
     return(<div className="Gallery">
         <section>
@@ -87,17 +86,25 @@ function Gallery(props){
 
 function Thumbnail(props){
     const{webIMG, printIMG, caption, details} = props.data;
-    const bgUrl = 'url('+webIMG+')';
-    return(<div className="Thumbnail" >
-        {/* <div className="Thumbnail__img" style={{backgroundImage:bgUrl}}></div> */}
-        <img src={webIMG} alt={caption}/>
-        <div className="Thumbnail__btns">
-            <div>
-                {caption && <p>{caption}</p>}
-                {details && <i>{details}</i>}
+    const[imgLoaded, setImgToLoaded] = useState(false)
+    function loadingImg(){
+        setImgToLoaded(true)
+    }
+    return(
+        <div>
+            <div className="Thumbnail" >
+                <img src={webIMG} alt={caption} onLoad={loadingImg}/>
+                <div className="Thumbnail__btns">
+                    <div>
+                        {caption && <p>{caption}</p>}
+                        {details && <i>{details}</i>}
+                    </div>
+                    <a href={webIMG} download className="btn"> Download Web Media</a>
+                    <a href={printIMG} download className="btn"> Download Print Media</a>
+                </div>
+                {!imgLoaded && <div className="Thumbnail__loader">Loading ...</div>}
             </div>
-            <a href={webIMG} download className="btn"> Download Web Media</a>
-            <a href={printIMG} download className="btn"> Download Print Media</a>
+
         </div>
-    </div>)
+    )
 }
