@@ -14,12 +14,19 @@ export default function Contact (){
             <div className="Contact">
                 <Page data = {appPages.contact.topContent}>
                     <section className="Contact__section">
-                        <div className="section__title">General Enquiries</div>
+                        {/* <div className="section__title">General Enquiries</div>
                         <p>
                             <b className="jennyMcLean"> Jenny McLean</b> <br/>
                             contact@murraygrantofficial.com <br/>
                             +44 (0) 330 0242941
+                        </p> */}
+                        <div className="section__title">Direct Enquiries</div>
+                        <p className="murrayEmail">
+                            murray@murraygrantofficial.com
                         </p>
+                        <div>
+                            <SocialMedia/>
+                        </div>
                         <div className="section__title">Media Enquiries</div>
                         <div className="Contact__media" id="media_enquiries">
                             <p>
@@ -35,13 +42,7 @@ export default function Contact (){
                                 alex@thisistailormade.com
                             </p>
                         </div>
-                        <div className="section__title">Direct Enquiries</div>
-                        <p className="murrayEmail">
-                            murray@murraygrantofficial.com
-                        </p>
-                        <div>
-                            <SocialMedia/>
-                        </div>
+
                     </section>
 
                 </Page>
