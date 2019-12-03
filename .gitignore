@@ -15,7 +15,7 @@
 /backup
 
 #downloads
-/downloads
+/src/media/downloads
 
 # misc
 .DS_Store
