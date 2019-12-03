@@ -29,8 +29,7 @@ export default function Downloads (){
     return(<div className="Downloads" id="downloads">
         {link && <section className="Downloads__link" onClick={handleLinkClick}>Download Press Materials.</section>}
         {login && <Login loadGallery={ loadGallery }/>}
-        {/* {gallery && <Gallery hideGallery={hideGallery}/>} */}
-        <Gallery hideGallery={hideGallery}/>}
+        {!gallery && <Gallery hideGallery={hideGallery}/>}
     </div>)
 }
 
