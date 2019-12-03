@@ -29,7 +29,8 @@ export default function Downloads (){
     return(<div className="Downloads" id="downloads">
         {link && <section className="Downloads__link" onClick={handleLinkClick}>Download Press Materials.</section>}
         {login && <Login loadGallery={ loadGallery }/>}
-        {gallery && <Gallery hideGallery={hideGallery}/>}
+        {/* {gallery && <Gallery hideGallery={hideGallery}/>} */}
+        <Gallery hideGallery={hideGallery}/>}
     </div>)
 }
 
@@ -78,38 +79,42 @@ function Gallery(props){
 
     const thumbnails = mediaDownloads.map((download,i)=><Thumbnail data={download} key={'Thumbnail_'+i}/>)
     return(<div className="Gallery">
+        <div className="Gallery__close" onClick={props.hideGallery}>&times;</div>
         <section>
-            <div className="Gallery__close" onClick={props.hideGallery}>&times;</div>
             {thumbnails}
         </section>
     </div>)
 }
 
 function Thumbnail(props){
-    const{webIMG, printIMG, caption, details} = props.data;
+    const{caption, orientation, original, large, medium, small} = props.data;
     const[imgLoaded, setImgToLoaded] = useState(false)
     function loadingImg(){
         setImgToLoaded(true)
 
     }
-    return(
-        <div>
-            <div className="Thumbnail" >
-                <img src={webIMG} alt={caption} onLoad={loadingImg}/>
-                <div className="Thumbnail__btns">
-                    <div>
-                        {caption && <p>{caption}</p>}
-                        {details && <i>{details}</i>}
-                    </div>
-                    <a href={webIMG} download className="btn"> Download Web Media</a>
-                    <a href={printIMG} download className="btn"> Download Print Media</a>
-                </div>
-                {!imgLoaded && <div className="Thumbnail__loader">
-                    <img src={loader} alt='Loading...'/>
-                    <p>Loading...</p>
-                </div>}
-            </div>
 
+    return(
+        <div className="Thumbnail" >
+            <div className="Thumbnail__imgs">
+                <img src={small.src} alt={caption} onLoad={loadingImg} className={"Thumbnail__img Thumbnail__img_"+ orientation} />
+            </div>
+            <div className="Thumbnail__btns">
+                <div>
+                    {caption && <p>{caption}</p>}
+                </div>
+
+                <a href={original.src} download className="btn"> Original Size ( {original.size} )</a>
+                <a href={large.src} download className="btn"> Large Size ( {large.size} )</a>
+                <a href={medium.src} download className="btn"> Medium Size ( {medium.size} )</a>
+                <a href={small.src} download className="btn"> Small Size ( {small.size} )</a>
+
+            </div>
+            {!imgLoaded && <div className="Thumbnail__loader">
+                <img src={loader} alt='Loading...'/>
+                <p>Loading...</p>
+            </div>}
         </div>
+
     )
 }
