@@ -14,6 +14,9 @@
 #backup
 /backup
 
+#downloads
+/downloads
+
 # misc
 .DS_Store
 .env.local
