@@ -20,6 +20,16 @@ import image4_large from './../../../media/downloads/MurrayGrant_img4_large.jpg'
 import image4_medium from './../../../media/downloads/MurrayGrant_img4_medium.jpg';
 import image4_small from './../../../media/downloads/MurrayGrant_img4_small.jpg';
 
+import image5_original from './../../../media/downloads/MurrayGrant_img5_original.jpg';
+import image5_large from './../../../media/downloads/MurrayGrant_img5_large.jpg';
+import image5_medium from './../../../media/downloads/MurrayGrant_img5_medium.jpg';
+import image5_small from './../../../media/downloads/MurrayGrant_img5_small.jpg';
+
+import image6_original from './../../../media/downloads/MurrayGrant_img6_original.jpg';
+import image6_large from './../../../media/downloads/MurrayGrant_img6_large.jpg';
+import image6_medium from './../../../media/downloads/MurrayGrant_img6_medium.jpg';
+import image6_small from './../../../media/downloads/MurrayGrant_img6_small.jpg';
+
 
 const image1 = {
     caption:'Murray Grant - official portrait.',
@@ -110,6 +120,50 @@ const image4 = {
 
 
 }
+const image5 = {
+    caption:'Murray Grant - official portrait.',
+    orientation:'landscape',
+    original:{
+        src:image5_original,
+        size:'2634 x 1760'
+    },
+    large:{
+        src:image5_large,
+        size:'1920 x 1282'
+    },
+    medium:{
+        src:image5_medium,
+        size:'1280 x 855'
+    },
+    small:{
+        src:image5_small,
+        size:'640 x 427'
+    },
+
+
+}
+const image6 = {
+    caption:'Murray Grant - official portrait.',
+    orientation:'landscape',
+    original:{
+        src:image6_original,
+        size:'2616 x 1760'
+    },
+    large:{
+        src:image6_large,
+        size:'1920 x 1291'
+    },
+    medium:{
+        src:image6_medium,
+        size:'1280 x 861'
+    },
+    small:{
+        src:image6_small,
+        size:'640 x 430'
+    },
+
+
+}
 
 
 export const mediaDownloads = [
@@ -118,5 +172,7 @@ export const mediaDownloads = [
     image2,
     image3,
     image4,
+    image5,
+    image6,
 
 ]
