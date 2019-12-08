@@ -33,7 +33,6 @@ import image6_small from './../../../media/downloads/MurrayGrant_img6_small.jpg'
 
 const image1 = {
     caption:'Murray Grant - official portrait.',
-    orientation:'portrait',
     original:{
         src:image1_original,
         size:'2933 x 4400'
@@ -56,7 +55,6 @@ const image1 = {
 
 const image2 = {
     caption:'Murray Grant - official portrait.',
-    orientation:'landscape',
     original:{
         src:image2_original,
         size:'4144 x 2933'
@@ -78,7 +76,6 @@ const image2 = {
 }
 const image3 = {
     caption:'Murray Grant - official portrait.',
-    orientation:'landscape',
     original:{
         src:image3_original,
         size:'4572 x 2966'
@@ -100,7 +97,6 @@ const image3 = {
 }
 const image4 = {
     caption:'Murray Grant - official portrait.',
-    orientation:'landscape',
     original:{
         src:image4_original,
         size:'4576 x 3052'
@@ -122,7 +118,6 @@ const image4 = {
 }
 const image5 = {
     caption:'Murray Grant - official portrait.',
-    orientation:'landscape',
     original:{
         src:image5_original,
         size:'2634 x 1760'
@@ -144,7 +139,6 @@ const image5 = {
 }
 const image6 = {
     caption:'Murray Grant - official portrait.',
-    orientation:'landscape',
     original:{
         src:image6_original,
         size:'2616 x 1760'

@@ -29,7 +29,7 @@ export default function Downloads (){
     return(<div className="Downloads" id="downloads">
         {link && <section className="Downloads__link" onClick={handleLinkClick}>Download Press Materials.</section>}
         {login && <Login loadGallery={ loadGallery }/>}
-        {!gallery && <Gallery hideGallery={hideGallery}/>}
+        {gallery && <Gallery hideGallery={hideGallery}/>}
     </div>)
 }
 
@@ -86,7 +86,7 @@ function Gallery(props){
 }
 
 function Thumbnail(props){
-    const{caption, orientation, original, large, medium, small} = props.data;
+    const{caption, original, large, medium, small} = props.data;
     const[imgLoaded, setImgToLoaded] = useState(false)
     function loadingImg(){
         setImgToLoaded(true)
@@ -96,7 +96,8 @@ function Thumbnail(props){
     return(
         <div className="Thumbnail" >
             <div className="Thumbnail__imgs">
-                <img src={small.src} alt={caption} onLoad={loadingImg} className={"Thumbnail__img Thumbnail__img_"+ orientation} />
+                <img src={small.src} alt={caption} onLoad={loadingImg} className="Thumbnail__img" />
+                <a href={small.src} download> Click to download</a>
             </div>
             <div className="Thumbnail__btns">
                 <div>
