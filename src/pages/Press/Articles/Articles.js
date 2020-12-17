@@ -1,17 +1,16 @@
 import React, { useState } from 'react';
-import {NavHashLink} from 'react-router-hash-link';
 import './Articles.scss';
 
 import {articlesFeatured, articlesOther} from './../../../api/articles';
 
 export default function Articles (){
-    const [displayAllArticles, setDisplayAllArticles] = useState(false);
+    const [setDisplayAllArticles] = useState(false);
 
-    function showOtherArticles(e){
-        // e.target.scrollIntoView();
-        e.target.remove();
-        setDisplayAllArticles(true);
-    }
+    // function showOtherArticles(e){
+    //     // e.target.scrollIntoView();
+    //     e.target.remove();
+    //     setDisplayAllArticles(true);
+    // }
     const articlesFeaturedList = articlesFeatured.map(article=>displayArticle(article));
     const articlesOtherList = articlesOther.map(article=>displayArticle(article));
 
@@ -32,7 +31,7 @@ export default function Articles (){
 }
 function displayArticle(article){
     const{cls, date, author, source, title, subtitle, text, img, link} = article;
-    const bg = require('./../../../media/imgs/'+img.path);
+    const bg = require('./../../../media/imgs/'+img.path).default;
     return (
         <article className={cls} key={cls}>
 

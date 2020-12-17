@@ -1,5 +1,4 @@
-import React, {useState, useEffect} from 'react';
-import { NavLink } from 'react-router-dom';
+import React from 'react';
 import './Clients.scss';
 import {pastProjectsClients} from './../../../api/projects';
 
@@ -7,7 +6,7 @@ export default function Clients (){
     const clientsLogos = pastProjectsClients.map(project=>{
         const{clientsLogo} = project.imgs;
         const {name} = project.projectName;
-        const logo = require('./../../../media/logos/'+clientsLogo);
+        const logo = require('./../../../media/logos/'+clientsLogo).default;
         return <img src={logo} alt={name} key = {"logos_"+name}/>
 
     })
@@ -17,7 +16,7 @@ export default function Clients (){
             <div className="wrapper flex">
                 {clientsLogos}
             </div>
-            {/* <NavLink to="/biography" className="btn">About Murray</NavLink> */}
+          
         </section>
     )
 

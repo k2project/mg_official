@@ -51,7 +51,7 @@ function Slideshow(){
     })
     const slidesBg = pastProjectsSlides.map((slide, index)=>{
 
-        const bg=require('./../../../media/imgs/'+slide.imgs.bg);
+        const bg=require('./../../../media/imgs/'+slide.imgs.bg).default;
         return (
             <div className="Slideshow__slide"
                 key={`slideshow_slide_${slide.projectName.name}`}

@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './PastProjects.scss';
 import {pastProjectsSlides} from './../../../api/projects';
-import {slideToLeft, slideToRight,handleTouchStart, handleTouchMove, slidingUsingArrowsKeys} from './../../../api/funs';
+import {handleTouchStart, handleTouchMove} from './../../../api/funs';
 
 export default function PastProjects (){
     return(
@@ -83,10 +83,10 @@ function Slideshow(){
             el.removeEventListener('touchstart', runHandleTouchStart);
             el.removeEventListener('touchmove', runHandleTouchMove);
         }
-    })
+    },[currentSlide, xDown, yDown, stopSlideshow])
     const slidesBg = pastProjectsSlides.map((slide, index)=>{
 
-        const bg=require('./../../../media/imgs/'+slide.imgs.bg);
+        const bg=require('./../../../media/imgs/'+slide.imgs.bg).default;
         return (
             <div className={"Slideshow__slide "+slide.cls}
                 key={`slideshow_slide_${slide.projectName.name}`}

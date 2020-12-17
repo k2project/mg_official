@@ -1,4 +1,3 @@
-import React from 'react';
 
 import image1_original from './../../../media/downloads/MurrayGrant_img1_original.jpg';
 import image1_large from './../../../media/downloads/MurrayGrant_img1_large.jpg';

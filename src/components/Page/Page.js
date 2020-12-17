@@ -62,12 +62,12 @@ function Video (props){
 
         }
 
-    })
+    },[sound])
     return(
         <div className="Video">
             {videoLoading && <img src={loader} alt="loader" className="loader"/>}
             <video loop autoPlay id="page-video">
-                 <source src={require('./../../media/videos/'+path)} type="video/mp4" />
+                 <source src={require('./../../media/videos/'+path).default} type="video/mp4" />
             </video>
             {sound && <div className="video_ctrl_sound" onClick={()=>toggleSound(soundOn, setSound)}>
                 {soundOn && <img src={soundIsOn} alt="sound on"/>}

@@ -1,7 +1,6 @@
 import React  from 'react';
 
 import facebook from './../media/icons/facebook.png';
-import twitter from './../media/icons/twitter.png';
 import instagram from './../media/icons/instagram.png';
 import linkedin from './../media/icons/linkedin.png';
 

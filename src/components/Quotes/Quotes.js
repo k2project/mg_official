@@ -1,26 +1,29 @@
 import React, {useState, useEffect} from 'react';
 import './Quotes.scss';
 
-import {slideToLeft, slideToRight,handleTouchStart, handleTouchMove, slidingUsingArrowsKeys} from './../../api/funs';
+import {handleTouchStart, handleTouchMove} from './../../api/funs';
 import quotesIMG from './../../media/icons/quotes.png'
 
 export default function Quotes(props){
     let slider =null;
-    const {quotes, time} = props;
+    const { time} = props;
     const [currentIndex, setCurrentIndex] = useState(0);
     const [xDown, setxDown] = useState(null);
     const [yDown, setyDown] = useState(null);
 
+
     function runQuotes(){
-        // clearSlider();
         const quotes = document.querySelectorAll('.Quotes__quote');
         const ctrls = document.querySelectorAll('.Quotes__slider li');
-        quotes.forEach((q,z)=>{
+
+        quotes.forEach((q, z) => {
             q.classList.remove('current');
             ctrls[z].classList.remove('current');
         })
+
         quotes[currentIndex].classList.add('current')
         ctrls[currentIndex].classList.add('current')
+
         slider = setTimeout(()=>{
             let index = currentIndex === quotes.length-1 ? 0 : currentIndex+1;
             setCurrentIndex(index);
@@ -37,9 +40,16 @@ export default function Quotes(props){
             clearTimeout(slider);
         }
     }
+    function restartSlider(e) {
+        clearSlider();
+        setCurrentIndex(Number(e.target.dataset.currentSlide));
+        runQuotes();
+    }
     useEffect(()=>{
         runQuotes();
         const el = document.querySelector('.Quotes');
+        const slider = document.querySelector('.Quotes__slider ');
+        
         // //swipping
         const stateData = {
             arr:props.quotes,
@@ -60,19 +70,25 @@ export default function Quotes(props){
         }
         el.addEventListener('touchmove', runHandleTouchMove);
 
+        // slider.addEventListener('mouseenter', clearSlider);
+        // slider.addEventListener('mouseleave', restartSlider);
+        
         return ()=>{
             clearSlider();
             el.removeEventListener('touchstart', runHandleTouchStart);
             el.removeEventListener('touchmove', runHandleTouchMove);
         }
-    })
+    }, [props.quotes, currentIndex, xDown, yDown, clearSlider])
+    
     const quotesList = props.quotes.map(q => displayQuotes(q));
-    const ctrls = Array.from({length:props.quotes.length}).map((li,i)=><li key={"quotes li "+i} data-index={i} onClick={e=>getQuote(e)}></li>)
+
+    const ctrls = Array.from({ length: props.quotes.length }).map((li, i) => <li key={"quotes li " + i} data-index={i} onClick={e => getQuote(e)}></li>)
+    
     return(
         <section className="Quotes">
             <div className="section__body">
                 <img src={quotesIMG} alt="quotes" className="Quotes__quoteIMG"/>
-                <div className="Quotes__slider">
+                <div className="Quotes__slider" data-current-slide={currentIndex}>
                     {quotesList}
                     <ul>
                         {ctrls}
@@ -92,12 +108,12 @@ function displayQuotes(q){
                 <p>{q.text}</p>
             </div>
             <div className="Quote__contributor">
-                {q.img && <img src={require("./../../media/"+q.img)} alt={q.name} className="Quote__img"/>}
+                {q.img && <img src={require("./../../media/"+q.img).default} alt={q.name} className="Quote__img"/>}
                 <p>
                     {q.name && <b>{q.name}<br/></b>}
                     {q.role &&<span> {q.role}<br/></span>}
                     {q.show && <i>{q.show}<br/></i>}
-                    {q.institution && <a href={q.link} target="_blank"><u>
+                    {q.institution && <a href={q.link} target="_blank" rel="noreferrer noopener"><u>
                         <i>{q.institution}</i>
                     </u></a>}
 

@@ -140,22 +140,22 @@ const mgaManagement = {
     current:true,
     projectName:{
         display:false,
-        name:'MGA Management',
+        name:'Network Artists Management',
     },
     imgs:{
         bg:null,
-        logo:'mgam_white.png',
+        logo:'naml.png',
     },
     role:{
         title:'Co-founder & Creative Director ',
         subtitle:null,
     },
-    desc:'MGA Management is a Theatre, TV and Film Agency representing performers from across the UK and beyond, established in 2005, with offices in London and Edinburgh. MGA Management has been representing professional Actors, Dancers and Musical Theatre performers for over thirteen years in Scotland, complemented by a base in Covent Garden opened in December 2015.',
+    desc:'Network Artist Management, formally MGA Management, is a Theatre, Film and TV Agency representing professional performers from across the UK and beyond from offices in both Edinburgh and London. Established in 2005, we have been representing professional Actors, Dancers and Musical Theatre performers for over fifteen years working closely with each client providing a personal management service.',
     links:{
-        facebook:'https://www.facebook.com/mgamanagement/',
-        instagram:'https://www.instagram.com/mgamanagement/',
-        twitter:'https://twitter.com/MGAManagement',
-        website:'https://www.mgamanagement.com/',
+        facebook:'https://www.facebook.com/networkartistmanagement/',
+        instagram:'https://www.instagram.com/networkartistmanagement/',
+        twitter:'https://twitter.com/nam_agency ',
+        website:'https://www.mgamanagement.com',
     }
 }
 const masterclasses = {
@@ -228,23 +228,23 @@ const theCore= {
     current:true,
     projectName:{
         display:false,
-        name:'The Core',
+        name:'The Theatre Store',
     },
     imgs:{
         bg:null,
-        logo:'theCore.png',
+        logo:'theatreStore.jpg',
     },
     role:{
         title:'Co-founder & Vice Chair',
         subtitle:null,
     },
 
-    desc:'The Core is a charity shop with a difference, offering customers the opportunity to shop for all things theatrical and purchase theatre tickets at discounted rates. It is a hub to provide information on local performing arts events, offers guidance on opportunities to practise and train in the performing arts across the city and will host signings and talks by theatre stars! All proceeds go to the MGA Foundation.',
+    desc:(<><p>Your one-stop-shop for everything Showbiz!</p><p>Get your West End Theatre, National Event and Edinburgh Theatre Tickets on our Box Office in store or online. And browse our selection of theatrical gifts perfect for birthdays and those opening night celebrations!</p><p>Located in the heart of Stockbridge, Edinburgh, you can drop by in person or find everything here online.</p><p>If we don’t have what you want, or you don’t know what you want, let us help you find it!</p></>),
     links:{
-        facebook:'https://www.facebook.com/TheCoreScotland/',
-        instagram:'https://www.instagram.com/thecorescotland/',
+        facebook:'https://www.facebook.com/thetheatrestore',
+        instagram:'https://www.instagram.com/thetheatrestore/',
         twitter:null,
-        website:'http://www.thecorescotland.com/',
+        website:'http://www.thetheatrestore.com',
     }
 }
 //=============================================
@@ -297,27 +297,27 @@ const theBourbonStreetBoys= {
     </div>),
     links:null,
 }
-const saturdayNightFever= {
-    cls:'saturdayNightFever',
-    current:false,
-    projectName:{
-        display:false,
-        name:'Saturday Night Fever',
-    },
-    imgs:{
-        bg:'saturdayNightFever.jpg',
-        logo:null,
-    },
-    role:{
-        title:'Dance Captain / Ensemble ',
-        subtitle:null,
-    },
-    desc:(<div>
-        <p>Broadway and West End hit musical with songs from the Bee Gee’s based on Nick Cohn’s 1975 New York magazine article “Tribal Rites of the New Saturday Night”.</p>
-        <p><b>2015 production in Amstetten, Austria. </b></p>
-    </div>),
-    links:null,
-}
+// const saturdayNightFever= {
+//     cls:'saturdayNightFever',
+//     current:false,
+//     projectName:{
+//         display:false,
+//         name:'Saturday Night Fever',
+//     },
+//     imgs:{
+//         bg:'saturdayNightFever.jpg',
+//         logo:null,
+//     },
+//     role:{
+//         title:'Dance Captain / Ensemble ',
+//         subtitle:null,
+//     },
+//     desc:(<div>
+//         <p>Broadway and West End hit musical with songs from the Bee Gee’s based on Nick Cohn’s 1975 New York magazine article “Tribal Rites of the New Saturday Night”.</p>
+//         <p><b>2015 production in Amstetten, Austria. </b></p>
+//     </div>),
+//     links:null,
+// }
 const guysSingDolls= {
     cls:'guysSingDolls',
     current:false,
@@ -430,26 +430,26 @@ const zannaDont = {
     links:null,
 }
 
-const tonight = {
-    cls:'tonight',
-    current:false,
-    projectName:{
-        display:false,
-        name:(<div>TONIGHT <br/><small>from  the West End</small>...</div>),
-    },
-    imgs:{
-        bg:'tonight.jpg',
-        logo:null,
-    },
-    role:{
-        title:'Director & Choreographer',
-        subtitle:null,
-    },
-    desc:(<div>
-        <p></p>
-    </div>),
-    links:null,
-}
+// const tonight = {
+//     cls:'tonight',
+//     current:false,
+//     projectName:{
+//         display:false,
+//         name:(<div>TONIGHT <br/><small>from  the West End</small>...</div>),
+//     },
+//     imgs:{
+//         bg:'tonight.jpg',
+//         logo:null,
+//     },
+//     role:{
+//         title:'Director & Choreographer',
+//         subtitle:null,
+//     },
+//     desc:(<div>
+//         <p></p>
+//     </div>),
+//     links:null,
+// }
 
 //=============================================
 //=============================================
@@ -1226,7 +1226,7 @@ const projects=[
     mgaManagement,
     theCore,
     danceStar,
-    mgaFoundation,
+    // mgaFoundation,
     masterclasses,
     fierceTheatreSchools,
     choreographyProjects,

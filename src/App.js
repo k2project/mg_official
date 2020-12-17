@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.scss';
 
 //list pages imports before router
-import Holdingpage from './pages/Holdingpage';
+// import Holdingpage from './pages/Holdingpage';
 import Home from './pages/Home/Home';
 import Bio from './pages/Bio/Bio';
 import Endorsements from './pages/Endorsements/Endorsements';

@@ -1,16 +1,16 @@
 @import './../../../App.scss';
 
-.CurrentProjects{
+.CurrentProjects {
     background: none;
     // display: none; //anim
     margin-top: -14rem;
     opacity: 0;
     top: 10rem;
-    @include anim( slideInCPs, .7s, 0s, ease-out);
+    @include anim(slideInCPs, 0.7s, 0s, ease-out);
     color: #bfbfbf;
 }
 
-.projects{
+.projects {
     width: 100rem;
     display: grid;
     grid-auto-rows: 23rem;
@@ -20,29 +20,31 @@
     text-align: center;
     overflow: hidden;
 }
-.project{
-    background:$color_darker;
-    box-shadow: 0rem 1rem 2rem .5rem rgba(21,21,21, .5);
+.project {
+    background: $color_darker;
+    box-shadow: 0rem 1rem 2rem 0.5rem rgba(21, 21, 21, 0.5);
     grid-column: span 3;
     display: grid;
     align-content: center;
     overflow: hidden;
     cursor: pointer;
 }
+.mgaManagement,
+.theBeyondBroadwayExperience,
+.theCore,
 .ted,
 .mgaAcademy,
-.beyondBroadwayProduction{
+.beyondBroadwayProduction {
     grid-column: span 4;
-    .project__logo{
+    .project__logo {
         width: 80%;
     }
 }
-.project__logo{
+.project__logo {
     width: 100%;
-    padding: 3rem ;
+    padding: 3rem;
     margin: auto;
-    transition: .25s ease-out;
-
+    transition: 0.25s ease-out;
 }
 // .project__role.cover{
 //     padding:2rem;
@@ -65,9 +67,9 @@
 //
 //
 // }
-.project:hover .project__logo{
+.project:hover .project__logo {
     transform: scale(1.1);
-    transition: .25s ease-in;
+    transition: 0.25s ease-in;
 }
 // .projects:hover .project:hover{
 //      // opacity: 0;
@@ -85,81 +87,73 @@
 //
 // }
 
-
 //max 1300
-@include desktop-sm{
-    .projects{
+@include desktop-sm {
+    .projects {
         width: 80rem;
         grid-auto-rows: 17.5rem;
     }
-    .project__logo{
+    .project__logo {
         padding: 1rem;
         width: 80%;
     }
-    .project__role.cover{
-        padding:1.5rem;
+    .project__role.cover {
+        padding: 1.5rem;
         font-size: 1.2rem;
     }
-
 }
 //max 1024
-@include tablet{
-    .projects{
+@include tablet {
+    .projects {
         width: 64rem;
         grid-auto-rows: 14.5rem;
     }
-    .project__logo{
+    .project__logo {
         padding: 1rem;
         width: 90%;
     }
-
 }
 //max 768
-@include mobile{
-    .CurrentProjects{
+@include mobile {
+    .CurrentProjects {
         margin-top: -7rem;
     }
-    .projects{
+    .projects {
         // border: solid 1px red;
         grid-template-columns: 1fr 1fr;
         width: 40rem;
     }
-    .project{
+    .project {
         grid-column: span 1;
     }
     .ted,
     .mgaAcademy,
-    .beyondBroadwayProduction{
+    .beyondBroadwayProduction {
         grid-column: span 1;
     }
-    .ted{
-        grid-column: span 2;
-        // grid-row: 1;
-        .project__logo{
-            width: 50%;
-            padding: 1rem;
-        }
-    }
-
+    // .ted {
+    //     grid-column: span 2;
+    //     // grid-row: 1;
+    //     .project__logo {
+    //         width: 50%;
+    //         padding: 1rem;
+    //     }
+    // }
 }
 // max 480
-@include mobile-sm{
-
-    .projects{
+@include mobile-sm {
+    .projects {
         width: 85vw;
     }
 
-
-    .project__logo{
+    .project__logo {
         padding: 0.7rem;
     }
-
 }
 
 // mobile landscape
-@include mobile-landscape{
-    .CurrentProjects{
+@include mobile-landscape {
+    .CurrentProjects {
         margin-top: -7rem;
     }
-
 }

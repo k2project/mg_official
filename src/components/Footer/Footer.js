@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import {NavHashLink} from 'react-router-hash-link';
 import './Footer.scss';
 
 export default function Footer(){
@@ -18,7 +17,7 @@ export default function Footer(){
                 <NavLink to="/press" >Press</NavLink> */}
                 <NavLink to="/contact" >Contact</NavLink>
                 <NavLink to="/cookies_policy" >Cookies Policy</NavLink>
-                <a onClick={()=>{window.scrollTo(0,0)}}>Go To Top</a>
+                {/* <a onClick={()=>{window.scrollTo(0,0)}}>Go To Top</a> */}
             </div>
         </footer>
     )

@@ -1,12 +1,10 @@
 import React, {useState, useEffect} from 'react';
-import { NavLink } from 'react-router-dom';
 import DocumentMeta from 'react-document-meta';
 
 import './Home.scss';
 import {appPages} from './../../api/appData';
 
 import Page from './../../components/Page/Page';
-import SocialMedia from './../../components/SocialMedia';
 import Top from './Top/Top';
 import CurrentProjects from './CurrentProjects/CurrentProjects';
 import PastProjects from './PastProjects/PastProjects';
@@ -26,7 +24,7 @@ export default function Home (){
             },t)
             sessionStorage.setItem('initAnim', 'true');
         }
-    });
+    },[]);
     return(
         <DocumentMeta {...appPages.home.meta}>
             <div className="Home">

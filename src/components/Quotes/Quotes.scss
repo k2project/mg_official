@@ -1,13 +1,20 @@
-@import './../../App.scss';  //import vars and mixins
+@import './../../App.scss'; //import vars and mixins
 
-.Quotes{
-    .section__body{
+.Quotes {
+    .section__body {
         padding-bottom: 5rem;
         text-align: center;
     }
+    p {
+        text-align: left !important;
+    }
+    .q_large {
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
 }
 
-.Quotes__quoteIMG{
+.Quotes__quoteIMG {
     width: 16rem;
     top: -3rem;
     background: $color_dark;
@@ -15,38 +22,39 @@
     z-index: 2;
 }
 //Masterclass Quotes__slider height defined in Masterclasses.scss
-.Quotes__slider{
-    height: 27rem;
-    border: solid .1rem #4f4f4f;
+.Quotes__slider {
+    min-height: 40rem;
+    border: solid 0.1rem #4f4f4f;
     color: $color_silver;
     top: -8rem;
     overflow: hidden;
-    ul{
+    ul {
         width: 100%;
         position: absolute;
         bottom: 0;
         padding: 0 8rem 2rem;
         text-align: right;
-        li{
-            height: .8rem;
-            width: .8rem;
+        z-index: 3;
+        li {
+            height: 0.8rem;
+            width: 0.8rem;
             border-radius: 100%;
             background: #2f2f2f;
             display: inline-block;
-            margin-left: .7rem;
+            margin-left: 0.7rem;
             cursor: pointer;
         }
-        li.current{
+        li.current {
             background: #aaa;
         }
     }
-    a{
+    a {
         z-index: 2;
         font-weight: bold;
     }
 }
 
-.Quotes__quote.cover{
+.Quotes__quote.cover {
     background: $color_dark;
     line-height: 2rem;
     // padding: 4.5rem 8rem 0;
@@ -54,110 +62,105 @@
     grid-gap: 2rem;
     align-content: space-between;
 
-    p{
+    p {
         margin: 0;
     }
     //for slider
     opacity: 0;
-    .Quote__text{
+    .Quote__text {
         left: -5rem;
         opacity: 0;
+        min-height: 20rem;
+        display: flex;
+        align-items: center;
     }
-    .Quote__contributor{
+    .Quote__contributor {
         opacity: 0;
         left: 8rem;
         color: #5f5f5f;
     }
-
 }
-.Quotes__quote.cover.current{
+.Quotes__quote.cover.current {
     opacity: 1;
     .Quote__text,
-    .Quote__contributor{
+    .Quote__contributor {
         top: 0;
         left: 0;
         opacity: 1;
-        transition: .75s ease-out;
+        transition: 0.75s ease-out;
+        z-index: 2;
     }
-
-
 }
 
 //max 1300
-@include desktop-sm{
-    .Quotes__quote.cover{
+@include desktop-sm {
+    .Quotes__quote.cover {
         // padding: 4rem 4rem 0;
         padding: 7rem 4rem 4rem;
     }
-    .Quotes__slider ul{
+    .Quotes__slider ul {
         padding-right: 4rem;
     }
-
 }
 //max 1024
-@include tablet{
-
-    .Quotes__quoteIMG{
+@include tablet {
+    .Quotes__quoteIMG {
         width: 14rem;
     }
-    .Quotes__slider{
-        height: 24rem;
-    }
-    .Quotes__quote.cover{
-        padding-top: 6rem;
-        .Quote__text{
+
+    .Quotes__quote.cover {
+        // padding-top: 6rem;
+        padding-top: 0;
+        .Quote__text {
             left: 0;
             top: 8rem;
             opacity: 0;
+            min-height: 30rem;
+            align-items: center;
         }
-        .Quote__contributor{
-            margin-top: -4rem;
+        .Quote__contributor {
             opacity: 0;
-            left:0;
-            top: 2rem;
+            left: 0;
+            padding-bottom: 2rem;
+            margin-top: -2rem;
+            p {
+                margin: 0;
+            }
         }
     }
-
 }
 //max 768
-@include mobile{
-
-    .Quotes{
-        .section__body{
+@include mobile {
+    .Quotes {
+        .section__body {
             padding-bottom: 0rem;
         }
     }
 
-    .Quotes__quoteIMG{
+    .Quotes__quoteIMG {
         width: 13rem;
     }
-    .Quotes__slider{
-        height: 35rem;
+    .Quotes__slider {
+        min-height: 60rem;
     }
 
-    .Quotes__quote.cover{
+    .Quotes__quote.cover {
         align-content: center;
-        padding: 0 4rem;
-        p{
+        padding: 0 2rem;
+        p {
             margin: 2rem 0;
         }
     }
-    // .Quotes__quote{
-    //     // padding: 3rem 4rem 0;
-    // }
-    .Quotes__slider ul{
+
+    .Quotes__slider ul {
         padding-right: 3rem;
+        padding-left: 0;
+        bottom: -1rem;
     }
 }
 // max 480
-@include mobile-sm{
-    .Quotes__slider{
-    }
-    // .Quotes__quote{
-    //     padding: 3rem 3rem 0;
-    // }
+@include mobile-sm {
 }
 // mobile landscape
-@include mobile-landscape{
-
+@include mobile-landscape {
 }

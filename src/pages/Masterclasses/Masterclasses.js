@@ -1,5 +1,4 @@
-import React, {useEffect} from 'react';
-import {NavHashLink} from 'react-router-hash-link';
+import React from 'react';
 import DocumentMeta from 'react-document-meta';
 import './Masterclasses.scss';
 import {appPages} from './../../api/appData';

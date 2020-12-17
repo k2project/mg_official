@@ -1,6 +1,4 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-import {NavHashLink} from 'react-router-hash-link';
 import DocumentMeta from 'react-document-meta';
 import './Choreography.scss';
 import {appPages} from './../../api/appData';
@@ -23,7 +21,7 @@ import LSOH  from './../../media/posters/LSOH.jpg';
 import Starnights  from './../../media/posters/Starnights.jpg';
 import TheProducers  from './../../media/posters/TheProducers.jpg';
 import Tonight2015  from './../../media/posters/Tonight2015.jpg';
-import Tonight2016  from './../../media/posters/Tonight2016.jpg';
+// import Tonight2016  from './../../media/posters/Tonight2016.jpg';
 import TonightXmas from './../../media/posters/TonightXmas.jpg';
 import WOZ from './../../media/posters/WOZ.jpg';
 import Zanna from './../../media/posters/Zanna.jpg';

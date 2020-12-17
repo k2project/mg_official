@@ -10,8 +10,8 @@ import twitter from './../../../../media/icons/twitter.png';
 import instagram from './../../../../media/icons/instagram.png';
 
 //for swipping
-let xDown = null;
-let yDown = null;
+// let xDown = null;
+// let yDown = null;
 export default function ProjectsSlider ( props ){
 
     const {index, setProjectIndex} = props;
@@ -52,7 +52,7 @@ export default function ProjectsSlider ( props ){
             el.removeEventListener('touchmove', runHandleTouchMove);
             document.removeEventListener('keydown', handleKeyDown);
         }
-    })
+    },[currentIndex, xDown, yDown])
     let  project = currentProjects[currentIndex];
     return(
         <div className="ProjectsSlider">
@@ -84,7 +84,7 @@ function displayProjectLayout(project){
 
             </div>
             <div className='projectDetails_rgt'>
-                <img src={require('./../../../../media/logos/'+imgs.logo)} alt={`${projectName.name} logo`} className="details__logo"/>
+                <img src={require('./../../../../media/logos/'+imgs.logo).default} alt={`${projectName.name} logo`} className="details__logo"/>
                 <div className="details__links">
                     {links && links.facebook && <a href={links.facebook} target="_blank"  rel="noopener noreferrer"> <img src={facebook} alt="facebook logo"/></a>}
                     {links && links.twitter && <a href={links.twitter}  target="_blank"  rel="noopener noreferrer"> <img src={twitter} alt="twitter logo"/></a>}

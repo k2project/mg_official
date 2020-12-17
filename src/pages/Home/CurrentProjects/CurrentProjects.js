@@ -20,13 +20,11 @@ export default function CurrentProjects (){
 }
 
 function displayCurrentProjectsLayout(project,index,cb){
-    const { cls, links, desc, imgs, projectName, subpageURL, role} = project;
+    const { cls, imgs, projectName} = project;
     return(
         <div className = {`project ${cls}`} key = {`box_${cls}`}  onClick={e => showProjectsSlider(e,index,cb)}>
-            <img src={require('./../../../media/logos/'+imgs.logo)} alt={projectName.name} className="project__logo" data-project={cls}/>
-            {/* <div className="project__role cover">
-                {role.title}
-            </div> */}
+            <img src={require('./../../../media/logos/'+imgs.logo).default} alt={projectName.name} className="project__logo" data-project={cls}/>
+           
         </div>
     )
 }

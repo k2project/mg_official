@@ -1,5 +1,27 @@
 import React from 'react';
 
+const tajana = {
+    name:'Tajana Pagitz',
+    title:' CEO DanceStar, Worldwide Dance Competition',
+    link: 'http://www.dancestar.org',
+    country:{
+        name:'Croatia',
+        flag:'croatia.png'
+    },
+    text:'During our time together, Murray always displayed two must - have attributes in the judging world : patience and flexibility. As an open minded person he is always able to approach a performance on its own terms. We appreciate him as a dancer, choreographer, director, artist and also highly appreciate him spreading the word and DanceStar spirit among fellow UK dancers and choreographers. With his ability to analyze, compare and rank he manages to effectively express the dancer’s success or shortcomings in an encouraging and effective manner and maintain a level of professionalism and respect at all times.',
+}
+
+const thomasDoherty = {
+    name:'Thomas Doherty ',
+    title:'TV & Movie Actor',
+    link: 'https://www.imdb.com/name/nm6015235/',
+    country:{
+        name:'United Kingdom',
+        flag:'uk.png'
+    },
+    text:'The most striking thing for me about Murray isn’t just his incredible ability as a professional dancer, or the respect I have for his extensive capability as a choreographer, but as a teacher, he has the ability to see your potential, beyond even your own ideas of what that potential might be. He has the facility and the unwavering passion to get you there - and he won’t rest until you do. Trust me.',
+}
+
 const markLethem = {
     name:'Mark Lethem',
     title:'Managing Director at IAB',
@@ -93,8 +115,10 @@ const GregorMcPhie  = {
 }
 
 export const endorsements = [
-    markLethem,
+    tajana,
     SteveLeatham,
+    thomasDoherty,
+    markLethem,
     chrisStapelberg,
     natalieWeiss,
     ValerieFairnie,
@@ -106,19 +130,27 @@ export const endorsements = [
 
 export const masterclassQuotes = [
     {
+        name:'Fergal McGof',
+        role:'The Bodyguard, Matilda, Book of Mormon',
+        link:null,
+        text:(<p className="q_large">Murray is an incredible mentor who took me under his wing and prepared me for my professional training. My career would definitely not be what it is without this man.</p>),
+        img:'imgs/FergalMcGoff.jpeg',
+    },
+    {
+        name:'Sonny Grieveson',
+        role:'Tanz der Vampire, The Band – The Musical',
+        link:null,
+        text:(<small>My professional experience with Murray Grant extends across the entire span of his multifaceted and formidable skill set. Initially being trained and guided by Murray as a Teacher/Mentor, I went on afterwards to work professionally alongside him in his roles as a Choreographer and Director. I have also assisted him on projects where he has been involved both in Casting and as a Creative Consultant. Through these experiences I have not only seen Murray adapt his approach to an impressive range of projects and roles - but I have also experienced first hand the benefits of his accomplished teaching methods, dynamic choreography styles and his extensive knowledge and network of global contacts within the Performing Arts. Murray Grant embodies professional excellence; combine this with a diverse skill set of exceptional standard and he has successfully carved out an unrivalled po sition within our industry. Murray would undoubtedly be a powerful and vibrant asset to any professional project within the Creative Arts</small>),
+        img:'imgs/SonnyGrieveson.jpeg',
+    },
+    {
         name:'Tracy Baxter',
         role:'Industry Coordinator at the Hammond',
         link:'https://www.thehammondschool.co.uk/',
         text:'A fabulous masterclass and an excellent insight into the Industry. The students where challenged and came away with so much experience and knowledge which is so important in their training. Murray really put them through their paces in a very encouraging manner and the advice her gave them both individually and as a year group was fantastic. We cannot wait to welcome Murray back again at the Hammond.  A true professional who knows the Industry and knows what skills the students need in order to succeed once they have graduated.',
         img:'logos/theHammondLogo.png',
     },
-    {
-        name:'Thomas Doherty ',
-        role:'Disney’s Descendants 2 & 3, HBO’s Catherine the Great, High Strung',
-        link:null,
-        text:'The most striking thing for me about Murray isn’t just his incredible ability as a professional dancer, or the respect I have for his extensive capability as a choreographer, but as a teacher, he has the ability to see your potential, beyond even your own ideas of what that potential might be. He has the facility and the unwavering passion to get you there - and he won’t rest until you do. Trust me.',
-        img:'imgs/doherty.jpg',
-    },
+   
     {
         name:'Elizabeth Ennis',
         role:'Westside Stage School Director',
@@ -134,6 +166,14 @@ export const masterclassQuotes = [
         img:'imgs/costa.jpg',
     },
     {
+        name:'Rebecca Stenhouse',
+        role:'Legally Blonde (UK Tour), Grease (European Arena Tour), Rock of Ages (NCL)',
+        // link:'http://www.westsidestageschool.ie',
+        text:(<p className="q_large">I wouldn't be where I am today without Murray. He taught me so many valuable lessons about being a performer. He will always push you to be the best you can be and make you have fun while doing it.</p>),
+        img:'imgs/rebeca.jpg',
+    },
+
+    {
         name:'Rowen Letham',
         role:'Production Assistant',
         institution:'New College Lanarkshire',
@@ -142,14 +182,7 @@ export const masterclassQuotes = [
         img:'logos/rowenLetham.jpg',
     },
 
-    {
-        name:'Rebecca Stenhouse',
-        role:'Legally Blonde (UK Tour), Grease (European Arena Tour), Rock of Ages (NCL)',
-        // link:'http://www.westsidestageschool.ie',
-        text:'I wouldn\'t be where I am today without Murray. He taught me so many valuable lessons about being a performer. He will always push you to be the best you can be and make you have fun while doing it.',
-        img:'imgs/rebeca.jpg',
-    },
-
+   
 
 
 ]
@@ -157,35 +190,70 @@ export const masterclassQuotes = [
 
 export const choreographyQuotes = [
     {
-        institution:'All Edinburgh Theatre',
-        link:'http://www.alledinburghtheatre.com/review-the-producers/',
-        show:'The Producers',
-        text:'Choreographer Murray Grant’s contributions are seamless, they’ve wrangled their triple-threat charges to fantastic effect. The show never stops moving and it never stops being superb.'
-
-    },
-    {
         institution:'The Scotsman',
         link:'https://www.scotsman.com/news-2-15012/reviews-macpherson-s-rant-the-church-hill-theatre-1-1221770',
         show:'Macphersons Rant',
-        text:'Murray Grant\'s adventurous choreography added a modern edge to the show.'
+        text:(<p className="q_large">Murray Grant's adventurous choreography added a modern edge to the show.</p>)
     },
+    {
+        institution:'Bühnenlichter.de ',
+        link:' http://buehnenlichter.de/best-of-musical-starnights-2016-2017/ ',
+        show:'Online portal for Musicals, Concerts, Shows and More ',
+        text:"With 'Best of Musical Stanights' Murray Grant has developed a programme, that has made it possible to experience the entire world of musical theatre, with all of its facets, in one evening. One after the other, musical theatre hit follows musical theatre hit. Interspersed, are short breaks for lovingly-crafted presentations that give the audience a summary of the chosen songs. Fantastic scenery and sets in the form of Video and image-projection, support the individual performances and make possible swift scenic and thematic changes. Over 250 richly-colourful costumes (very close to their original inspirations), and a 14-strong ensemble (specifically cast for this production) make the evening a pleasure for the eyes and ears. "
+
+    },
+    {
+        institution:'All Edinburgh Theatre',
+        link:'http://www.alledinburghtheatre.com/review-the-producers/',
+        show: 'The Producers',
+        text:(<p className="q_large">Choreographer Murray Grant’s contributions are seamless, they’ve wrangled their triple-threat charges to fantastic effect. The show never stops moving and it never stops being superb.</p>)
+
+    },
+    {
+        institution:'Echo',
+        link:'http://www.alledinburghtheatre.com/review-the-producers/',
+        show: 'Manuel Wenda',
+        text:(<><p>Murray Grant and Marc McBride have developed the overall concept... The dance-interludes are a fitting accompaniment, rapid changes in style make sure for an entertaining evening... Leonard Bernstein's 'West Side Story' radiates sex appeal, 'America' sparkles despite being one of the most repeatedly-played musical theatre standards. Rolling streetscenes of Manhattan are projected on the backdrop. 'Chicago' lives and breathes Jazz and Blues rhythms. </p></>)
+
+    },
+  
     {
         institution:'Broadway Baby',
         link:'https://broadwaybaby.com/shows/zanna-dont/707071',
         show:'Zanna Don’t',
-        text:'Where the show really stands out is in the choreography, it works really well with plenty of nice touches and flourishes.'
+        text:(<p className="q_large">Where the show really stands out is in the choreography, it works really well with plenty of nice touches and flourishes.</p>)
+    },
+    {
+        institution:'Hockenheimer Tageszeitung',
+        link:'hhttps://www.morgenweb.de/schwetzinger-zeitung_artikel,-hockenheim-spritzige-show-voller-energie-_arid,322146.html ',
+        show:'Corinna Deiß',
+        text:"Offering snapshots of classic scenes from various musicals, multiple 'Best Of' shows tour regularly and simultaneously throughout the country. This  includes 'Musical Starnights' choreographed and conceived by Murray Grant... Choreographic highlights included 'The red boots' from 'Dance of the vampires', peppered with a number of daring acrobatics and lifts...The show closed with 'Time of My Life' (lift included) and 'Fame', which was performed a second time after the curtain-call applause, which the audience never wanted to end. These young singers and dancers had promised a great show with bright costumes, top-level singing and complicated choreography. Applause, whistles and many happy faces confirmed that these promises were met. "
+    },
+    {
+        institution:'Eckernförder Zeitung, SHZ.de',
+        link:'https://www.shz.de/lokales/eckernfoerder-zeitung/musicalhits-bringen-stadthalle-zum-kochen-id12444256.html ',
+        show:'Petra Beruschke',
+        text:'Under the leadership of Choreographer and artistic director Murray Grant, a young and international Ensemble presented a brilliant cross-section of the most celebrated moments from the best musicals. The performers from the UK, Germany, Austria, New Zealand and Croatia shone not only vocally, but also with their perfectionist dance-breaks. '
     },
     {
         institution:'ScotsGay Arts',
         link:'https://scotsgayarts.com/blog/',
         show:'Little Shop of Horrors',
-        text:(<span>Grant’s choreography is sharp and well-judged with the occasional nod to other musicals such as <i>Fiddler On The Roof</i> and the company commit to it fully.</span>)
+        text:(<p className="q_large">Grant’s choreography is sharp and well-judged with the occasional nod to other musicals such as <i>Fiddler On The Roof</i> and the company commit to it fully.</p>)
+    },
+    {
+        institution:'Bayerische Rundschau',
+        link:'https://www.genios.de/presse-archiv/artikel/BR/20160205/farbenpraechtig-und-fantasievoll/3139453660.html ',
+        show:'Stephan Herbert Fuchs ',
+        text: 'On the Creative team, choreographer Murray Grant has gone to great lengths to get a varied, brightly coloured and imaginative show on its legs, and he has largely succeeded in his plan. Beautiful voices, magnificent costumes and a sophisticated lighting-design with modern 3D photo and video projections provided the audience with the best entertainment at a high level. '
+        
     },
     {
         institution:'The Review Hub',
         link:'https://www.thereviewshub.com/the-addams-family-kings-theatre-edinburgh/',
         show:'The Addams Family',
-        text:'Dance numbers galore are present in this production and are all unique in some way, usually through a good contrast of lighting colours or style such as the tango and praise must be offered to choreographer Murray Grant and the cast for a solid delivery.'
+        text: 'Dance numbers galore are present in this production and are all unique in some way, usually through a good contrast of lighting colours or style such as the tango and praise must be offered to choreographer Murray Grant and the cast for a solid delivery.'
+        
     },
 
 ]

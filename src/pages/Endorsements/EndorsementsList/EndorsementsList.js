@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 import './EndorsementsList.scss';
 
 import {endorsements} from './../../../api/endorsements';
@@ -24,7 +24,7 @@ function displayEndorsements(endorsement){
             <div className="quote__name">
                 <b><u><a href={link} target="_blank"  rel="noopener noreferrer">{name}</a></u></b> <br/>
                 <i>{title} </i>
-                <img src={require('./../../../media/icons/'+country.flag)} alt={country.name} className="quote__flag"/>
+                <img src={require('./../../../media/icons/'+country.flag).default} alt={country.name} className="quote__flag"/>
             </div>
 
         </div>

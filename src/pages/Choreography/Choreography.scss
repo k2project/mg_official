@@ -1,51 +1,42 @@
-@import './../../App.scss';  //import vars and mixins
+@import './../../App.scss'; //import vars and mixins
 
-.Choreography{
-
-}
-.Posters{
+.Posters {
     display: block;
-    img{
+    img {
         width: 16.65%; //6
         width: 14.28%; //7
         width: 12.5%; //8
         display: inline-block;
         vertical-align: bottom;
-        opacity: .6;
+        opacity: 0.6;
     }
-
 }
 //max 1300
-@include desktop-sm{
-
+@include desktop-sm {
 }
 //max 1024
-@include tablet{
-    .Posters img{
-        width: 20%;//5
+@include tablet {
+    .Posters img {
+        width: 20%; //5
     }
-    .Posters img:nth-last-child(2){
+    .Posters img:nth-last-child(2) {
         display: none;
     }
 }
 //max 768
-@include mobile{
-
-    .Choreography .Page__top{
-        background-image: url('./../../media/imgs/choreography.mobile.JPG');
+@include mobile {
+    .Choreography .Page__top {
+        background-image: url('./../../media/imgs/choreography.mobile.jpg');
         background-size: cover;
-        background-position: center ;
+        background-position: center;
     }
-    .Posters img{
+    .Posters img {
         width: 25%; //4
     }
-    .Posters img:nth-last-child(2){
+    .Posters img:nth-last-child(2) {
         display: inline-block;
     }
-
 }
 // max 480
-@include mobile-sm{
-
-
+@include mobile-sm {
 }
