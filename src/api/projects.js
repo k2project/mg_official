@@ -140,7 +140,7 @@ const mgaManagement = {
     current:true,
     projectName:{
         display:false,
-        name:'Network Artists Management',
+        name:'Network Artist Management',
     },
     imgs:{
         bg:null,
@@ -235,11 +235,15 @@ const theCore= {
         logo:'theatreStore.jpg',
     },
     role:{
-        title:'Co-founder & Vice Chair',
+        title:'Founder and Director',
         subtitle:null,
     },
 
-    desc:(<><p>Your one-stop-shop for everything Showbiz!</p><p>Get your West End Theatre, National Event and Edinburgh Theatre Tickets on our Box Office in store or online. And browse our selection of theatrical gifts perfect for birthdays and those opening night celebrations!</p><p>Located in the heart of Stockbridge, Edinburgh, you can drop by in person or find everything here online.</p><p>If we don’t have what you want, or you don’t know what you want, let us help you find it!</p></>),
+    desc:(<><p>The shop has a selection of theatre gifts available, including Pin Badges,
+greetings cards, and Break a Leg gifts all available to order on-line.</p><p>We can supply all your uniform &amp; ticketing needs. With a selection of Hoodies,
+T-Shirts and other clothing lines available on request and a Covid friendly
+ticketing system that can be sold by seating plan, sections, or unallocated.</p><p>Finally we run a Box Office for Edinburgh Playhouse, and all ATG &amp; Love
+Theatre venues across the UK, which incorporates London’s WEST END.</p></>),
     links:{
         facebook:'https://www.facebook.com/thetheatrestore',
         instagram:'https://www.instagram.com/thetheatrestore/',

@@ -3,7 +3,7 @@
 .ProjectsSlider{
     background: $color_darker;
     width: 100rem;
-    height: 72rem;;
+    height: 72rem;
     margin: auto;
     overflow: hidden;
     z-index: 9;
@@ -46,7 +46,9 @@
 }
 .projectDetails_lft{
     display: grid;
-    grid-template-rows: 12rem 1fr auto;
+    grid-template-rows: 10rem 1fr auto;
+
+
 }
 .details__name{
     text-align: left;
@@ -78,8 +80,9 @@
     text-align: justify;
 
 }
+
 a.details__btn{
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 .details__logo{
     width: 100%;
@@ -189,10 +192,12 @@ a.details__btn{
     .projectDetails_lft{
         grid-template-rows: 10rem 1fr auto;
         p{
-            width: 90%;
+            width: 100%;
         }
     }
-
+    .details__logo{
+        left: 2rem;
+    }
 
 
 
@@ -201,7 +206,7 @@ a.details__btn{
 @include mobile{
     .ProjectsSlider{
         width: 90%;
-        height: 57rem;
+        height: 59rem;
         .btn{
             width: 18rem;
             font-size: 1.2rem;
